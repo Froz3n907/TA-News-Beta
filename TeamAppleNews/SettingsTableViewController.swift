@@ -55,12 +55,10 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         case 3:
             cellIdentifier = "rate"
         case 4:
-            cellIdentifier = "more"
-        case 5:
             cellIdentifier = "restore"
-        case 6:
+        case 5:
             cellIdentifier = "not"
-        case 7:
+        case 6:
             cellIdentifier = "pic"
         default:
             cellIdentifier = "Cell"
@@ -75,14 +73,14 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 7
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.row == 0 {
             return 40
         }
-        if indexPath.row == 7 {
+        if indexPath.row == 6 {
             return 156
         }
         return 55
@@ -101,15 +99,15 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         if indexPath.row == 3 {
             UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/teamapplenews/id995706775?ls=1&mt=8")!)
         }
-        if indexPath.row == 5 {
+        if indexPath.row == 4 {
             InAppPurchase.sharedInstance.restoreTransactions()
         }
-        if indexPath.row == 6 {
+        if indexPath.row == 5 {
             if let appSettings = NSURL(string: UIApplicationOpenSettingsURLString) {
                 UIApplication.sharedApplication().openURL(appSettings)
             }
         }
-        if indexPath.row == 7 {
+        if indexPath.row == 6 {
             let cell = tableView.dequeueReusableCellWithIdentifier("pic", forIndexPath: indexPath)
             cell.selectionStyle = .None
         }
