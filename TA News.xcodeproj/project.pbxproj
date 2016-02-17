@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9855D9B41C73B14800FBF0DF /* LI_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9855D9B31C73B14800FBF0DF /* LI_3x.png */; };
+		98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DF591C753C1900059323 /* LaunchImage Icon.png */; };
 		DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */; };
 		DA0948A71C0F669500DF1079 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0948A61C0F669500DF1079 /* SafariServices.framework */; };
 		DA0948A91C0F78CD00DF1079 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */; };
@@ -127,7 +127,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9855D9B31C73B14800FBF0DF /* LI_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LI_3x.png; sourceTree = "<group>"; };
+		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
 		DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		DA0948A61C0F669500DF1079 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
@@ -391,7 +391,7 @@
 				DA36D5C61BE4FC1C0035285A /* SF-UI-Display-Thin.otf */,
 				DA36D5C71BE4FC1C0035285A /* SF-UI-Text-Heavy.otf */,
 				DA36D5C81BE4FC1C0035285A /* share black.PNG */,
-				9855D9B31C73B14800FBF0DF /* LI_3x.png */,
+				98B4DF591C753C1900059323 /* LaunchImage Icon.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -747,13 +747,13 @@
 				DAFF566C1C20BA9F00838822 /* reddit.PNG in Resources */,
 				DA36D61B1BE4FCB10035285A /* Icon 60x60.png in Resources */,
 				DABD2F671C3C5B000062D901 /* connect.PNG in Resources */,
+				98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */,
 				DABD2F6B1C3C5B000062D901 /* tan.PNG in Resources */,
 				DABD2F6D1C3C5B000062D901 /* toys.PNG in Resources */,
 				DA36D5E41BE4FC1C0035285A /* SF-UI-Text-Heavy.otf in Resources */,
 				DA1E31C71C13822900499592 /* facebook.PNG in Resources */,
 				DA41D9511C38A6D0007BE8B3 /* restore.PNG in Resources */,
 				DA36D5D11BE4FC1C0035285A /* 2.0_on_trans.png in Resources */,
-				9855D9B41C73B14800FBF0DF /* LI_3x.png in Resources */,
 				DA36D61F1BE4FCB10035285A /* Icon 120x120.png in Resources */,
 				DA36D5E51BE4FC1C0035285A /* share black.PNG in Resources */,
 				DA3DD3491C25B4F8001728BC /* emerald.png in Resources */,
