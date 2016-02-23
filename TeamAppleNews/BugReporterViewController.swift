@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 
+
 class BugReporterViewController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
