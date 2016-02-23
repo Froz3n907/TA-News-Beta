@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DF591C753C1900059323 /* LaunchImage Icon.png */; };
+		98B4DF5C1C7BC39600059323 /* BugReporterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B4DF5B1C7BC39500059323 /* BugReporterViewController.swift */; };
 		DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */; };
 		DA0948A71C0F669500DF1079 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0948A61C0F669500DF1079 /* SafariServices.framework */; };
 		DA0948A91C0F78CD00DF1079 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */; };
@@ -128,6 +129,7 @@
 
 /* Begin PBXFileReference section */
 		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
+		98B4DF5B1C7BC39500059323 /* BugReporterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugReporterViewController.swift; sourceTree = "<group>"; };
 		DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		DA0948A61C0F669500DF1079 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				DA3F8D371BE510520038277E /* Settings */,
 				DABD2F6F1C3C64580062D901 /* Pull To Refresh */,
 				DA36D5891BE4FBBB0035285A /* Main.storyboard */,
+				98B4DF5B1C7BC39500059323 /* BugReporterViewController.swift */,
 				DA3F8D631BE511720038277E /* SWRevealViewController */,
 				DA36D58C1BE4FBBB0035285A /* Assets.xcassets */,
 				DA36D58E1BE4FBBB0035285A /* LaunchScreen.storyboard */,
@@ -815,6 +818,7 @@
 				DACD39DB1C1603AB00900FF2 /* TATEmbededViewController.swift in Sources */,
 				DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */,
 				DA3F8D921BE6CF0C0038277E /* Common.swift in Sources */,
+				98B4DF5C1C7BC39600059323 /* BugReporterViewController.swift in Sources */,
 				DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */,
 				DA3F8DA21BE7F4890038277E /* BookmarkDetailsViewController.swift in Sources */,
 				DA36D5861BE4FBBB0035285A /* AppDelegate.swift in Sources */,
@@ -987,6 +991,7 @@
 				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "TeamAppleNews-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1010,6 +1015,7 @@
 				PRODUCT_NAME = "TA News";
 				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "TeamAppleNews-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

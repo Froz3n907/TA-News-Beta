@@ -12,7 +12,12 @@ import iAd
 
 //public updateWebView()
 
-class TATEmbededViewController : UIViewController {
+class TATEmbededViewController : UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+    
+    var goAudio = AVPlayer()
+    var show = AVAudioPlayer()
+    
+    var soundData : NSData!
 
     @IBOutlet var sliderMenu: UIBarButtonItem!
     
@@ -29,7 +34,8 @@ class TATEmbededViewController : UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        streamShow()
+        
         sliderMenu.target = self.revealViewController()
         sliderMenu.action = Selector("revealToggle:")
         
@@ -109,6 +115,12 @@ class TATEmbededViewController : UIViewController {
         }
         
     }
+    @IBAction func playShow(sender: UIButton) {
+        self.show.prepareToPlay()
+        self.show.volume = 1.0
+        self.show.delegate = self
+        self.show.play()
+    }
     
     @IBAction func pause(sender: AnyObject) {
         audioPlayer.pause()
@@ -161,5 +173,4 @@ class TATEmbededViewController : UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-}
+  }
