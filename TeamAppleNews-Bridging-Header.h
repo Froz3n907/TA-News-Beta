@@ -29,5 +29,6 @@
 #import "NavigationMenuTableViewController.h"
 #import "AppConnectViewController.h"
 #import "SnapchatViewController.h"
+#import <Instabug/Instabug.h>
 
 //hello

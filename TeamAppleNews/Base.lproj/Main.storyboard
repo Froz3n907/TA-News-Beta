@@ -1914,20 +1914,6 @@
             </objects>
             <point key="canvasLocation" x="1181" y="2943"/>
         </scene>
-        <!--Bug Reporter View Controller-->
-        <scene sceneID="IDm-KO-YRC">
-            <objects>
-                <viewController id="VD9-IO-cLk" customClass="BugReporterViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="Vd1-al-kmF">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                    </webView>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qa-bs-Y6u" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1181" y="3599"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="e81-D2-cmE">
             <objects>

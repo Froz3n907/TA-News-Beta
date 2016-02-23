@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		980FD9601C7D158F00363F1E /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95D1C7D158F00363F1E /* DigitsKit.framework */; };
+		980FD9611C7D158F00363F1E /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980FD95E1C7D158F00363F1E /* DigitsKitResources.bundle */; };
+		980FD9621C7D158F00363F1E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95F1C7D158F00363F1E /* TwitterCore.framework */; };
+		980FD9651C7D170000363F1E /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980FD9631C7D170000363F1E /* Instabug.bundle */; };
+		980FD9661C7D170000363F1E /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9641C7D170000363F1E /* Instabug.framework */; };
+		980FD9681C7D173C00363F1E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9671C7D173C00363F1E /* CoreMotion.framework */; };
+		980FD96A1C7D175200363F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9691C7D175200363F1E /* UIKit.framework */; };
+		980FD96C1C7D175E00363F1E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD96B1C7D175E00363F1E /* CoreTelephony.framework */; };
 		98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DF591C753C1900059323 /* LaunchImage Icon.png */; };
-		98B4DF5C1C7BC39600059323 /* BugReporterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B4DF5B1C7BC39500059323 /* BugReporterViewController.swift */; };
 		DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */; };
 		DA0948A71C0F669500DF1079 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0948A61C0F669500DF1079 /* SafariServices.framework */; };
 		DA0948A91C0F78CD00DF1079 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */; };
@@ -128,8 +135,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		980FD95D1C7D158F00363F1E /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		980FD95E1C7D158F00363F1E /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DigitsKitResources.bundle; sourceTree = "<group>"; };
+		980FD95F1C7D158F00363F1E /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		980FD9631C7D170000363F1E /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
+		980FD9641C7D170000363F1E /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
+		980FD9671C7D173C00363F1E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		980FD9691C7D175200363F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		980FD96B1C7D175E00363F1E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
-		98B4DF5B1C7BC39500059323 /* BugReporterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugReporterViewController.swift; sourceTree = "<group>"; };
 		DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		DA0948A61C0F669500DF1079 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
@@ -247,10 +261,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980FD96C1C7D175E00363F1E /* CoreTelephony.framework in Frameworks */,
+				980FD96A1C7D175200363F1E /* UIKit.framework in Frameworks */,
+				980FD9681C7D173C00363F1E /* CoreMotion.framework in Frameworks */,
 				DAC1621E1C41B8DA0077416D /* MediaPlayer.framework in Frameworks */,
 				DAC1621C1C41B8880077416D /* AVFoundation.framework in Frameworks */,
 				DACD39D31C13CCA900900FF2 /* StoreKit.framework in Frameworks */,
+				980FD9601C7D158F00363F1E /* DigitsKit.framework in Frameworks */,
 				DA3F8D671BE677EC0038277E /* EventKit.framework in Frameworks */,
+				980FD9621C7D158F00363F1E /* TwitterCore.framework in Frameworks */,
 				DAB28FF51C42B5DB0030AB9A /* Crashlytics.framework in Frameworks */,
 				DACD39D91C13CCDB00900FF2 /* libsqlite3.tbd in Frameworks */,
 				DACD39D71C13CCC100900FF2 /* libz.tbd in Frameworks */,
@@ -270,6 +289,7 @@
 				DACD39C41C13CC1300900FF2 /* ParseFacebookUtils.framework in Frameworks */,
 				DACD39C11C13CC1300900FF2 /* ParseFacebookUtilsV4.framework in Frameworks */,
 				DAB28FF41C42B5DB0030AB9A /* Fabric.framework in Frameworks */,
+				980FD9661C7D170000363F1E /* Instabug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +357,6 @@
 				DA3F8D371BE510520038277E /* Settings */,
 				DABD2F6F1C3C64580062D901 /* Pull To Refresh */,
 				DA36D5891BE4FBBB0035285A /* Main.storyboard */,
-				98B4DF5B1C7BC39500059323 /* BugReporterViewController.swift */,
 				DA3F8D631BE511720038277E /* SWRevealViewController */,
 				DA36D58C1BE4FBBB0035285A /* Assets.xcassets */,
 				DA36D58E1BE4FBBB0035285A /* LaunchScreen.storyboard */,
@@ -424,6 +443,14 @@
 		DA36D6111BE4FC7A0035285A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				980FD96B1C7D175E00363F1E /* CoreTelephony.framework */,
+				980FD9691C7D175200363F1E /* UIKit.framework */,
+				980FD9671C7D173C00363F1E /* CoreMotion.framework */,
+				980FD9631C7D170000363F1E /* Instabug.bundle */,
+				980FD9641C7D170000363F1E /* Instabug.framework */,
+				980FD95D1C7D158F00363F1E /* DigitsKit.framework */,
+				980FD95E1C7D158F00363F1E /* DigitsKitResources.bundle */,
+				980FD95F1C7D158F00363F1E /* TwitterCore.framework */,
 				DAB28FF21C42B5DA0030AB9A /* Fabric.framework */,
 				DAB28FF31C42B5DB0030AB9A /* Crashlytics.framework */,
 				DAC1621D1C41B8DA0077416D /* MediaPlayer.framework */,
@@ -619,6 +646,7 @@
 				DA36D57F1BE4FBBB0035285A /* Frameworks */,
 				DA36D5801BE4FBBB0035285A /* Resources */,
 				DAB28FF11C42B5890030AB9A /* ShellScript */,
+				980FD96D1C7D1A8200363F1E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -739,6 +767,7 @@
 				DA1E31CA1C13822900499592 /* tumblr.PNG in Resources */,
 				DA1E31C91C13822900499592 /* snapchat.PNG in Resources */,
 				DA36D5DF1BE4FC1C0035285A /* navicon@3x.png in Resources */,
+				980FD9651C7D170000363F1E /* Instabug.bundle in Resources */,
 				DABD2F661C3C5B000062D901 /* bookmarks.PNG in Resources */,
 				DA36D61A1BE4FCB10035285A /* Icon 58x58.png in Resources */,
 				DABD2F6A1C3C5B000062D901 /* settings.PNG in Resources */,
@@ -763,6 +792,7 @@
 				DA36D58B1BE4FBBB0035285A /* Main.storyboard in Resources */,
 				DA41D9551C38A81F007BE8B3 /* more.PNG in Resources */,
 				DA36D5E01BE4FC1C0035285A /* news icon.PNG in Resources */,
+				980FD9611C7D158F00363F1E /* DigitsKitResources.bundle in Resources */,
 				DA1E31C81C13822900499592 /* instagram.PNG in Resources */,
 				DA41D95B1C39DC9B007BE8B3 /* faceo.png in Resources */,
 				DABD2F691C3C5B000062D901 /* galley.PNG in Resources */,
@@ -790,6 +820,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		980FD96D1C7D1A8200363F1E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#--- SCRIPT BEGIN ---\n# SKIP_SIMULATOR_BUILDS=1\nSCRIPT_SRC=$(find \"$PROJECT_DIR\" -name 'Instabug_dsym_upload.sh' | head -1)\nif [ ! \"${SCRIPT_SRC}\" ]; then\necho \"Instabug: err: script not found. Make sure that you're including Instabug.bundle in your project directory\"\nexit 1\nfi\nAPP_TOKEN=\"affae67b70d67a9976da331bf9d04d7f\"\nsource \"${SCRIPT_SRC}\"\n#--- SCRIPT END ---\n";
+		};
 		DAB28FF11C42B5890030AB9A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,7 +844,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 371014dff6c6aa9b02953aae33069552168c6ee9 ee5b1538de2ae6b22120720a71c0f6506cd0747d84d04ae490baf7617eec87db ";
+			shellScript = "./Fabric.framework/run 371014dff6c6aa9b02953aae33069552168c6ee9 ee5b1538de2ae6b22120720a71c0f6506cd0747d84d04ae490baf7617eec87db\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -818,7 +861,6 @@
 				DACD39DB1C1603AB00900FF2 /* TATEmbededViewController.swift in Sources */,
 				DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */,
 				DA3F8D921BE6CF0C0038277E /* Common.swift in Sources */,
-				98B4DF5C1C7BC39600059323 /* BugReporterViewController.swift in Sources */,
 				DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */,
 				DA3F8DA21BE7F4890038277E /* BookmarkDetailsViewController.swift in Sources */,
 				DA36D5861BE4FBBB0035285A /* AppDelegate.swift in Sources */,
@@ -977,6 +1019,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TeamAppleNews",

@@ -34,7 +34,6 @@ class TATEmbededViewController : UIViewController, AVAudioPlayerDelegate, AVAudi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        streamShow()
         
         sliderMenu.target = self.revealViewController()
         sliderMenu.action = Selector("revealToggle:")
