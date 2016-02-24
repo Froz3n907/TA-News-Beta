@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 
 class BookmarksTableViewController: UITableViewController {
 
@@ -39,15 +38,6 @@ class BookmarksTableViewController: UITableViewController {
         sliderMenu.action = Selector("revealToggle:")
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
-        }
         
         let userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
         let itemListFromData:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray

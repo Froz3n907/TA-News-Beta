@@ -54,7 +54,6 @@
 		DA3DD3491C25B4F8001728BC /* emerald.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DD3481C25B4F8001728BC /* emerald.png */; };
 		DA3F8D2E1BE506D00038277E /* NavigationMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F8D2D1BE506D00038277E /* NavigationMenuTableViewController.m */; };
 		DA3F8D5C1BE510E20038277E /* SnapchatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F8D4B1BE510E20038277E /* SnapchatViewController.m */; };
-		DA3F8D651BE638F40038277E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F8D641BE638F40038277E /* iAd.framework */; };
 		DA3F8D671BE677EC0038277E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3F8D661BE677EC0038277E /* EventKit.framework */; };
 		DA3F8D6B1BE688960038277E /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F8D6A1BE688960038277E /* BookmarksTableViewController.swift */; };
 		DA3F8D921BE6CF0C0038277E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3F8D8E1BE6CF0C0038277E /* Common.swift */; };
@@ -278,7 +277,6 @@
 				DA0948A71C0F669500DF1079 /* SafariServices.framework in Frameworks */,
 				DACD39C51C13CC1300900FF2 /* Parse.framework in Frameworks */,
 				DACD39C31C13CC1300900FF2 /* ParseUI.framework in Frameworks */,
-				DA3F8D651BE638F40038277E /* iAd.framework in Frameworks */,
 				DACD39C01C13CC1300900FF2 /* Bolts.framework in Frameworks */,
 				DACD39C21C13CC1300900FF2 /* ParseTwitterUtils.framework in Frameworks */,
 				DACD39C41C13CC1300900FF2 /* ParseFacebookUtils.framework in Frameworks */,

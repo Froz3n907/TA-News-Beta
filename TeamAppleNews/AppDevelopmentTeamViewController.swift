@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 
 class AppDevelopmentTeamViewController: UIViewController {
     
@@ -15,16 +14,6 @@ class AppDevelopmentTeamViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
-        }
-        
     }
     
     override func didReceiveMemoryWarning() {

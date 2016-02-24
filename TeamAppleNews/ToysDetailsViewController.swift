@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 import SafariServices
 
 class ToysDetailsViewController: UIViewController, UIWebViewDelegate, SFSafariViewControllerDelegate {
@@ -58,15 +57,6 @@ class ToysDetailsViewController: UIViewController, UIWebViewDelegate, SFSafariVi
                 }
             }
             task.resume()
-        }
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
         }
         
     }

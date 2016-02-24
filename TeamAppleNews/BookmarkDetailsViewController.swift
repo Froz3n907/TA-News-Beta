@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import iAd
 import SafariServices
 import Parse
 import AVFoundation
 import AVKit
 
-class BookmarkDetailsViewController: UIViewController, ADBannerViewDelegate, SFSafariViewControllerDelegate {
+class BookmarkDetailsViewController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet var bottomBar: UIToolbar!
     
@@ -70,15 +69,6 @@ class BookmarkDetailsViewController: UIViewController, ADBannerViewDelegate, SFS
             bWebView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
             bWebView.opaque = false
             self.titleLabel.backgroundColor = UIColor.whiteColor()
-        }
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
         }
         
     }

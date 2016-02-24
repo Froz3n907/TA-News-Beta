@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 
 class SettingsTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -24,15 +23,6 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         sliderMenu.action = Selector("revealToggle:")
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
-        }
         
         tableView.tableFooterView = UIView()
         

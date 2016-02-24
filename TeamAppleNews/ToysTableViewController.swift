@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 
 class ToysTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate {
     
@@ -37,15 +36,6 @@ class ToysTableViewController: UIViewController, UITableViewDataSource, UITableV
         sliderMenu.action = Selector("revealToggle:")
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
-        }
         
     }
     

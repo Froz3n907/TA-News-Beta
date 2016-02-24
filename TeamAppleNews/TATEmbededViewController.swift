@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import iAd
 
 //public updateWebView()
 
@@ -45,15 +44,6 @@ class TATEmbededViewController : UIViewController {
         saveButtom.enabled = false
         buttonText.enabled = false
         buttonText.title = ""
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
-        }
         
     }
     

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import iAd
 import SafariServices
 
 class DetailsViewController: UIViewController, UIWebViewDelegate, SFSafariViewControllerDelegate {
@@ -94,15 +93,6 @@ class DetailsViewController: UIViewController, UIWebViewDelegate, SFSafariViewCo
         timer2 = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: Selector("finish"), userInfo: nil, repeats: false)
         
         TAN = "TAN"
-        
-        self.canDisplayBannerAds = true
-        let removeiAds = NSUserDefaults.standardUserDefaults().objectForKey("removeiAds") as! Bool!
-        if (removeiAds != nil && removeiAds == true) {
-            canDisplayBannerAds = false
-        }
-        if (removeiAds != nil && removeiAds == false) {
-            self.canDisplayBannerAds = true
-        }
         
     }
     
