@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		980FD9601C7D158F00363F1E /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95D1C7D158F00363F1E /* DigitsKit.framework */; };
 		980FD9621C7D158F00363F1E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95F1C7D158F00363F1E /* TwitterCore.framework */; };
 		980FD9651C7D170000363F1E /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980FD9631C7D170000363F1E /* Instabug.bundle */; };
 		980FD9661C7D170000363F1E /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9641C7D170000363F1E /* Instabug.framework */; };
 		980FD9681C7D173C00363F1E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9671C7D173C00363F1E /* CoreMotion.framework */; };
 		980FD96A1C7D175200363F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9691C7D175200363F1E /* UIKit.framework */; };
 		980FD96C1C7D175E00363F1E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD96B1C7D175E00363F1E /* CoreTelephony.framework */; };
-		98560ED31C7E7066003B7C74 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 98560ED21C7E7066003B7C74 /* DigitsKitResources.bundle */; };
 		98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DF591C753C1900059323 /* LaunchImage Icon.png */; };
 		98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */; };
 		DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */; };
@@ -135,14 +133,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		980FD95D1C7D158F00363F1E /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
 		980FD95F1C7D158F00363F1E /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		980FD9631C7D170000363F1E /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
 		980FD9641C7D170000363F1E /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 		980FD9671C7D173C00363F1E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		980FD9691C7D175200363F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		980FD96B1C7D175E00363F1E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		98560ED21C7E7066003B7C74 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
 		98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATEmbededViewController.swift; sourceTree = "<group>"; };
 		DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -267,7 +263,6 @@
 				DAC1621E1C41B8DA0077416D /* MediaPlayer.framework in Frameworks */,
 				DAC1621C1C41B8880077416D /* AVFoundation.framework in Frameworks */,
 				DACD39D31C13CCA900900FF2 /* StoreKit.framework in Frameworks */,
-				980FD9601C7D158F00363F1E /* DigitsKit.framework in Frameworks */,
 				DA3F8D671BE677EC0038277E /* EventKit.framework in Frameworks */,
 				980FD9621C7D158F00363F1E /* TwitterCore.framework in Frameworks */,
 				DAB28FF51C42B5DB0030AB9A /* Crashlytics.framework in Frameworks */,
@@ -448,8 +443,6 @@
 				980FD9671C7D173C00363F1E /* CoreMotion.framework */,
 				980FD9631C7D170000363F1E /* Instabug.bundle */,
 				980FD9641C7D170000363F1E /* Instabug.framework */,
-				980FD95D1C7D158F00363F1E /* DigitsKit.framework */,
-				98560ED21C7E7066003B7C74 /* DigitsKitResources.bundle */,
 				980FD95F1C7D158F00363F1E /* TwitterCore.framework */,
 				DAB28FF21C42B5DA0030AB9A /* Fabric.framework */,
 				DAB28FF31C42B5DB0030AB9A /* Crashlytics.framework */,
@@ -781,7 +774,6 @@
 				DABD2F671C3C5B000062D901 /* connect.PNG in Resources */,
 				98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */,
 				DABD2F6B1C3C5B000062D901 /* tan.PNG in Resources */,
-				98560ED31C7E7066003B7C74 /* DigitsKitResources.bundle in Resources */,
 				DABD2F6D1C3C5B000062D901 /* toys.PNG in Resources */,
 				DA36D5E41BE4FC1C0035285A /* SF-UI-Text-Heavy.otf in Resources */,
 				DA1E31C71C13822900499592 /* facebook.PNG in Resources */,
