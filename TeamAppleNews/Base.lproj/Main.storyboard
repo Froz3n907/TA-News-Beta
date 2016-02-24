@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OJI-H9-eVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OJI-H9-eVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -658,7 +658,6 @@
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ChangeAudioTime" destination="mCf-yM-SFw" id="TvC-Rq-mH7"/>
                         <outlet property="buttonText" destination="tHb-Jh-0Vw" id="p4V-rP-hpe"/>
                         <outlet property="saveButtom" destination="JIJ-uU-mNX" id="NIU-Be-Ey0"/>
                         <outlet property="sliderMenu" destination="f4o-J5-lmo" id="yEo-gt-rv8"/>
