@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		980FD9601C7D158F00363F1E /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95D1C7D158F00363F1E /* DigitsKit.framework */; };
-		980FD9611C7D158F00363F1E /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980FD95E1C7D158F00363F1E /* DigitsKitResources.bundle */; };
 		980FD9621C7D158F00363F1E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95F1C7D158F00363F1E /* TwitterCore.framework */; };
 		980FD9651C7D170000363F1E /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980FD9631C7D170000363F1E /* Instabug.bundle */; };
 		980FD9661C7D170000363F1E /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9641C7D170000363F1E /* Instabug.framework */; };
 		980FD9681C7D173C00363F1E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9671C7D173C00363F1E /* CoreMotion.framework */; };
 		980FD96A1C7D175200363F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9691C7D175200363F1E /* UIKit.framework */; };
 		980FD96C1C7D175E00363F1E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD96B1C7D175E00363F1E /* CoreTelephony.framework */; };
+		98560ED31C7E7066003B7C74 /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 98560ED21C7E7066003B7C74 /* DigitsKitResources.bundle */; };
 		98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DF591C753C1900059323 /* LaunchImage Icon.png */; };
 		98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */; };
 		DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */; };
@@ -136,13 +136,13 @@
 
 /* Begin PBXFileReference section */
 		980FD95D1C7D158F00363F1E /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
-		980FD95E1C7D158F00363F1E /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DigitsKitResources.bundle; sourceTree = "<group>"; };
 		980FD95F1C7D158F00363F1E /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		980FD9631C7D170000363F1E /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
 		980FD9641C7D170000363F1E /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Instabug.framework; sourceTree = "<group>"; };
 		980FD9671C7D173C00363F1E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		980FD9691C7D175200363F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		980FD96B1C7D175E00363F1E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		98560ED21C7E7066003B7C74 /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
 		98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATEmbededViewController.swift; sourceTree = "<group>"; };
 		DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -449,7 +449,7 @@
 				980FD9631C7D170000363F1E /* Instabug.bundle */,
 				980FD9641C7D170000363F1E /* Instabug.framework */,
 				980FD95D1C7D158F00363F1E /* DigitsKit.framework */,
-				980FD95E1C7D158F00363F1E /* DigitsKitResources.bundle */,
+				98560ED21C7E7066003B7C74 /* DigitsKitResources.bundle */,
 				980FD95F1C7D158F00363F1E /* TwitterCore.framework */,
 				DAB28FF21C42B5DA0030AB9A /* Fabric.framework */,
 				DAB28FF31C42B5DB0030AB9A /* Crashlytics.framework */,
@@ -781,6 +781,7 @@
 				DABD2F671C3C5B000062D901 /* connect.PNG in Resources */,
 				98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */,
 				DABD2F6B1C3C5B000062D901 /* tan.PNG in Resources */,
+				98560ED31C7E7066003B7C74 /* DigitsKitResources.bundle in Resources */,
 				DABD2F6D1C3C5B000062D901 /* toys.PNG in Resources */,
 				DA36D5E41BE4FC1C0035285A /* SF-UI-Text-Heavy.otf in Resources */,
 				DA1E31C71C13822900499592 /* facebook.PNG in Resources */,
@@ -792,7 +793,6 @@
 				DA36D58B1BE4FBBB0035285A /* Main.storyboard in Resources */,
 				DA41D9551C38A81F007BE8B3 /* more.PNG in Resources */,
 				DA36D5E01BE4FC1C0035285A /* news icon.PNG in Resources */,
-				980FD9611C7D158F00363F1E /* DigitsKitResources.bundle in Resources */,
 				DA1E31C81C13822900499592 /* instagram.PNG in Resources */,
 				DA41D95B1C39DC9B007BE8B3 /* faceo.png in Resources */,
 				DABD2F691C3C5B000062D901 /* galley.PNG in Resources */,
