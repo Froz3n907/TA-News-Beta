@@ -16,6 +16,7 @@
 		980FD96A1C7D175200363F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9691C7D175200363F1E /* UIKit.framework */; };
 		980FD96C1C7D175E00363F1E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD96B1C7D175E00363F1E /* CoreTelephony.framework */; };
 		98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DF591C753C1900059323 /* LaunchImage Icon.png */; };
+		98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */; };
 		DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */; };
 		DA0948A71C0F669500DF1079 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0948A61C0F669500DF1079 /* SafariServices.framework */; };
 		DA0948A91C0F78CD00DF1079 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */; };
@@ -113,7 +114,6 @@
 		DACD39D51C13CCB400900FF2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D41C13CCB400900FF2 /* SystemConfiguration.framework */; };
 		DACD39D71C13CCC100900FF2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D61C13CCC100900FF2 /* libz.tbd */; };
 		DACD39D91C13CCDB00900FF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */; };
-		DACD39DB1C1603AB00900FF2 /* TATEmbededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACD39DA1C1603AB00900FF2 /* TATEmbededViewController.swift */; };
 		DAFF566C1C20BA9F00838822 /* reddit.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DAFF566B1C20BA9F00838822 /* reddit.PNG */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +144,7 @@
 		980FD9691C7D175200363F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		980FD96B1C7D175E00363F1E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
+		98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATEmbededViewController.swift; sourceTree = "<group>"; };
 		DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		DA0948A61C0F669500DF1079 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
@@ -252,7 +253,6 @@
 		DACD39D41C13CCB400900FF2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DACD39D61C13CCC100900FF2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		DACD39DA1C1603AB00900FF2 /* TATEmbededViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATEmbededViewController.swift; sourceTree = "<group>"; };
 		DAFF566B1C20BA9F00838822 /* reddit.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddit.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -493,7 +493,7 @@
 		DA3F8D311BE50FCF0038277E /* TeamApple Talk */ = {
 			isa = PBXGroup;
 			children = (
-				DACD39DA1C1603AB00900FF2 /* TATEmbededViewController.swift */,
+				98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */,
 				DACD39B71C13CB4100900FF2 /* TATAudioTableViewController.swift */,
 			);
 			name = "TeamApple Talk";
@@ -858,7 +858,6 @@
 				DA3F8D5C1BE510E20038277E /* SnapchatViewController.m in Sources */,
 				DA59397D1C28FE0400B40358 /* MoreAppsTableViewController.swift in Sources */,
 				DA3F8D951BE6CF0C0038277E /* RssRecord.swift in Sources */,
-				DACD39DB1C1603AB00900FF2 /* TATEmbededViewController.swift in Sources */,
 				DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */,
 				DA3F8D921BE6CF0C0038277E /* Common.swift in Sources */,
 				DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */,
@@ -873,6 +872,7 @@
 				DA3F8D931BE6CF0C0038277E /* DetailsViewController.swift in Sources */,
 				DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */,
 				DA3F8D941BE6CF0C0038277E /* ListViewController.swift in Sources */,
+				98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */,
 				DACD39B81C13CB4200900FF2 /* TATAudioTableViewController.swift in Sources */,
 				DAA6673B1C343E2500FF2D4B /* InstagramViewController.swift in Sources */,
 				DA3F8D9E1BE7EA1A0038277E /* ToysTableViewController.swift in Sources */,

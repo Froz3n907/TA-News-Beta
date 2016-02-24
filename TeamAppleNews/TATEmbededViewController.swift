@@ -12,13 +12,8 @@ import iAd
 
 //public updateWebView()
 
-class TATEmbededViewController : UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+class TATEmbededViewController : UIViewController {
     
-    var goAudio = AVPlayer()
-    var show = AVAudioPlayer()
-    
-    var soundData : NSData!
-
     @IBOutlet var sliderMenu: UIBarButtonItem!
     
     var htmlString = String()
@@ -113,12 +108,6 @@ class TATEmbededViewController : UIViewController, AVAudioPlayerDelegate, AVAudi
             webView.opaque = false
         }
         
-    }
-    @IBAction func playShow(sender: UIButton) {
-        self.show.prepareToPlay()
-        self.show.volume = 1.0
-        self.show.delegate = self
-        self.show.play()
     }
     
     @IBAction func pause(sender: AnyObject) {
