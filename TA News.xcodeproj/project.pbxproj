@@ -75,7 +75,6 @@
 		DA4877041C1DBA8600DA5263 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4877031C1DBA8600DA5263 /* EventViewController.swift */; };
 		DA5939791C28A45D00B40358 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */; };
 		DA59397B1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */; };
-		DA59397D1C28FE0400B40358 /* MoreAppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59397C1C28FE0400B40358 /* MoreAppsTableViewController.swift */; };
 		DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */; };
 		DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */; };
 		DAA6673B1C343E2500FF2D4B /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6673A1C343E2500FF2D4B /* InstagramViewController.swift */; };
@@ -212,7 +211,6 @@
 		DA4877031C1DBA8600DA5263 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDevelopmentTeamViewController.swift; sourceTree = "<group>"; };
-		DA59397C1C28FE0400B40358 /* MoreAppsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreAppsTableViewController.swift; sourceTree = "<group>"; };
 		DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
 		DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableViewCell.swift; sourceTree = "<group>"; };
 		DAA6673A1C343E2500FF2D4B /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
@@ -542,7 +540,6 @@
 			children = (
 				DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */,
 				DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */,
-				DA59397C1C28FE0400B40358 /* MoreAppsTableViewController.swift */,
 				DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */,
 				DA1CFF6F1C10AE5C00AA46DF /* MoreApps Images */,
 			);
@@ -846,7 +843,6 @@
 				DA0948A91C0F78CD00DF1079 /* WebsiteViewController.swift in Sources */,
 				DA4877041C1DBA8600DA5263 /* EventViewController.swift in Sources */,
 				DA3F8D5C1BE510E20038277E /* SnapchatViewController.m in Sources */,
-				DA59397D1C28FE0400B40358 /* MoreAppsTableViewController.swift in Sources */,
 				DA3F8D951BE6CF0C0038277E /* RssRecord.swift in Sources */,
 				DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */,
 				DA3F8D921BE6CF0C0038277E /* Common.swift in Sources */,

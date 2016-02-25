@@ -69,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("1HJPhBvsiNk0SHvAW9PhIKr88xqpO5LK0TcgKkgm",
             clientKey: "K8rEAlEcyufROFiraAGEHesKuf6KFpGBzhuzVFSB")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
-        Fabric.with([Crashlytics.self,Digits.self])
+        Fabric.with([Crashlytics.self])
         if application.applicationState != UIApplicationState.Background {            
             let preBackgroundPush = !application.respondsToSelector("backgroundRefreshStatus")
             let oldPushHandlerOnly = !self.respondsToSelector("application:didReceiveRemoteNotification:fetchCompletionHandler:")
