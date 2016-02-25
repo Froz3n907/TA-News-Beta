@@ -2,8 +2,8 @@
 //  TeamAppleNewsUITests.swift
 //  TeamAppleNewsUITests
 //
-//  Created by Toby Woollaston on 31/10/2015.
-//  Copyright © 2015 FutureAppleCEO. All rights reserved.
+//  Created by Toby Woollaston on 31/10/2016.
+//  Copyright © 2016 FutureAppleCEO. All rights reserved.
 //
 
 import XCTest

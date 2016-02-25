@@ -2,8 +2,8 @@
 //  NavigationMenuTableViewController.m
 //  TeamAppleNews
 //
-//  Created by Toby Woollaston on 18/07/2015.
-//  Copyright © 2015 FutureAppleCEO. All rights reserved.
+//  Created by Toby Woollaston on 18/07/2016.
+//  Copyright © 2016 FutureAppleCEO. All rights reserved.
 //
 
 #import "NavigationMenuTableViewController.h"

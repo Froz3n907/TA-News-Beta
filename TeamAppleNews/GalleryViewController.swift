@@ -2,8 +2,8 @@
 //  GalleryViewController.swift
 //  TeamAppleNews
 //
-//  Created by Toby Woollaston on 02/12/2015.
-//  Copyright © 2015 FutureAppleCEO. All rights reserved.
+//  Created by Toby Woollaston on 02/12/2016.
+//  Copyright © 2016 FutureAppleCEO. All rights reserved.
 //
 
 import UIKit

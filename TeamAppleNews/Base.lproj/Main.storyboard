@@ -47,6 +47,7 @@
             <string>SFUIDisplay-Thin</string>
             <string>SFUIDisplay-Thin</string>
             <string>SFUIDisplay-Thin</string>
+            <string>SFUIDisplay-Thin</string>
         </mutableArray>
         <mutableArray key="SF-UI-Text-Heavy.otf">
             <string>SFUIText-Heavy</string>
@@ -1864,6 +1865,29 @@
                                                 <constraint firstItem="Uma-BN-rgl" firstAttribute="leading" secondItem="JJD-ua-eux" secondAttribute="leading" id="Tf5-mA-T3r"/>
                                                 <constraint firstItem="Uma-BN-rgl" firstAttribute="top" secondItem="JJD-ua-eux" secondAttribute="top" id="eFl-Pw-wR9"/>
                                                 <constraint firstAttribute="bottom" secondItem="Uma-BN-rgl" secondAttribute="bottom" id="iGZ-fZ-GAV"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.84262820510000003" green="0.84262820510000003" blue="0.84262820510000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ver" rowHeight="22" id="yc3-Rx-RBN">
+                                        <rect key="frame" x="0.0" y="515" width="600" height="22"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yc3-Rx-RBN" id="Old-bj-0ns">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0.1 Build 101" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6h-bh-P86">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="K6h-bh-P86" secondAttribute="trailing" id="f18-4f-nqp"/>
+                                                <constraint firstItem="K6h-bh-P86" firstAttribute="top" secondItem="Old-bj-0ns" secondAttribute="top" id="fF7-oa-8or"/>
+                                                <constraint firstItem="K6h-bh-P86" firstAttribute="leading" secondItem="Old-bj-0ns" secondAttribute="leading" id="kdd-jP-VWD"/>
+                                                <constraint firstAttribute="bottom" secondItem="K6h-bh-P86" secondAttribute="bottom" id="uW0-59-e3k"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.84262820510000003" green="0.84262820510000003" blue="0.84262820510000003" alpha="1" colorSpace="calibratedRGB"/>

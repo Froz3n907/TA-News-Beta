@@ -3,7 +3,7 @@
 //  SwiftRSSReader
 //
 //  Created by Prashant on 14/09/15.
-//  Copyright (c) 2015 PrashantKumar Mangukiya. All rights reserved.
+//  Copyright (c) 2016 PrashantKumar Mangukiya. All rights reserved.
 //
 
 import Foundation
