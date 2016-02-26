@@ -76,6 +76,8 @@
 		DA5939791C28A45D00B40358 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */; };
 		DA59397B1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */; };
 		DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */; };
+		DA7252771C7F6F81003556E3 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7252761C7F6F81003556E3 /* pause.png */; };
+		DA7252791C7F707E003556E3 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7252781C7F707E003556E3 /* play.png */; };
 		DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */; };
 		DAA6673B1C343E2500FF2D4B /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6673A1C343E2500FF2D4B /* InstagramViewController.swift */; };
 		DAB28FF41C42B5DB0030AB9A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB28FF21C42B5DA0030AB9A /* Fabric.framework */; };
@@ -212,6 +214,8 @@
 		DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDevelopmentTeamViewController.swift; sourceTree = "<group>"; };
 		DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
+		DA7252761C7F6F81003556E3 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		DA7252781C7F707E003556E3 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableViewCell.swift; sourceTree = "<group>"; };
 		DAA6673A1C343E2500FF2D4B /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
 		DAB28FF21C42B5DA0030AB9A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
@@ -382,6 +386,8 @@
 		DA36D5B31BE4FC0C0035285A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA7252781C7F707E003556E3 /* play.png */,
+				DA7252761C7F6F81003556E3 /* pause.png */,
 				DAA667211C32D0A700FF2D4B /* Menu Icons */,
 				DA41D93B1C389DF6007BE8B3 /* Settings Icons */,
 				DA41D9271C389698007BE8B3 /* InSafari50x50.png.PNG */,
@@ -764,6 +770,7 @@
 				DABD2F731C3C64C90062D901 /* PullToRefreshViewController.xib in Resources */,
 				DABD2F6E1C3C5B000062D901 /* web.PNG in Resources */,
 				DA36D58D1BE4FBBB0035285A /* Assets.xcassets in Resources */,
+				DA7252791C7F707E003556E3 /* play.png in Resources */,
 				DAFF566C1C20BA9F00838822 /* reddit.PNG in Resources */,
 				DA36D61B1BE4FCB10035285A /* Icon 60x60.png in Resources */,
 				DABD2F671C3C5B000062D901 /* connect.PNG in Resources */,
@@ -778,6 +785,7 @@
 				DA36D5E51BE4FC1C0035285A /* share black.PNG in Resources */,
 				DA3DD3491C25B4F8001728BC /* emerald.png in Resources */,
 				DA36D58B1BE4FBBB0035285A /* Main.storyboard in Resources */,
+				DA7252771C7F6F81003556E3 /* pause.png in Resources */,
 				DA41D9551C38A81F007BE8B3 /* more.PNG in Resources */,
 				DA36D5E01BE4FC1C0035285A /* news icon.PNG in Resources */,
 				DA1E31C81C13822900499592 /* instagram.PNG in Resources */,

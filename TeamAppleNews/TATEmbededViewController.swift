@@ -15,12 +15,13 @@ class TATEmbededViewController : UIViewController {
     
     @IBOutlet var sliderMenu: UIBarButtonItem!
     
+    @IBOutlet var playButton: UIButton!
+    @IBOutlet var pauseButton: UIButton!
+    
     var htmlString = String()
     var TAT = String()
     
     var array1 = [String]()
-
-    @IBOutlet var buttonText: UIBarButtonItem!
     
     @IBOutlet var webView: UIWebView!
     
@@ -36,14 +37,23 @@ class TATEmbededViewController : UIViewController {
         
         NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "updateWebView", userInfo: nil, repeats: true)
         
-        webView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
-        webView.opaque = false
+        //webView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
+        //webView.opaque = false
         
         TAT = "TAT"
         
         saveButtom.enabled = false
-        buttonText.enabled = false
-        buttonText.title = ""
+        
+        webView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.7)
+        webView.opaque = false
+        
+        playButton.layer.cornerRadius = 36
+        playButton.layer.borderWidth = 0
+        playButton.layer.borderColor = UIColor.blackColor().CGColor
+        
+        pauseButton.layer.cornerRadius = 36
+        pauseButton.layer.borderWidth = 0
+        pauseButton.layer.borderColor = UIColor.blackColor().CGColor
         
     }
     
@@ -77,7 +87,6 @@ class TATEmbededViewController : UIViewController {
             update = false
             saveButtom.enabled = true
             saveButtom.title = "Save"
-            buttonText.title = name
            
             let userDefaults:NSUserDefaults = NSUserDefaults.standardUserDefaults()
             let itemList:NSMutableArray? = userDefaults.objectForKey("itemList") as? NSMutableArray
@@ -94,8 +103,7 @@ class TATEmbededViewController : UIViewController {
                     }
                 }
             }
-            webView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
-            webView.opaque = false
+            
         }
         
     }

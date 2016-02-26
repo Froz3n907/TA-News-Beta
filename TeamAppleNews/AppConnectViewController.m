@@ -33,7 +33,7 @@
     [reddit setAlpha:0];
     
     [UIView beginAnimations:nil context:NULL];
-    [UIView setAnimationDelay:1];
+    [UIView setAnimationDelay:0.75];
     [UIView setAnimationDuration:0.5];
     [text setAlpha:1];
     [twitter setAlpha:.85];
