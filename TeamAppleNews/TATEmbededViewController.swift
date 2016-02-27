@@ -15,6 +15,8 @@ class TATEmbededViewController : UIViewController {
     
     @IBOutlet var sliderMenu: UIBarButtonItem!
     
+    @IBOutlet var sliderControl: UISlider!
+    
     @IBOutlet var playButton: UIButton!
     @IBOutlet var pauseButton: UIButton!
     
@@ -116,6 +118,12 @@ class TATEmbededViewController : UIViewController {
         audioPlayer.play()
     }
 
+    @IBAction func changeAudioTime(sender: AnyObject) {
+        
+        audioPlayer.play()
+        
+    }
+    
     @IBOutlet var saveButtom: UIBarButtonItem!
 
     @IBAction func saveFunc(sender: AnyObject) {
