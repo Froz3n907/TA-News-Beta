@@ -49,7 +49,7 @@ class TATAudioTableViewController: UITableViewController, AVAudioPlayerDelegate 
         update = false
         
     }
-    
+        
     func grabAudio() {
         
         let audioQuery = PFQuery(className: "Audio")

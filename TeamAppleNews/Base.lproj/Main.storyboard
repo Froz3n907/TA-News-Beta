@@ -603,14 +603,14 @@
                                 </connections>
                             </containerView>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayv-0X-K6z">
-                                <rect key="frame" x="0.0" y="270" width="600" height="206"/>
+                                <rect key="frame" x="0.0" y="270" width="600" height="191"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89927262929999996" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="206" id="B0r-mN-GM5"/>
+                                    <constraint firstAttribute="height" constant="191" id="B0r-mN-GM5"/>
                                 </constraints>
                             </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4Y-X1-GPS">
-                                <rect key="frame" x="0.0" y="476" width="600" height="124"/>
+                                <rect key="frame" x="0.0" y="461" width="600" height="139"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89927262929999996" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuh-S1-h1T">
@@ -631,11 +631,20 @@
                                     <constraint firstAttribute="width" constant="20" id="CX1-Pg-GaM"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-5y-VpR">
-                                <rect key="frame" x="318" y="503" width="72" height="70"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Faj-V1-NCf">
+                                <rect key="frame" x="158" y="465" width="284" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Ub3-Tw-XJ9"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeAudioTime:" destination="Wok-uB-QJK" eventType="valueChanged" id="ZEE-J2-TrX"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-5y-VpR">
+                                <rect key="frame" x="318" y="503" width="70" height="70"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="72" id="O1U-0x-ael"/>
+                                    <constraint firstAttribute="width" constant="70" id="O1U-0x-ael"/>
                                 </constraints>
                                 <state key="normal" image="play.png"/>
                                 <connections>
@@ -645,15 +654,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Faj-V1-NCf" firstAttribute="centerX" secondItem="cS6-dF-G68" secondAttribute="centerX" id="0MO-E1-Jw7"/>
                             <constraint firstItem="UQd-Jf-KIw" firstAttribute="trailing" secondItem="Ayv-0X-K6z" secondAttribute="trailing" id="HQa-5j-bI5"/>
                             <constraint firstItem="Ayv-0X-K6z" firstAttribute="leading" secondItem="UQd-Jf-KIw" secondAttribute="leading" id="J9y-D6-AaK"/>
                             <constraint firstItem="Ayv-0X-K6z" firstAttribute="top" secondItem="UQd-Jf-KIw" secondAttribute="bottom" id="Jr0-pu-YZm"/>
+                            <constraint firstItem="Nuh-S1-h1T" firstAttribute="top" secondItem="Faj-V1-NCf" secondAttribute="bottom" constant="8" symbolic="YES" id="QkW-5v-ae4"/>
                             <constraint firstItem="p4Y-X1-GPS" firstAttribute="trailing" secondItem="Ayv-0X-K6z" secondAttribute="trailing" id="RbD-ut-AUy"/>
                             <constraint firstItem="p4Y-X1-GPS" firstAttribute="leading" secondItem="8XT-gB-P4R" secondAttribute="leading" id="SQV-8t-U0L"/>
                             <constraint firstItem="cS6-dF-G68" firstAttribute="bottom" secondItem="Nuh-S1-h1T" secondAttribute="bottom" id="U7a-gG-cHO"/>
                             <constraint firstItem="Rbh-Vn-ZXB" firstAttribute="trailing" secondItem="p4Y-X1-GPS" secondAttribute="trailing" id="XvR-zf-Wqi"/>
-                            <constraint firstItem="Nuh-S1-h1T" firstAttribute="top" secondItem="Ayv-0X-K6z" secondAttribute="bottom" constant="27" id="Ydp-d0-3LU"/>
-                            <constraint firstItem="Nuh-S1-h1T" firstAttribute="centerY" secondItem="p4Y-X1-GPS" secondAttribute="centerY" id="dPb-kZ-En1"/>
+                            <constraint firstItem="Nuh-S1-h1T" firstAttribute="top" secondItem="Ayv-0X-K6z" secondAttribute="bottom" constant="42" id="Ydp-d0-3LU"/>
+                            <constraint firstItem="Nuh-S1-h1T" firstAttribute="centerY" secondItem="p4Y-X1-GPS" secondAttribute="centerY" constant="7.5" id="dPb-kZ-En1"/>
                             <constraint firstItem="Ayv-0X-K6z" firstAttribute="leading" secondItem="p4Y-X1-GPS" secondAttribute="leading" id="hDJ-Ag-RVH"/>
                             <constraint firstItem="Ayv-0X-K6z" firstAttribute="leading" secondItem="Rbh-Vn-ZXB" secondAttribute="leading" id="iFN-ge-2v6"/>
                             <constraint firstItem="p4Y-X1-GPS" firstAttribute="bottom" secondItem="eWD-xK-AvO" secondAttribute="top" id="jUi-Lj-cGx"/>
@@ -684,6 +695,7 @@
                         <outlet property="pauseButton" destination="Nuh-S1-h1T" id="6Qs-1v-m1C"/>
                         <outlet property="playButton" destination="Ga1-5y-VpR" id="y2a-fU-UEv"/>
                         <outlet property="saveButtom" destination="JIJ-uU-mNX" id="NIU-Be-Ey0"/>
+                        <outlet property="sliderControl" destination="Faj-V1-NCf" id="WOU-bR-7fU"/>
                         <outlet property="sliderMenu" destination="f4o-J5-lmo" id="yEo-gt-rv8"/>
                         <outlet property="webView" destination="Ayv-0X-K6z" id="7lo-xY-B1e"/>
                     </connections>
@@ -1994,7 +2006,7 @@
         <image name="navicon.png" width="36" height="36"/>
         <image name="not.PNG" width="89" height="89"/>
         <image name="pause.png" width="74" height="72"/>
-        <image name="play.png" width="74" height="72"/>
+        <image name="play.png" width="72" height="72"/>
         <image name="rate.PNG" width="89" height="89"/>
         <image name="reddit.PNG" width="500" height="500"/>
         <image name="remove.PNG" width="89" height="89"/>
