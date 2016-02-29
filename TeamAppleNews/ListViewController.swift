@@ -142,8 +142,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func refresh(sender:AnyObject) {
-        self.myTableView.reloadData()
-        self.refreshControl.endRefreshing()
+        self.loadRSSData()
     }
     
     private func loadRSSData(){

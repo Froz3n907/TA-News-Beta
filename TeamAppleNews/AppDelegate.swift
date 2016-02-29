@@ -144,7 +144,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    /*func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+    
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let frontNavigationController = storyboard.instantiateViewControllerWithIdentifier("planningViewController")
+        let rearNavifationController = storyboard.instantiateViewControllerWithIdentifier("menuViewController")
+        let mainRevealController : SWRevealViewController = SWRevealViewController(rearViewController: rearNavifationController, frontViewController: frontNavigationController)
+        self.window?.rootViewController? = mainRevealController
         
         if shortcutItem.type == "TAN" {
             let sb = UIStoryboard(name: "Main", bundle: nil)
@@ -194,7 +200,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         }
         
-    }*/
+    }
 
 }
 
