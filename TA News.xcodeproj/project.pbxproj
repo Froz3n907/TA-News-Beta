@@ -165,10 +165,10 @@
 		DA36D58C1BE4FBBB0035285A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA36D58F1BE4FBBB0035285A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA36D5911BE4FBBB0035285A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA36D5961BE4FBBB0035285A /* TA News.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TA News.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA36D5961BE4FBBB0035285A /* TA News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TA News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA36D59A1BE4FBBB0035285A /* TeamAppleNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamAppleNewsTests.swift; sourceTree = "<group>"; };
 		DA36D59C1BE4FBBB0035285A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA36D5A11BE4FBBB0035285A /* TA News.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TA News.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA36D5A11BE4FBBB0035285A /* TA News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TA News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA36D5A51BE4FBBB0035285A /* TeamAppleNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamAppleNewsUITests.swift; sourceTree = "<group>"; };
 		DA36D5A71BE4FBBB0035285A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA36D5B41BE4FC1C0035285A /* 2.0_on_trans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.0_on_trans.png; sourceTree = "<group>"; };
@@ -356,8 +356,8 @@
 			isa = PBXGroup;
 			children = (
 				DA36D5821BE4FBBB0035285A /* TA News.app */,
-				DA36D5961BE4FBBB0035285A /* TA News.xctest */,
-				DA36D5A11BE4FBBB0035285A /* TA News.xctest */,
+				DA36D5961BE4FBBB0035285A /* TA News.app */,
+				DA36D5A11BE4FBBB0035285A /* TA News.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -697,7 +697,7 @@
 			);
 			name = "TA NewsTests";
 			productName = TeamAppleNewsTests;
-			productReference = DA36D5961BE4FBBB0035285A /* TA News.xctest */;
+			productReference = DA36D5961BE4FBBB0035285A /* TA News.app */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		DA36D5A01BE4FBBB0035285A /* TA NewsUITests */ = {
@@ -715,7 +715,7 @@
 			);
 			name = "TA NewsUITests";
 			productName = TeamAppleNewsUITests;
-			productReference = DA36D5A11BE4FBBB0035285A /* TA News.xctest */;
+			productReference = DA36D5A11BE4FBBB0035285A /* TA News.app */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -1042,6 +1042,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
@@ -1079,6 +1080,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};

@@ -65,7 +65,7 @@ class DetailsViewController: UIViewController, UIWebViewDelegate, SFSafariViewCo
                         //print(finalTextArray[0])
                         self.htmlString = "<font face='SF UI Display' size='3'> \(textSummary2)"
                         //print(self.htmlString)
-                        
+                    
                         if self.htmlString.rangeOfString("<div><div class=\"") != nil {
                             
                             let htmlArray = self.htmlString.componentsSeparatedByString("<div><div class=\"")
@@ -83,7 +83,6 @@ class DetailsViewController: UIViewController, UIWebViewDelegate, SFSafariViewCo
                             
                         }
                     }
-                    
                 }
             }
             task.resume()

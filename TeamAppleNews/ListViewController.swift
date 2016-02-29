@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate {
     
@@ -36,6 +37,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         sliderMenu.action = Selector("revealToggle:")
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        SVProgressHUD.showWithStatus("Loading...")
         
     }
 
@@ -135,6 +138,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         } else {
             myTableView.tableFooterView = UIView()
         }
+        SVProgressHUD.dismiss()
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {

@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import AVFoundation
 import AVKit
+import SVProgressHUD
 
 class InstagramViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -27,6 +28,8 @@ class InstagramViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         
         accountsTable.tableFooterView = UIView()
+        
+        SVProgressHUD.showWithStatus("Loading...")
 
         let objectIDQuery = PFQuery(className: "InstagramAccounts")
         objectIDQuery.findObjectsInBackgroundWithBlock({
@@ -40,6 +43,7 @@ class InstagramViewController: UIViewController, UITableViewDelegate, UITableVie
                     //print(self.usernameArray)
                     //print(self.pictureArray)
                     self.accountsTable.reloadData()
+                    SVProgressHUD.dismiss()
                 }
             }
         })

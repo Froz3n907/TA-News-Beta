@@ -11,6 +11,7 @@ import Parse
 import AVFoundation
 import AVKit
 import EventKit
+import SVProgressHUD
 
 class EventViewController: UIViewController {
     
@@ -56,6 +57,8 @@ class EventViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SVProgressHUD.showWithStatus("Loading...")
         
         self.eventNameLabel.hidden = true
         self.eventCountdownLabel.hidden = true
@@ -103,6 +106,7 @@ class EventViewController: UIViewController {
                     self.eventDateLabel.hidden = false
                     self.addToCalendar.enabled = true
                     self.shareEvent.enabled = true
+                    SVProgressHUD.dismiss() 
                 }
                 //print(self.eventName)
                 //print(self.eventYear)

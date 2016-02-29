@@ -11,6 +11,7 @@ import Parse
 import AVFoundation
 import AVKit
 import AVFoundation
+import SVProgressHUD
 
 public var audioPlayer = AVPlayer()
 public var selectedPodcast = Int()
@@ -62,8 +63,10 @@ class TATAudioTableViewController: UITableViewController, AVAudioPlayerDelegate 
                 
                 audioPlayer = AVPlayer(URL: NSURL(string: audioFileURLTemp)!)
                 audioPlayer.play()
-                
+               
             }
+          
+            SVProgressHUD.dismiss()
             
         })
         
@@ -87,6 +90,7 @@ class TATAudioTableViewController: UITableViewController, AVAudioPlayerDelegate 
         
         selectedPodcast = indexPath.row
         grabAudio()
+        SVProgressHUD.showWithStatus("Loading...")
         name = nameArray[indexPath.row]
         
         url = urlArray[indexPath.row]

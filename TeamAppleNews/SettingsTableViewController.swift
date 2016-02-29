@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class SettingsTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -94,15 +95,21 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
             InAppPurchase.sharedInstance.removeAdBanner()
         }*/
         if indexPath.row == 2 {
-            UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/teamapplenews/id995706775?ls=1&mt=8")!)
+            SVProgressHUD.show()
+            SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Gradient)
+            UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/ta-news/id995706775?ls=1&mt=8")!)
+            SVProgressHUD.dismiss()
         }
         /*if indexPath.row == 4 {
             InAppPurchase.sharedInstance.restoreTransactions()
         }*/
         if indexPath.row == 3 {
+            SVProgressHUD.show()
+            SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Gradient)
             if let appSettings = NSURL(string: UIApplicationOpenSettingsURLString) {
                 UIApplication.sharedApplication().openURL(appSettings)
             }
+            SVProgressHUD.dismiss()
         }
         if indexPath.row == 4 {
             let cell = tableView.dequeueReusableCellWithIdentifier("pic", forIndexPath: indexPath)
