@@ -17,9 +17,7 @@
 		98CAFC021C811E7400D77442 /* SIFloatingCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CAFC011C811E7400D77442 /* SIFloatingCollection.framework */; };
 		98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */; };
 		A44AF03E4E56408BDD90DB13 /* Pods_TA_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB785955DC227B284FD5866 /* Pods_TA_News.framework */; };
-		DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */; };
 		DA0948A71C0F669500DF1079 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0948A61C0F669500DF1079 /* SafariServices.framework */; };
-		DA0948A91C0F78CD00DF1079 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */; };
 		DA1CFF731C10AED900AA46DF /* Screen Shot 2014-02-25 at 18.48.14.png in Resources */ = {isa = PBXBuildFile; fileRef = DA1CFF721C10AED900AA46DF /* Screen Shot 2014-02-25 at 18.48.14.png */; };
 		DA1CFF751C10B1E300AA46DF /* pongIcon3.png in Resources */ = {isa = PBXBuildFile; fileRef = DA1CFF741C10B1E300AA46DF /* pongIcon3.png */; };
 		DA1E31C71C13822900499592 /* facebook.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DA1E31C11C13822900499592 /* facebook.PNG */; };
@@ -145,9 +143,7 @@
 		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
 		98CAFC011C811E7400D77442 /* SIFloatingCollection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SIFloatingCollection.framework; path = "Pods/../build/Debug-iphoneos/SIFloatingCollection.framework"; sourceTree = "<group>"; };
 		98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATEmbededViewController.swift; sourceTree = "<group>"; };
-		DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		DA0948A61C0F669500DF1079 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 		DA1CFF721C10AED900AA46DF /* Screen Shot 2014-02-25 at 18.48.14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2014-02-25 at 18.48.14.png"; sourceTree = "<group>"; };
 		DA1CFF741C10B1E300AA46DF /* pongIcon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pongIcon3.png; sourceTree = "<group>"; };
 		DA1E31C11C13822900499592 /* facebook.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.PNG; sourceTree = "<group>"; };
@@ -374,8 +370,6 @@
 				DA3F8D321BE50FE70038277E /* TeamApple Toys */,
 				DA3F8D331BE510080038277E /* Bookmarks */,
 				DA3F8D341BE5101E0038277E /* Events */,
-				DA3F8D621BE511020038277E /* Gallery */,
-				DA3F8D351BE5103F0038277E /* Website */,
 				DA3F8D361BE510490038277E /* Connect */,
 				DA3F8D371BE510520038277E /* Settings */,
 				DABD2F6F1C3C64580062D901 /* Pull To Refresh */,
@@ -548,14 +542,6 @@
 			name = Events;
 			sourceTree = "<group>";
 		};
-		DA3F8D351BE5103F0038277E /* Website */ = {
-			isa = PBXGroup;
-			children = (
-				DA0948A81C0F78CD00DF1079 /* WebsiteViewController.swift */,
-			);
-			name = Website;
-			sourceTree = "<group>";
-		};
 		DA3F8D361BE510490038277E /* Connect */ = {
 			isa = PBXGroup;
 			children = (
@@ -578,14 +564,6 @@
 				DA1CFF6F1C10AE5C00AA46DF /* MoreApps Images */,
 			);
 			name = Settings;
-			sourceTree = "<group>";
-		};
-		DA3F8D621BE511020038277E /* Gallery */ = {
-			isa = PBXGroup;
-			children = (
-				DA0948A41C0F65CA00DF1079 /* GalleryViewController.swift */,
-			);
-			name = Gallery;
 			sourceTree = "<group>";
 		};
 		DA3F8D631BE511720038277E /* SWRevealViewController */ = {
@@ -924,7 +902,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0948A91C0F78CD00DF1079 /* WebsiteViewController.swift in Sources */,
 				DA4877041C1DBA8600DA5263 /* EventViewController.swift in Sources */,
 				DA3F8D5C1BE510E20038277E /* SnapchatViewController.m in Sources */,
 				DA3F8D951BE6CF0C0038277E /* RssRecord.swift in Sources */,
@@ -940,7 +917,6 @@
 				DA5939791C28A45D00B40358 /* SettingsTableViewController.swift in Sources */,
 				DA3F8D2E1BE506D00038277E /* NavigationMenuTableViewController.m in Sources */,
 				DA3F8D931BE6CF0C0038277E /* DetailsViewController.swift in Sources */,
-				DA0948A51C0F65CA00DF1079 /* GalleryViewController.swift in Sources */,
 				DA3F8D941BE6CF0C0038277E /* ListViewController.swift in Sources */,
 				98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */,
 				DACD39B81C13CB4200900FF2 /* TATAudioTableViewController.swift in Sources */,

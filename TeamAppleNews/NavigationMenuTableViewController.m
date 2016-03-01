@@ -8,6 +8,7 @@
 
 #import "NavigationMenuTableViewController.h"
 #import "SWRevealViewController.h"
+#import "SafariServices/SafariServices.h"
 
 @interface NavigationMenuTableViewController ()
 
@@ -142,6 +143,16 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row == 6) {
+        SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://instagram.com/futureappleceo/"]]];
+        [self presentViewController:sfvc animated:YES completion:nil];
+    }
+    if (indexPath.row == 7) {
+        SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.futureappleceo.com/"]]];
+        [self presentViewController:sfvc animated:YES completion:nil];
+    }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
