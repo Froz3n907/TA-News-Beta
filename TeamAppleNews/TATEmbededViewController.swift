@@ -121,6 +121,7 @@ class TATEmbededViewController : UIViewController {
     @IBAction func changeAudioTime(sender: AnyObject) {
         
         audioPlayer.play()
+        CMTime 
         
     }
     
