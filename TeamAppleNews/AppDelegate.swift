@@ -36,7 +36,7 @@
 <key>UIApplicationShortcutItemTitle</key>
 <string>Bookmarks</string>
 <key>UIApplicationShortcutItemType</key>
-<string>book</string>
+<string>com.FACEO.TeamAppleNews.book</string>
 <key>UIApplicationShortcuteItemIconFile</key>
 <string>books black.PNG</string>
 </dict>
