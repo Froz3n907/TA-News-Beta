@@ -186,12 +186,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         if shortcutItem.type == "event" {
             
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let frontNavigationController = storyboard.instantiateViewControllerWithIdentifier("planningViewController")
-            let rearNavifationController = storyboard.instantiateViewControllerWithIdentifier("menuViewController")
-            let mainRevealController : SWRevealViewController = SWRevealViewController(rearViewController: rearNavifationController, frontViewController: frontNavigationController)
-            self.window?.rootViewController? = mainRevealController
-            
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let newVC = sb.instantiateViewControllerWithIdentifier("EVENT") as! EventViewController
             let root = UIApplication.sharedApplication().keyWindow?.rootViewController

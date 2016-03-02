@@ -82,7 +82,7 @@
         <!--Navigation Menu Table View Controller-->
         <scene sceneID="OjK-SU-fNs">
             <objects>
-                <tableViewController id="tsl-pU-0XK" customClass="NavigationMenuTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="menuViewController" id="tsl-pU-0XK" customClass="NavigationMenuTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NAf-Ee-Kea">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -347,7 +347,7 @@
         <!--Navigation Controller-->
         <scene sceneID="cBy-hh-nAX">
             <objects>
-                <navigationController id="WSj-Bl-Vvc" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="planningViewController" id="WSj-Bl-Vvc" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KnP-aW-25e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -607,7 +607,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nuh-S1-h1T">
                                 <rect key="frame" x="212" y="503" width="70" height="70"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Tne-RB-b3T"/>
                                     <constraint firstAttribute="width" constant="70" id="dkF-i6-eVN"/>
@@ -634,7 +634,7 @@
                             </slider>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-5y-VpR">
                                 <rect key="frame" x="318" y="503" width="70" height="70"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="O1U-0x-ael"/>
                                 </constraints>
@@ -1772,7 +1772,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0.1 Build 105" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6h-bh-P86">
                                                     <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
                                                     <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1883,6 +1883,6 @@
         <image name="youtube.PNG" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pU6-g3-EN8"/>
+        <segue reference="gwu-Zj-D1b"/>
     </inferredMetricsTieBreakers>
 </document>
