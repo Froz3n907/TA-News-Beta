@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -19,7 +21,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>105</string>
+	<string>105.1</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -66,6 +68,49 @@
 		<string>SF-UI-Text-Heavy.otf</string>
 		<string>SF-UI-Display-Thin.otf</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>TeamApple News</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>TAN</string>
+			<key>UIApplicationShortcuteItemIconFile</key>
+			<string>tan black.PNG</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>TeamApple Talk</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>TAT</string>
+			<key>UIApplicationShortcuteItemIconFile</key>
+			<string>tat black.PNG</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>TeamApple Toys</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>toys</string>
+			<key>UIApplicationShortcuteItemIconFile</key>
+			<string>toys black.PNG</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Bookmarks</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>book</string>
+			<key>UIApplicationShortcuteItemIconFile</key>
+			<string>books black.PNG</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Events</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>event</string>
+			<key>UIApplicationShortcuteItemIconFile</key>
+			<string>events black.PNG</string>
+		</dict>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
@@ -83,48 +128,5 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
-    <key>UIApplicationShortcutItems</key>
-    <array>
-        <dict>
-            <key>UIApplicationShortcutItemTitle</key>
-            <string>TeamApple News</string>
-            <key>UIApplicationShortcutItemType</key>
-            <string>TAN</string>
-            <key>UIApplicationShortcuteItemIconFile</key>
-            <string>tan black.PNG</string>
-        </dict>
-        <dict>
-            <key>UIApplicationShortcutItemTitle</key>
-            <string>TeamApple Talk</string>
-            <key>UIApplicationShortcutItemType</key>
-            <string>TAT</string>
-            <key>UIApplicationShortcuteItemIconFile</key>
-            <string>tat black.PNG</string>
-        </dict>
-        <dict>
-            <key>UIApplicationShortcutItemTitle</key>
-            <string>TeamApple Toys</string>
-            <key>UIApplicationShortcutItemType</key>
-            <string>toys</string>
-            <key>UIApplicationShortcuteItemIconFile</key>
-            <string>toys black.PNG</string>
-        </dict>
-        <dict>
-            <key>UIApplicationShortcutItemTitle</key>
-            <string>Bookmarks</string>
-            <key>UIApplicationShortcutItemType</key>
-            <string>book</string>
-            <key>UIApplicationShortcuteItemIconFile</key>
-            <string>books black.PNG</string>
-        </dict>
-        <dict>
-            <key>UIApplicationShortcutItemTitle</key>
-            <string>Events</string>
-            <key>UIApplicationShortcutItemType</key>
-            <string>event</string>
-            <key>UIApplicationShortcuteItemIconFile</key>
-            <string>events black.PNG</string>
-        </dict>
-    </array>
 </dict>
 </plist>
