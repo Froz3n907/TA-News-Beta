@@ -629,9 +629,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="280" id="Ub3-Tw-XJ9"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="changeAudioTime:" destination="Wok-uB-QJK" eventType="valueChanged" id="ZEE-J2-TrX"/>
-                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ga1-5y-VpR">
                                 <rect key="frame" x="318" y="503" width="70" height="70"/>

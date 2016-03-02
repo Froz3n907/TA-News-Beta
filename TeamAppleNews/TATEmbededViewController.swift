@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 //public updateWebView()
 
@@ -28,6 +29,8 @@ class TATEmbededViewController : UIViewController {
     @IBOutlet var webView: UIWebView!
     
     var webViewString = String()
+    
+    var timeObserver: AnyObject!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +60,15 @@ class TATEmbededViewController : UIViewController {
         pauseButton.layer.borderWidth = 0
         pauseButton.layer.borderColor = UIColor.blackColor().CGColor
         
+        sliderControl.addTarget(self, action: "sliderBeganTracking:", forControlEvents: .TouchDown)
+        sliderControl.addTarget(self, action: "sliderEndedTracking:", forControlEvents: .TouchUpInside)
+        //sliderControl.addTarget(self, action: "sliderValueChanged:", forControlEvents: .ValueChanged)
+        
+        
+        
     }
+    
+    var timer = NSTimer()
     
     func updateWebView() {
         if update == true {
@@ -106,7 +117,22 @@ class TATEmbededViewController : UIViewController {
                 }
             }
             
+            timer = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: Selector("updateSlider"), userInfo: nil, repeats: true)
+            
         }
+        
+    }
+    
+    func updateSlider() {
+
+        print(sliderControl.value)
+        let audioDuration = CMTimeGetSeconds(audioPlayer.currentItem!.duration)
+        //print(audioDuration)
+        let sliderWidth: Float = (1/Float(audioDuration))/10
+        //print(sliderWidth)
+        let currentTime = sliderControl.value
+        //print(currentTime)
+        sliderControl.value = currentTime + sliderWidth
         
     }
     
@@ -117,13 +143,29 @@ class TATEmbededViewController : UIViewController {
     @IBAction func play(sender: AnyObject) {
         audioPlayer.play()
     }
-
-    @IBAction func changeAudioTime(sender: AnyObject) {
-        
-        audioPlayer.play()
-        //CMTime
-        
+    
+    var playerRateBeforeSeek: Float = 0
+    
+    func sliderBeganTracking(slider: UISlider!) {
+        playerRateBeforeSeek = audioPlayer.rate
+        audioPlayer.pause()
     }
+    
+    func sliderEndedTracking(slider: UISlider!) {
+        let videoDuration = CMTimeGetSeconds(audioPlayer.currentItem!.duration)
+        let elapsedTime: Float64 = videoDuration * Float64(sliderControl.value)
+        
+        audioPlayer.seekToTime(CMTimeMakeWithSeconds(elapsedTime, 10)) { (completed: Bool) -> Void in
+            if (self.playerRateBeforeSeek > 0) {
+                audioPlayer.play()
+            }
+        }
+    }
+    
+    /*func sliderValueChanged(slider: UISlider!) {
+        let videoDuration = CMTimeGetSeconds(audioPlayer.currentItem!.duration)
+        let elapsedTime: Float64 = videoDuration * Float64(sliderControl.value)
+    }*/
     
     @IBOutlet var saveButtom: UIBarButtonItem!
 
