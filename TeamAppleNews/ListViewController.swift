@@ -40,6 +40,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         SVProgressHUD.showWithStatus("Loading...")
         
+        //registerForPreviewingWithDelegate(self, sourceView: myTableView)
+        
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -195,5 +197,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
     }
+    
+    /*func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        if let indexPath = myTableView.indexPathForRowAtPoint(location) {
+            //This will show the cell clearly and blur the rest of the screen for our peek.
+            previewingContext.sourceRect = myTableView.rectForRowAtIndexPath(indexPath)
+            return viewControllerForIndexPath(indexPath)
+        }
+        return nil
+    }*/
 
 }
