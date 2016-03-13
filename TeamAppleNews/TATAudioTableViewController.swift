@@ -10,7 +10,6 @@ import UIKit
 import Parse
 import AVFoundation
 import AVKit
-import AVFoundation
 import SVProgressHUD
 
 public var audioPlayer = AVPlayer()

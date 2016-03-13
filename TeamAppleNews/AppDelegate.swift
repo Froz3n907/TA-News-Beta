@@ -12,7 +12,7 @@
 <key>UIApplicationShortcutItemTitle</key>
 <string>TeamApple News</string>
 <key>UIApplicationShortcutItemType</key>
-<string>TAN</string>
+<string>$(PRODUCT_BUNDLE_IDENTIFIER).TAN</string>
 <key>UIApplicationShortcuteItemIconFile</key>
 <string>tan black.PNG</string>
 </dict>
@@ -20,7 +20,7 @@
 <key>UIApplicationShortcutItemTitle</key>
 <string>TeamApple Talk</string>
 <key>UIApplicationShortcutItemType</key>
-<string>TAT</string>
+<string>$(PRODUCT_BUNDLE_IDENTIFIER).TAT</string>
 <key>UIApplicationShortcuteItemIconFile</key>
 <string>tat black.PNG</string>
 </dict>
@@ -28,7 +28,7 @@
 <key>UIApplicationShortcutItemTitle</key>
 <string>TeamApple Toys</string>
 <key>UIApplicationShortcutItemType</key>
-<string>toys</string>
+<string>$(PRODUCT_BUNDLE_IDENTIFIER).toys</string>
 <key>UIApplicationShortcuteItemIconFile</key>
 <string>toys black.PNG</string>
 </dict>
@@ -36,7 +36,7 @@
 <key>UIApplicationShortcutItemTitle</key>
 <string>Bookmarks</string>
 <key>UIApplicationShortcutItemType</key>
-<string>com.FACEO.TeamAppleNews.book</string>
+<string>$(PRODUCT_BUNDLE_IDENTIFIER).book</string>
 <key>UIApplicationShortcuteItemIconFile</key>
 <string>books black.PNG</string>
 </dict>
@@ -44,7 +44,7 @@
 <key>UIApplicationShortcutItemTitle</key>
 <string>Events</string>
 <key>UIApplicationShortcutItemType</key>
-<string>event</string>
+<string>$(PRODUCT_BUNDLE_IDENTIFIER).event</string>
 <key>UIApplicationShortcuteItemIconFile</key>
 <string>events black.PNG</string>
 </dict>
@@ -144,7 +144,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
-    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+    /*func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
     
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let frontNavigationController = storyboard.instantiateViewControllerWithIdentifier("planningViewController")
@@ -194,7 +194,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         }
         
-    }
+    }*/
 
 }
 

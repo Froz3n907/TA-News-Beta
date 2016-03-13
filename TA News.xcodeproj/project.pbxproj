@@ -112,6 +112,7 @@
 		DACD39D51C13CCB400900FF2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D41C13CCB400900FF2 /* SystemConfiguration.framework */; };
 		DACD39D71C13CCC100900FF2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D61C13CCC100900FF2 /* libz.tbd */; };
 		DACD39D91C13CCDB00900FF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */; };
+		DAF47B841C9221A6007AF551 /* TALive_Menu_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */; };
 		DAFF566C1C20BA9F00838822 /* reddit.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DAFF566B1C20BA9F00838822 /* reddit.PNG */; };
 /* End PBXBuildFile section */
 
@@ -250,6 +251,7 @@
 		DACD39D41C13CCB400900FF2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DACD39D61C13CCC100900FF2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TALive_Menu_Icon.png; sourceTree = "<group>"; };
 		DAFF566B1C20BA9F00838822 /* reddit.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddit.PNG; sourceTree = "<group>"; };
 		DE865AB5E3E9C62D74032DA3 /* Pods-TA News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TA News/Pods-TA News.debug.xcconfig"; sourceTree = "<group>"; };
 		DF2884E188F3C18FA41AE918 /* Pods-TA News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News.release.xcconfig"; path = "Pods/Target Support Files/Pods-TA News/Pods-TA News.release.xcconfig"; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 		DAA667211C32D0A700FF2D4B /* Menu Icons */ = {
 			isa = PBXGroup;
 			children = (
+				DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */,
 				DABD2F5D1C3C5B000062D901 /* bookmarks.PNG */,
 				DABD2F5E1C3C5B000062D901 /* connect.PNG */,
 				DABD2F5F1C3C5B000062D901 /* events.PNG */,
@@ -789,6 +792,7 @@
 				DA36D5E41BE4FC1C0035285A /* SF-UI-Text-Heavy.otf in Resources */,
 				DA1E31C71C13822900499592 /* facebook.PNG in Resources */,
 				DA41D9511C38A6D0007BE8B3 /* restore.PNG in Resources */,
+				DAF47B841C9221A6007AF551 /* TALive_Menu_Icon.png in Resources */,
 				DA36D5D11BE4FC1C0035285A /* 2.0_on_trans.png in Resources */,
 				DA36D61F1BE4FCB10035285A /* Icon 120x120.png in Resources */,
 				DA36D5E51BE4FC1C0035285A /* share black.PNG in Resources */,

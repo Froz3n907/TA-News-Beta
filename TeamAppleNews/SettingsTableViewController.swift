@@ -15,6 +15,8 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
     
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet var versionString: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

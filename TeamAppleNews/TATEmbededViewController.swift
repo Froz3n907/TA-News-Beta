@@ -125,14 +125,14 @@ class TATEmbededViewController : UIViewController {
     
     func updateSlider() {
 
-        print(sliderControl.value)
         let audioDuration = CMTimeGetSeconds(audioPlayer.currentItem!.duration)
-        //print(audioDuration)
+        print("audioDuration = \(audioDuration)")
         let sliderWidth: Float = (1/Float(audioDuration))/10
-        //print(sliderWidth)
+        print("sliderWidth = \(sliderWidth)")
         let currentTime = sliderControl.value
-        //print(currentTime)
+        print("currentTime = \(currentTime)")
         sliderControl.value = currentTime + sliderWidth
+        print("sliderControl.value = \(sliderControl.value)")
         
     }
     
@@ -148,7 +148,6 @@ class TATEmbededViewController : UIViewController {
     
     func sliderBeganTracking(slider: UISlider!) {
         playerRateBeforeSeek = audioPlayer.rate
-        audioPlayer.pause()
     }
     
     func sliderEndedTracking(slider: UISlider!) {

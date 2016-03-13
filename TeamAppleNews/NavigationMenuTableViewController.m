@@ -61,7 +61,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return 11;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
@@ -97,26 +97,30 @@
             break;
             
         case 4:
-            CellIdentifier = @"bookmarks";
+            CellIdentifier = @"live";
             break;
             
         case 5:
-            CellIdentifier = @"events";
+            CellIdentifier = @"bookmarks";
             break;
-        
+            
         case 6:
-            CellIdentifier = @"gallery";
+            CellIdentifier = @"events";
             break;
             
         case 7:
-            CellIdentifier = @"website";
-            break;
-            
-        case 8:
             CellIdentifier = @"connect";
+            break;
+        
+        case 8:
+            CellIdentifier = @"gallery";
             break;
             
         case 9:
+            CellIdentifier = @"website";
+            break;
+            
+        case 10:
             CellIdentifier = @"settings";
             break;
             
@@ -144,11 +148,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row == 6) {
+    if (indexPath.row == 4) {
+        SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.futureappleceo.com/teamapple-live.html"]]];
+        [self presentViewController:sfvc animated:YES completion:nil];
+    }
+    if (indexPath.row == 8) {
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://instagram.com/futureappleceo/"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }
-    if (indexPath.row == 7) {
+    if (indexPath.row == 9) {
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.futureappleceo.com/"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }
