@@ -288,30 +288,8 @@
                                     <segue destination="jFu-Fk-ex1" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="SYh-XZ-PBm"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="gallery" textLabel="41N-ah-jYX" imageView="HNc-YR-DFa" rowHeight="55" style="IBUITableViewCellStyleDefault" id="9KX-Ag-JP1">
-                                <rect key="frame" x="0.0" y="523" width="600" height="55"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9KX-Ag-JP1" id="XB8-ao-6dY">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="41N-ah-jYX">
-                                            <rect key="frame" x="84" y="0.0" width="501" height="54"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="21"/>
-                                            <color key="textColor" red="0.2666666667" green="0.79215686269999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="galley.PNG" id="HNc-YR-DFa">
-                                            <rect key="frame" x="15" y="0.0" width="54" height="54"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </imageView>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="website" textLabel="vx6-yq-kQO" imageView="Agu-5O-xvd" rowHeight="55" style="IBUITableViewCellStyleDefault" id="cwL-w2-FQw">
-                                <rect key="frame" x="0.0" y="578" width="600" height="55"/>
+                                <rect key="frame" x="0.0" y="523" width="600" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cwL-w2-FQw" id="d29-Vc-vkA">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
@@ -325,6 +303,28 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="web.PNG" id="Agu-5O-xvd">
+                                            <rect key="frame" x="15" y="0.0" width="54" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="gallery" textLabel="41N-ah-jYX" imageView="HNc-YR-DFa" rowHeight="55" style="IBUITableViewCellStyleDefault" id="9KX-Ag-JP1">
+                                <rect key="frame" x="0.0" y="578" width="600" height="55"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9KX-Ag-JP1" id="XB8-ao-6dY">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="41N-ah-jYX">
+                                            <rect key="frame" x="84" y="0.0" width="501" height="54"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="21"/>
+                                            <color key="textColor" red="0.2666666667" green="0.79215686269999996" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="galley.PNG" id="HNc-YR-DFa">
                                             <rect key="frame" x="15" y="0.0" width="54" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -1398,7 +1398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJq-2G-jFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2719" y="2943"/>
+            <point key="canvasLocation" x="2777" y="2943"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kUb-rb-nmP">

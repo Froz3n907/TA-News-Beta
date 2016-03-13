@@ -111,13 +111,13 @@
         case 7:
             CellIdentifier = @"connect";
             break;
-        
-        case 8:
-            CellIdentifier = @"gallery";
-            break;
             
-        case 9:
+        case 8:
             CellIdentifier = @"website";
+            break;
+        
+        case 9:
+            CellIdentifier = @"gallery";
             break;
             
         case 10:
