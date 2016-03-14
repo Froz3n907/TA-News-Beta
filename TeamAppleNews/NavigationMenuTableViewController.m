@@ -152,11 +152,11 @@
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.futureappleceo.com/teamapple-live.html"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }
-    if (indexPath.row == 8) {
+    if (indexPath.row == 9) {
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://instagram.com/futureappleceo/"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }
-    if (indexPath.row == 9) {
+    if (indexPath.row == 8) {
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.futureappleceo.com/"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }
