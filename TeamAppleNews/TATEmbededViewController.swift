@@ -96,6 +96,7 @@ class TATEmbededViewController : UIViewController {
                     }
                 }
                 task.resume()
+                sliderControl.value = 0
             }
             update = false
             saveButtom.enabled = true
