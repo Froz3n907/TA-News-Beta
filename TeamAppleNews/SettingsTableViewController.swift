@@ -31,6 +31,10 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         
         tableView.separatorStyle = .None
         
+        let nsObject: AnyObject? = NSBundle.mainBundle().infoDictionary["CFBundleShortVersionString"]
+        let version = nsObject as String
+        print(version)
+        
     }
     
     override func didReceiveMemoryWarning() {
