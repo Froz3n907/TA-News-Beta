@@ -12,7 +12,7 @@ import SVProgressHUD
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate {
     
     @IBOutlet var sliderMenu: UIBarButtonItem!
-    var refreshControl:UIRefreshControl!
+    var refreshControl: UIRefreshControl!
     
     @IBOutlet var myTableView: UITableView!
     
