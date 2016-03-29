@@ -9,7 +9,50 @@
 import UIKit
 import SVProgressHUD
 
-class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate {
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate, UISearchController, UISearchResultsUpdating, UISearchBarDelegate {
+    
+    var searchController: UISearchController!
+    func configureSearchController() {
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = true
+        searchController.searchBar.placeholder = "Search TA News..."
+        searchController.searchBar.delegate = self
+        searchController.searchBar.sizeToFit()
+        
+        tblSearchResults.tableHeaderView = searchController.searchBar
+    }
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        shouldShowSearchResults = true
+        tblSearchResults.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        shouldShowSearchResults = false
+        tblSearchResults.reloadData()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        if !shouldShowSearchResults {
+            shouldShowSearchResults = true
+            tblSearchResults.reloadData()
+        }
+        
+        searchController.searchBar.resignFirstResponder()
+    }
+    
+    func updateSearchResultsForSearchController(searchController: UISearchController) {
+        let searchString = searchController.searchBar.text
+        
+        filteredArray = dataArray.filter({ (Articles) -> Bool in
+            let articleText: NSString = article
+            
+            return (articleText.rangeOfString(searchString, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
+        })
+        
+        tblSearchResults.reloadData()
+    }
     
     @IBOutlet var sliderMenu: UIBarButtonItem!
     var refreshControl: UIRefreshControl!
@@ -30,43 +73,11 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         ListViewController.dataSource = self
         UISearch.delegate = self
         
+        configureSearchController()
+        
         var searchActive : Bool = false
         var data = ["iPhone", "iOS", "iPad", "iPhone", "iPod", "MacOS", "OS X", "TA News", "FutureAppleCEO", "Apple"]
         var filtered:[String] = []
-    }
-    
-    @IBOutlet weak var UISearch: UISearchBar!
-    
-    func searchBarTextDidBeginEditing(UISearchBar: UISearchBar) {
-        searchActive = true;
-    }
-    
-    func searchBarTextDidEndEditing(UISearchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarCancelButtonClicked(UISearchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func searchBarSearchButtonClicked(UISearchBar: UISearchBar) {
-        searchActive = false;
-    }
-    
-    func UISearch(UISearch: UISearchBar, textDidChange searchText: String) {
-        
-        filtered = data.filter({ (text) -> Bool in
-            let tmp: NSString = text
-            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
-            return range.location != NSNotFound
-        })
-        if(filtered.count == 0){
-            searchActive = false;
-        } else {
-            searchActive = true;
-        }
-       self.tableView.reload()
-    
 
         
         self.myTableView.dataSource = self
