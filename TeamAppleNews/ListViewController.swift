@@ -24,6 +24,50 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        /* Setup delegates */
+        ListViewController.delegate = self
+        ListViewController.dataSource = self
+        UISearch.delegate = self
+        
+        var searchActive : Bool = false
+        var data = ["iPhone", "iOS", "iPad", "iPhone", "iPod", "MacOS", "OS X", "TA News", "FutureAppleCEO", "Apple"]
+        var filtered:[String] = []
+    }
+    
+    @IBOutlet weak var UISearch: UISearchBar!
+    
+    func searchBarTextDidBeginEditing(UISearchBar: UISearchBar) {
+        searchActive = true;
+    }
+    
+    func searchBarTextDidEndEditing(UISearchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarCancelButtonClicked(UISearchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func searchBarSearchButtonClicked(UISearchBar: UISearchBar) {
+        searchActive = false;
+    }
+    
+    func UISearch(UISearch: UISearchBar, textDidChange searchText: String) {
+        
+        filtered = data.filter({ (text) -> Bool in
+            let tmp: NSString = text
+            let range = tmp.rangeOfString(searchText, options: NSStringCompareOptions.CaseInsensitiveSearch)
+            return range.location != NSNotFound
+        })
+        if(filtered.count == 0){
+            searchActive = false;
+        } else {
+            searchActive = true;
+        }
+       self.tableView.reload()
+    
+
         
         self.myTableView.dataSource = self
         self.myTableView.delegate = self
@@ -53,8 +97,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    
+        func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
@@ -198,7 +242,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     
-    /*func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+                /*func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
         if let indexPath = myTableView.indexPathForRowAtPoint(location) {
             //This will show the cell clearly and blur the rest of the screen for our peek.
             previewingContext.sourceRect = myTableView.rectForRowAtIndexPath(indexPath)
