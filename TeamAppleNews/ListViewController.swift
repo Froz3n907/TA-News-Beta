@@ -9,50 +9,7 @@
 import UIKit
 import SVProgressHUD
 
-class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate, UISearchController, UISearchResultsUpdating, UISearchBarDelegate {
-    
-    var searchController: UISearchController!
-    func configureSearchController() {
-        searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = true
-        searchController.searchBar.placeholder = "Search TA News..."
-        searchController.searchBar.delegate = self
-        searchController.searchBar.sizeToFit()
-        
-        tblSearchResults.tableHeaderView = searchController.searchBar
-    }
-    
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        shouldShowSearchResults = true
-        tblSearchResults.reloadData()
-    }
-    
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        shouldShowSearchResults = false
-        tblSearchResults.reloadData()
-    }
-    
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        if !shouldShowSearchResults {
-            shouldShowSearchResults = true
-            tblSearchResults.reloadData()
-        }
-        
-        searchController.searchBar.resignFirstResponder()
-    }
-    
-    func updateSearchResultsForSearchController(searchController: UISearchController) {
-        let searchString = searchController.searchBar.text
-        
-        filteredArray = dataArray.filter({ (Articles) -> Bool in
-            let articleText: NSString = article
-            
-            return (articleText.rangeOfString(searchString, options: NSStringCompareOptions.CaseInsensitiveSearch).location) != NSNotFound
-        })
-        
-        tblSearchResults.reloadData()
-    }
+class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, NSXMLParserDelegate/*, UISearchResultsUpdating, UISearchBarDelegate*/ {
     
     @IBOutlet var sliderMenu: UIBarButtonItem!
     var refreshControl: UIRefreshControl!
@@ -67,18 +24,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        /* Setup delegates */
-        ListViewController.delegate = self
-        ListViewController.dataSource = self
-        UISearch.delegate = self
-        
-        configureSearchController()
-        
-        var searchActive : Bool = false
-        var data = ["iPhone", "iOS", "iPad", "iPhone", "iPod", "MacOS", "OS X", "TA News", "FutureAppleCEO", "Apple"]
-        var filtered:[String] = []
-
         
         self.myTableView.dataSource = self
         self.myTableView.delegate = self
