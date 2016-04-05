@@ -30,5 +30,6 @@
 #import "AppConnectViewController.h"
 #import "SnapchatViewController.h"
 #import <Instabug/Instabug.h>
+#import <Rollout/Rollout.h>
 
 //hello

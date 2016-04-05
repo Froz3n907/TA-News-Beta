@@ -64,6 +64,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        #if DEBUG
+            Rollout.setupWithKey("56f733e521ad9c531aeffd9c", developmentDevice: true)
+        #else
+            Rollout.setupWithKey("56f733e521ad9c531aeffd9c", developmentDevice: false)
+        #endif
+        
         Instabug.startWithToken("affae67b70d67a9976da331bf9d04d7f", invocationEvent: IBGInvocationEventFloatingButton)
         Parse.enableLocalDatastore()
         Parse.setApplicationId("1HJPhBvsiNk0SHvAW9PhIKr88xqpO5LK0TcgKkgm",

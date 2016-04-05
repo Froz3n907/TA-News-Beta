@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		039C6B419D28484F81BCFADC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A0D6CCA6D4BABB7F7FD57 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		248DC861F489410B89DC8D09 /* Rollout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F1143F470C44A7AB2F345A /* Rollout.framework */; };
 		980FD9621C7D158F00363F1E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95F1C7D158F00363F1E /* TwitterCore.framework */; };
 		980FD9651C7D170000363F1E /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980FD9631C7D170000363F1E /* Instabug.bundle */; };
 		980FD9661C7D170000363F1E /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9641C7D170000363F1E /* Instabug.framework */; };
@@ -134,6 +136,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83F1143F470C44A7AB2F345A /* Rollout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rollout.framework; path = "Rollout-ios-SDK/Rollout/Rollout.framework"; sourceTree = "<group>"; };
 		8DB785955DC227B284FD5866 /* Pods_TA_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TA_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980FD95F1C7D158F00363F1E /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		980FD9631C7D170000363F1E /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
@@ -256,6 +259,7 @@
 		DAFF566B1C20BA9F00838822 /* reddit.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddit.PNG; sourceTree = "<group>"; };
 		DE865AB5E3E9C62D74032DA3 /* Pods-TA News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TA News/Pods-TA News.debug.xcconfig"; sourceTree = "<group>"; };
 		DF2884E188F3C18FA41AE918 /* Pods-TA News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News.release.xcconfig"; path = "Pods/Target Support Files/Pods-TA News/Pods-TA News.release.xcconfig"; sourceTree = "<group>"; };
+		E46A0D6CCA6D4BABB7F7FD57 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +296,8 @@
 				DAB28FF41C42B5DB0030AB9A /* Fabric.framework in Frameworks */,
 				980FD9661C7D170000363F1E /* Instabug.framework in Frameworks */,
 				A44AF03E4E56408BDD90DB13 /* Pods_TA_News.framework in Frameworks */,
+				248DC861F489410B89DC8D09 /* Rollout.framework in Frameworks */,
+				039C6B419D28484F81BCFADC /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,11 +334,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A264E8076BC345738496FDE7 /* Rollout */ = {
+			isa = PBXGroup;
+			children = (
+				83F1143F470C44A7AB2F345A /* Rollout.framework */,
+			);
+			name = Rollout;
+			sourceTree = "<group>";
+		};
 		D917719222A2B592A1A2F28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				98CAFC011C811E7400D77442 /* SIFloatingCollection.framework */,
 				8DB785955DC227B284FD5866 /* Pods_TA_News.framework */,
+				E46A0D6CCA6D4BABB7F7FD57 /* JavaScriptCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -355,6 +370,7 @@
 				DA36D5831BE4FBBB0035285A /* Products */,
 				A10C548D79363F399E7AD268 /* Pods */,
 				D917719222A2B592A1A2F28C /* Frameworks */,
+				A264E8076BC345738496FDE7 /* Rollout */,
 			);
 			sourceTree = "<group>";
 		};
@@ -658,6 +674,7 @@
 				DA36D57E1BE4FBBB0035285A /* Sources */,
 				DA36D57F1BE4FBBB0035285A /* Frameworks */,
 				DA36D5801BE4FBBB0035285A /* Resources */,
+				B2941A8ED0DA435B80B1C6B3 /* Rollout.io dsym upload */,
 				DAB28FF11C42B5890030AB9A /* ShellScript */,
 				980FD96D1C7D1A8200363F1E /* ShellScript */,
 				E42BBB998FBBDFF1BCF7ADD2 /* Embed Pods Frameworks */,
@@ -908,6 +925,20 @@
 			shellPath = /bin/sh;
 			shellScript = "#--- SCRIPT BEGIN ---\n# SKIP_SIMULATOR_BUILDS=1\nSCRIPT_SRC=$(find \"$PROJECT_DIR\" -name 'Instabug_dsym_upload.sh' | head -1)\nif [ ! \"${SCRIPT_SRC}\" ]; then\necho \"Instabug: err: script not found. Make sure that you're including Instabug.bundle in your project directory\"\nexit 1\nfi\nAPP_TOKEN=\"affae67b70d67a9976da331bf9d04d7f\"\nsource \"${SCRIPT_SRC}\"\n#--- SCRIPT END ---\n";
 		};
+		B2941A8ED0DA435B80B1C6B3 /* Rollout.io dsym upload */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Rollout.io dsym upload";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ROLLOUT_lastXcodeprojConfiguration=5 \"${SRCROOT}/Rollout-ios-SDK/lib/upload_dsym_phase\" -k 56f733e521ad9c531aeffd9c";
+		};
 		DAB28FF11C42B5890030AB9A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1122,11 +1153,13 @@
 					"$(PROJECT_DIR)/TeamAppleNews",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"Rollout-ios-SDK/Rollout",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = TeamAppleNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "\"-D\" \"DEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
 				PRODUCT_NAME = "TA News";
 				STRIP_PNG_TEXT = NO;
@@ -1149,11 +1182,13 @@
 					"$(PROJECT_DIR)/TeamAppleNews",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"Rollout-ios-SDK/Rollout",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = TeamAppleNews/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "\"-D\" \"DEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
 				PRODUCT_NAME = "TA News";
 				STRIP_PNG_TEXT = NO;
@@ -1166,6 +1201,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"Rollout-ios-SDK/Rollout",
+				);
 				INFOPLIST_FILE = TeamAppleNewsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsTests;
@@ -1178,6 +1217,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"Rollout-ios-SDK/Rollout",
+				);
 				INFOPLIST_FILE = TeamAppleNewsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsTests;
@@ -1189,6 +1232,10 @@
 		DA36D5B11BE4FBBB0035285A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"Rollout-ios-SDK/Rollout",
+				);
 				INFOPLIST_FILE = TeamAppleNewsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsUITests;
@@ -1201,6 +1248,10 @@
 		DA36D5B21BE4FBBB0035285A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"Rollout-ios-SDK/Rollout",
+				);
 				INFOPLIST_FILE = TeamAppleNewsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsUITests;
