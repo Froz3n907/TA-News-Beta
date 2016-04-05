@@ -56,7 +56,7 @@ class BookmarkDetailsViewController: UIViewController, SFSafariViewControllerDel
             if let audioFileURLTemp = audioUrl {
                     
                 audioPlayer = AVPlayer(URL: NSURL(string: audioFileURLTemp as! String)!)
-                timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: Selector("playAudio"), userInfo: nil, repeats: false)
+                timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: #selector(BookmarkDetailsViewController.playAudio), userInfo: nil, repeats: false)
                     
                 self.bottomBar.hidden = false
                 buttonText.enabled = false

@@ -88,8 +88,8 @@ class DetailsViewController: UIViewController, UIWebViewDelegate, SFSafariViewCo
             task.resume()
         }
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: Selector("loading"), userInfo: nil, repeats: true)
-        timer2 = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: Selector("finish"), userInfo: nil, repeats: false)
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: #selector(DetailsViewController.loading), userInfo: nil, repeats: true)
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: #selector(DetailsViewController.finish), userInfo: nil, repeats: false)
         
         TAN = "TAN"
         
@@ -297,8 +297,8 @@ class DetailsViewController: UIViewController, UIWebViewDelegate, SFSafariViewCo
             task.resume()
         }
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: Selector("loading"), userInfo: nil, repeats: true)
-        timer2 = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: Selector("finish"), userInfo: nil, repeats: false)
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: #selector(DetailsViewController.loading), userInfo: nil, repeats: true)
+        timer2 = NSTimer.scheduledTimerWithTimeInterval(9, target: self, selector: #selector(DetailsViewController.finish), userInfo: nil, repeats: false)
         
     }
     

@@ -67,7 +67,7 @@ class InstagramViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.accountLabel.text = accounts.objectAtIndex(indexPath.row) as? String
         
         cell.viewAccount.tag = indexPath.row
-        cell.viewAccount.addTarget(self, action: "viewAccount:", forControlEvents: .TouchUpInside)
+        cell.viewAccount.addTarget(self, action: #selector(InstagramViewController.viewAccount(_:)), forControlEvents: .TouchUpInside)
         
         username = NSMutableArray(array: usernameArray)
         

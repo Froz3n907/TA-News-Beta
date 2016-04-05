@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TA News iPad.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>TA News.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -30,6 +35,11 @@
 			<true/>
 		</dict>
 		<key>DA36D5A01BE4FBBB0035285A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DACC19601C9B64EC005C5159</key>
 		<dict>
 			<key>primary</key>
 			<true/>

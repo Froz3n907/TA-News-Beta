@@ -35,7 +35,7 @@ class BookmarksTableViewController: UITableViewController {
         tableView.backgroundView = UIImageView(image: UIImage(named: "emerald.png"))
         
         sliderMenu.target = self.revealViewController()
-        sliderMenu.action = Selector("revealToggle:")
+        sliderMenu.action = #selector(SWRevealViewController.revealToggle(_:))
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         

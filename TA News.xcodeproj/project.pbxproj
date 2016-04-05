@@ -234,6 +234,7 @@
 		DABD2F741C3C6A5A0062D901 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		DAC1621A1C41B8130077416D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DAC1621D1C41B8DA0077416D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DACC19611C9B64ED005C5159 /* TA News iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TA News iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACD39B71C13CB4100900FF2 /* TATAudioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATAudioTableViewController.swift; sourceTree = "<group>"; };
 		DACD39BA1C13CC1300900FF2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DACD39BB1C13CC1300900FF2 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
@@ -308,6 +309,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DACC195E1C9B64EC005C5159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -356,6 +364,7 @@
 				DA36D5821BE4FBBB0035285A /* TA News.app */,
 				DA36D5961BE4FBBB0035285A /* TA News.app */,
 				DA36D5A11BE4FBBB0035285A /* TA News.app */,
+				DACC19611C9B64ED005C5159 /* TA News iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -699,13 +708,30 @@
 			productReference = DA36D5A11BE4FBBB0035285A /* TA News.app */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DACC19601C9B64EC005C5159 /* TA News iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACC19701C9B64EE005C5159 /* Build configuration list for PBXNativeTarget "TA News iPad" */;
+			buildPhases = (
+				DACC195D1C9B64EC005C5159 /* Sources */,
+				DACC195E1C9B64EC005C5159 /* Frameworks */,
+				DACC195F1C9B64EC005C5159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TA News iPad";
+			productName = "TA News iPad";
+			productReference = DACC19611C9B64ED005C5159 /* TA News iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DA36D57A1BE4FBBB0035285A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = FutureAppleCEO;
 				TargetAttributes = {
@@ -726,6 +752,9 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = DA36D5811BE4FBBB0035285A;
 					};
+					DACC19601C9B64EC005C5159 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = DA36D57D1BE4FBBB0035285A /* Build configuration list for PBXProject "TA News" */;
@@ -744,6 +773,7 @@
 				DA36D5811BE4FBBB0035285A /* TA News */,
 				DA36D5951BE4FBBB0035285A /* TA NewsTests */,
 				DA36D5A01BE4FBBB0035285A /* TA NewsUITests */,
+				DACC19601C9B64EC005C5159 /* TA News iPad */,
 			);
 		};
 /* End PBXProject section */
@@ -819,6 +849,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DA36D59F1BE4FBBB0035285A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACC195F1C9B64EC005C5159 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -943,6 +980,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA36D5A61BE4FBBB0035285A /* TeamAppleNewsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACC195D1C9B64EC005C5159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1166,6 +1210,30 @@
 			};
 			name = Release;
 		};
+		DACC19711C9B64EE005C5159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TA News iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DACC19721C9B64EE005C5159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "TA News iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1201,6 +1269,15 @@
 			buildConfigurations = (
 				DA36D5B11BE4FBBB0035285A /* Debug */,
 				DA36D5B21BE4FBBB0035285A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACC19701C9B64EE005C5159 /* Build configuration list for PBXNativeTarget "TA News iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACC19711C9B64EE005C5159 /* Debug */,
+				DACC19721C9B64EE005C5159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

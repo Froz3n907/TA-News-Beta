@@ -68,7 +68,7 @@ class EventViewController: UIViewController {
         self.shareEvent.enabled = false
         
         sliderMenu.target = self.revealViewController()
-        sliderMenu.action = Selector("revealToggle:")
+        sliderMenu.action = #selector(SWRevealViewController.revealToggle(_:))
         
         self.eventNameLabel.text = ""
         eventCountdownLabel.text = ""
@@ -126,7 +126,7 @@ class EventViewController: UIViewController {
             }
         })
         
-        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("updateCountdown"), userInfo: nil, repeats: true)
+        self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(EventViewController.updateCountdown), userInfo: nil, repeats: true)
         
     }
     

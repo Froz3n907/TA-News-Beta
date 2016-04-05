@@ -47,7 +47,6 @@
             <string>SFUIDisplay-Thin</string>
             <string>SFUIDisplay-Thin</string>
             <string>SFUIDisplay-Thin</string>
-            <string>SFUIDisplay-Thin</string>
         </mutableArray>
         <mutableArray key="SF-UI-Text-Heavy.otf">
             <string>SFUIText-Heavy</string>
@@ -1642,7 +1641,7 @@
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7iD-QL-bCk">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" red="0.84262820512820502" green="0.84262820512820502" blue="0.84262820512820502" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.84262820510000003" green="0.84262820510000003" blue="0.84262820510000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="plain" rowHeight="55" id="p6T-bF-Aoa">
                                         <rect key="frame" x="0.0" y="28" width="600" height="55"/>
@@ -1777,29 +1776,6 @@
                                                 <constraint firstItem="Uma-BN-rgl" firstAttribute="leading" secondItem="JJD-ua-eux" secondAttribute="leading" id="Tf5-mA-T3r"/>
                                                 <constraint firstItem="Uma-BN-rgl" firstAttribute="top" secondItem="JJD-ua-eux" secondAttribute="top" id="eFl-Pw-wR9"/>
                                                 <constraint firstAttribute="bottom" secondItem="Uma-BN-rgl" secondAttribute="bottom" id="iGZ-fZ-GAV"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.84262820510000003" green="0.84262820510000003" blue="0.84262820510000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ver" rowHeight="22" id="5VU-2X-ZLx">
-                                        <rect key="frame" x="0.0" y="515" width="600" height="22"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5VU-2X-ZLx" id="gLs-8w-T8e">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="v1.0.1 Build 107" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGi-z4-KR1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
-                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="14"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="UGi-z4-KR1" firstAttribute="leading" secondItem="gLs-8w-T8e" secondAttribute="leading" id="e42-q9-ozP"/>
-                                                <constraint firstItem="UGi-z4-KR1" firstAttribute="top" secondItem="gLs-8w-T8e" secondAttribute="top" id="g5H-EO-dAz"/>
-                                                <constraint firstAttribute="bottom" secondItem="UGi-z4-KR1" secondAttribute="bottom" id="p4d-hc-3X6"/>
-                                                <constraint firstAttribute="trailing" secondItem="UGi-z4-KR1" secondAttribute="trailing" id="yhi-ie-VPq"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.84262820510000003" green="0.84262820510000003" blue="0.84262820510000003" alpha="1" colorSpace="calibratedRGB"/>

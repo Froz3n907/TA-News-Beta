@@ -15,25 +15,19 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
     
     @IBOutlet var tableView: UITableView!
     
-    @IBOutlet var versionString: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //tableView.backgroundView = UIImageView(image: UIImage(named: "emerald.png"))
         
         sliderMenu.target = self.revealViewController()
-        sliderMenu.action = Selector("revealToggle:")
+        sliderMenu.action = #selector(SWRevealViewController.revealToggle(_:))
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         tableView.tableFooterView = UIView()
         
         tableView.separatorStyle = .None
-        
-        let nsObject: AnyObject? = NSBundle.mainBundle().infoDictionary["CFBundleShortVersionString"]
-        let version = nsObject as String
-        print(version)
         
     }
     
@@ -59,8 +53,8 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
             cellIdentifier = "not"
         case 4:
             cellIdentifier = "pic"
-        case 5:
-            cellIdentifier = "ver"
+        //case 5:
+        //    cellIdentifier = "ver"
         default:
             cellIdentifier = "Cell"
         }
@@ -74,7 +68,7 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 5
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
@@ -84,9 +78,9 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         if indexPath.row == 4 {
             return 156
         }
-        if indexPath.row == 5 {
-            return 22
-        }
+        //if indexPath.row == 5 {
+        //    return 22
+        //}
         return 55
     }
     
@@ -121,11 +115,33 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
             let cell = tableView.dequeueReusableCellWithIdentifier("pic", forIndexPath: indexPath)
             cell.selectionStyle = .None
         }
-        if indexPath.row == 5 {
-            let cell = tableView.dequeueReusableCellWithIdentifier("pic", forIndexPath: indexPath)
-            cell.selectionStyle = .None
-        }
+        //if indexPath.row == 5 {
+        //    let cell = tableView.dequeueReusableCellWithIdentifier("pic", forIndexPath: indexPath)
+        //    cell.selectionStyle = .None
+        //}
         
+    }
+    
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView()
+        
+        let nsObject: AnyObject? = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"]
+        let versionNumber = nsObject as! String
+        print(versionNumber)
+        let buildObject: AnyObject? = NSBundle.mainBundle().infoDictionary!["CFBundleVersion"]
+        let build = buildObject as! String
+        print(build)
+        print("v\(versionNumber) Build \(build)")
+        
+        let version = UILabel(frame: CGRectMake(8, 15, tableView.frame.width, 30))
+        version.font = version.font.fontWithSize(12)
+        version.text = "v\(versionNumber) Build \(build)"
+        version.textColor = UIColor.darkGrayColor()
+        version.textAlignment = .Center;
+        
+        view.addSubview(version)
+
+        return view
     }
     
 }

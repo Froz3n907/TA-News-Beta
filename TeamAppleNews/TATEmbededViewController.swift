@@ -36,11 +36,11 @@ class TATEmbededViewController : UIViewController {
         super.viewDidLoad()
         
         sliderMenu.target = self.revealViewController()
-        sliderMenu.action = Selector("revealToggle:")
+        sliderMenu.action = #selector(SWRevealViewController.revealToggle(_:))
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
-        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "updateWebView", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: #selector(TATEmbededViewController.updateWebView), userInfo: nil, repeats: true)
         
         //webView.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.3)
         //webView.opaque = false
@@ -60,8 +60,8 @@ class TATEmbededViewController : UIViewController {
         pauseButton.layer.borderWidth = 0
         pauseButton.layer.borderColor = UIColor.blackColor().CGColor
         
-        sliderControl.addTarget(self, action: "sliderBeganTracking:", forControlEvents: .TouchDown)
-        sliderControl.addTarget(self, action: "sliderEndedTracking:", forControlEvents: .TouchUpInside)
+        sliderControl.addTarget(self, action: #selector(TATEmbededViewController.sliderBeganTracking(_:)), forControlEvents: .TouchDown)
+        sliderControl.addTarget(self, action: #selector(TATEmbededViewController.sliderEndedTracking(_:)), forControlEvents: .TouchUpInside)
         //sliderControl.addTarget(self, action: "sliderValueChanged:", forControlEvents: .ValueChanged)
         
         
@@ -118,7 +118,7 @@ class TATEmbededViewController : UIViewController {
                 }
             }
             
-            timer = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: Selector("updateSlider"), userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: #selector(TATEmbededViewController.updateSlider), userInfo: nil, repeats: true)
             
         }
         
