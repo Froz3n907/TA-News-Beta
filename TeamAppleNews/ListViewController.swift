@@ -68,12 +68,19 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath)
+        /*let cell = tableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath)
         
         let thisRecord : RssRecord  = self.rssRecordList[indexPath.row]
         
         cell.textLabel?.text = thisRecord.title
-        cell.detailTextLabel?.text = thisRecord.pubDate
+        cell.detailTextLabel?.text = thisRecord.pubDate*/
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath) as! NewsTableViewCell
+        
+        let thisRecord : RssRecord  = self.rssRecordList[indexPath.row]
+        
+        cell.articleTitle.text = thisRecord.title
+        cell.articleDetail.text = thisRecord.pubDate
         
         return cell
     }
