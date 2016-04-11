@@ -31,5 +31,6 @@
 #import "SnapchatViewController.h"
 #import <Instabug/Instabug.h>
 #import <Rollout/Rollout.h>
+#import "UIImageView+AFNetworking.h"
 
 //hello

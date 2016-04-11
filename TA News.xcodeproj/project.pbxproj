@@ -84,8 +84,16 @@
 		DAA6673B1C343E2500FF2D4B /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6673A1C343E2500FF2D4B /* InstagramViewController.swift */; };
 		DAB28FF41C42B5DB0030AB9A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB28FF21C42B5DA0030AB9A /* Fabric.framework */; };
 		DAB28FF51C42B5DB0030AB9A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB28FF31C42B5DB0030AB9A /* Crashlytics.framework */; };
-		DAB8F4951CBC1FEE00A0B601 /* Rollout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F49F08256F7410EB180A2C8 /* Rollout.framework */; };
 		DAB8F4971CBC23DB00A0B601 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4961CBC23DB00A0B601 /* NewsTableViewCell.swift */; };
+		DAB8F49E1CBC359A00A0B601 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F49D1CBC359A00A0B601 /* UIImageView+AFNetworking.m */; };
+		DAB8F4A21CBC35CD00A0B601 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4A11CBC35CD00A0B601 /* AFImageDownloader.m */; };
+		DAB8F4A51CBC35E200A0B601 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4A41CBC35E200A0B601 /* AFAutoPurgingImageCache.m */; };
+		DAB8F4A81CBC35FA00A0B601 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4A71CBC35FA00A0B601 /* AFHTTPSessionManager.m */; };
+		DAB8F4AB1CBC361000A0B601 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4AA1CBC361000A0B601 /* AFURLSessionManager.m */; };
+		DAB8F4AE1CBC362900A0B601 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4AD1CBC362900A0B601 /* AFURLResponseSerialization.m */; };
+		DAB8F4B11CBC364500A0B601 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4B01CBC364500A0B601 /* AFURLRequestSerialization.m */; };
+		DAB8F4B41CBC365800A0B601 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4B31CBC365800A0B601 /* AFSecurityPolicy.m */; };
+		DAB8F4B71CBC367500A0B601 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4B61CBC367500A0B601 /* AFNetworkReachabilityManager.m */; };
 		DABD2F661C3C5B000062D901 /* bookmarks.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DABD2F5D1C3C5B000062D901 /* bookmarks.PNG */; };
 		DABD2F671C3C5B000062D901 /* connect.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DABD2F5E1C3C5B000062D901 /* connect.PNG */; };
 		DABD2F681C3C5B000062D901 /* events.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DABD2F5F1C3C5B000062D901 /* events.PNG */; };
@@ -118,7 +126,6 @@
 		DACD39D91C13CCDB00900FF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */; };
 		DAF47B841C9221A6007AF551 /* TALive_Menu_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */; };
 		DAFF566C1C20BA9F00838822 /* reddit.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DAFF566B1C20BA9F00838822 /* reddit.PNG */; };
-		EB2EAB5CAC0741A7BC008FFF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A0D6CCA6D4BABB7F7FD57 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +235,25 @@
 		DAB28FF21C42B5DA0030AB9A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
 		DAB28FF31C42B5DB0030AB9A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
 		DAB8F4961CBC23DB00A0B601 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		DAB8F49C1CBC359A00A0B601 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		DAB8F49D1CBC359A00A0B601 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		DAB8F4A01CBC35CD00A0B601 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		DAB8F4A11CBC35CD00A0B601 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		DAB8F4A31CBC35E200A0B601 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		DAB8F4A41CBC35E200A0B601 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		DAB8F4A61CBC35FA00A0B601 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		DAB8F4A71CBC35FA00A0B601 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		DAB8F4A91CBC361000A0B601 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		DAB8F4AA1CBC361000A0B601 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		DAB8F4AC1CBC362900A0B601 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		DAB8F4AD1CBC362900A0B601 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		DAB8F4AF1CBC364500A0B601 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		DAB8F4B01CBC364500A0B601 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		DAB8F4B21CBC365800A0B601 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		DAB8F4B31CBC365800A0B601 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DAB8F4B51CBC367500A0B601 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		DAB8F4B61CBC367500A0B601 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		DAB8F4B81CBC36B900A0B601 /* AFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
 		DABD2F5D1C3C5B000062D901 /* bookmarks.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bookmarks.PNG; sourceTree = "<group>"; };
 		DABD2F5E1C3C5B000062D901 /* connect.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect.PNG; sourceTree = "<group>"; };
 		DABD2F5F1C3C5B000062D901 /* events.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = events.PNG; sourceTree = "<group>"; };
@@ -241,7 +267,6 @@
 		DABD2F741C3C6A5A0062D901 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		DAC1621A1C41B8130077416D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DAC1621D1C41B8DA0077416D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		DACC19611C9B64ED005C5159 /* TA News iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TA News iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACD39B71C13CB4100900FF2 /* TATAudioTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATAudioTableViewController.swift; sourceTree = "<group>"; };
 		DACD39BA1C13CC1300900FF2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		DACD39BB1C13CC1300900FF2 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
@@ -319,15 +344,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DACC195E1C9B64EC005C5159 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAB8F4951CBC1FEE00A0B601 /* Rollout.framework in Frameworks */,
-				EB2EAB5CAC0741A7BC008FFF /* JavaScriptCore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -378,7 +394,6 @@
 				DA36D5821BE4FBBB0035285A /* TA News.app */,
 				DA36D5961BE4FBBB0035285A /* TA News.app */,
 				DA36D5A11BE4FBBB0035285A /* TA News.app */,
-				DACC19611C9B64ED005C5159 /* TA News iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -403,6 +418,7 @@
 				DA36D58C1BE4FBBB0035285A /* Assets.xcassets */,
 				DA36D58E1BE4FBBB0035285A /* LaunchScreen.storyboard */,
 				DA36D5911BE4FBBB0035285A /* Info.plist */,
+				DAB8F49F1CBC359E00A0B601 /* AFNetworking */,
 				DA36D6101BE4FC730035285A /* App Icons */,
 				DA36D5B31BE4FC0C0035285A /* Supporting Files */,
 				DA36D6111BE4FC7A0035285A /* Frameworks */,
@@ -641,6 +657,32 @@
 			name = "Menu Icons";
 			sourceTree = "<group>";
 		};
+		DAB8F49F1CBC359E00A0B601 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				DAB8F4A61CBC35FA00A0B601 /* AFHTTPSessionManager.h */,
+				DAB8F4A71CBC35FA00A0B601 /* AFHTTPSessionManager.m */,
+				DAB8F4B81CBC36B900A0B601 /* AFNetworking.h */,
+				DAB8F4B51CBC367500A0B601 /* AFNetworkReachabilityManager.h */,
+				DAB8F4B61CBC367500A0B601 /* AFNetworkReachabilityManager.m */,
+				DAB8F4B21CBC365800A0B601 /* AFSecurityPolicy.h */,
+				DAB8F4B31CBC365800A0B601 /* AFSecurityPolicy.m */,
+				DAB8F4AF1CBC364500A0B601 /* AFURLRequestSerialization.h */,
+				DAB8F4B01CBC364500A0B601 /* AFURLRequestSerialization.m */,
+				DAB8F4AC1CBC362900A0B601 /* AFURLResponseSerialization.h */,
+				DAB8F4AD1CBC362900A0B601 /* AFURLResponseSerialization.m */,
+				DAB8F4A91CBC361000A0B601 /* AFURLSessionManager.h */,
+				DAB8F4AA1CBC361000A0B601 /* AFURLSessionManager.m */,
+				DAB8F4A31CBC35E200A0B601 /* AFAutoPurgingImageCache.h */,
+				DAB8F4A41CBC35E200A0B601 /* AFAutoPurgingImageCache.m */,
+				DAB8F4A01CBC35CD00A0B601 /* AFImageDownloader.h */,
+				DAB8F4A11CBC35CD00A0B601 /* AFImageDownloader.m */,
+				DAB8F49C1CBC359A00A0B601 /* UIImageView+AFNetworking.h */,
+				DAB8F49D1CBC359A00A0B601 /* UIImageView+AFNetworking.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
 		DABD2F6F1C3C64580062D901 /* Pull To Refresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -732,24 +774,6 @@
 			productReference = DA36D5A11BE4FBBB0035285A /* TA News.app */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		DACC19601C9B64EC005C5159 /* TA News iPad */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DACC19701C9B64EE005C5159 /* Build configuration list for PBXNativeTarget "TA News iPad" */;
-			buildPhases = (
-				DACC195D1C9B64EC005C5159 /* Sources */,
-				DACC195E1C9B64EC005C5159 /* Frameworks */,
-				DACC195F1C9B64EC005C5159 /* Resources */,
-				9B8571F760D14F55BFCD39C8 /* Rollout.io dsym upload */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TA News iPad";
-			productName = "TA News iPad";
-			productReference = DACC19611C9B64ED005C5159 /* TA News iPad.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -777,9 +801,6 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = DA36D5811BE4FBBB0035285A;
 					};
-					DACC19601C9B64EC005C5159 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
 				};
 			};
 			buildConfigurationList = DA36D57D1BE4FBBB0035285A /* Build configuration list for PBXProject "TA News" */;
@@ -798,7 +819,6 @@
 				DA36D5811BE4FBBB0035285A /* TA News */,
 				DA36D5951BE4FBBB0035285A /* TA NewsTests */,
 				DA36D5A01BE4FBBB0035285A /* TA NewsUITests */,
-				DACC19601C9B64EC005C5159 /* TA News iPad */,
 			);
 		};
 /* End PBXProject section */
@@ -880,13 +900,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DACC195F1C9B64EC005C5159 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -932,20 +945,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#--- SCRIPT BEGIN ---\n# SKIP_SIMULATOR_BUILDS=1\nSCRIPT_SRC=$(find \"$PROJECT_DIR\" -name 'Instabug_dsym_upload.sh' | head -1)\nif [ ! \"${SCRIPT_SRC}\" ]; then\necho \"Instabug: err: script not found. Make sure that you're including Instabug.bundle in your project directory\"\nexit 1\nfi\nAPP_TOKEN=\"affae67b70d67a9976da331bf9d04d7f\"\nsource \"${SCRIPT_SRC}\"\n#--- SCRIPT END ---\n";
-		};
-		9B8571F760D14F55BFCD39C8 /* Rollout.io dsym upload */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Rollout.io dsym upload";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "ROLLOUT_lastXcodeprojConfiguration=5 \"${SRCROOT}/Rollout-ios-SDK/lib/upload_dsym_phase\" -k 56f733e521ad9c531aeffd9c";
 		};
 		9D83497493444CB89B8E0943 /* Rollout.io dsym upload */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -997,10 +996,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA4877041C1DBA8600DA5263 /* EventViewController.swift in Sources */,
+				DAB8F4B71CBC367500A0B601 /* AFNetworkReachabilityManager.m in Sources */,
 				DA3F8D5C1BE510E20038277E /* SnapchatViewController.m in Sources */,
 				DA3F8D951BE6CF0C0038277E /* RssRecord.swift in Sources */,
 				DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */,
 				DA3F8D921BE6CF0C0038277E /* Common.swift in Sources */,
+				DAB8F4A51CBC35E200A0B601 /* AFAutoPurgingImageCache.m in Sources */,
+				DAB8F49E1CBC359A00A0B601 /* UIImageView+AFNetworking.m in Sources */,
 				DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */,
 				DA3F8DA21BE7F4890038277E /* BookmarkDetailsViewController.swift in Sources */,
 				DA36D5861BE4FBBB0035285A /* AppDelegate.swift in Sources */,
@@ -1010,14 +1012,20 @@
 				DA26812A1C1374C500F18685 /* AppConnectViewController.m in Sources */,
 				DAB8F4971CBC23DB00A0B601 /* NewsTableViewCell.swift in Sources */,
 				DA5939791C28A45D00B40358 /* SettingsTableViewController.swift in Sources */,
+				DAB8F4B41CBC365800A0B601 /* AFSecurityPolicy.m in Sources */,
 				DA3F8D2E1BE506D00038277E /* NavigationMenuTableViewController.m in Sources */,
 				DA3F8D931BE6CF0C0038277E /* DetailsViewController.swift in Sources */,
+				DAB8F4AB1CBC361000A0B601 /* AFURLSessionManager.m in Sources */,
+				DAB8F4B11CBC364500A0B601 /* AFURLRequestSerialization.m in Sources */,
 				DA3F8D941BE6CF0C0038277E /* ListViewController.swift in Sources */,
 				98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */,
 				DACD39B81C13CB4200900FF2 /* TATAudioTableViewController.swift in Sources */,
 				DAA6673B1C343E2500FF2D4B /* InstagramViewController.swift in Sources */,
 				DA3F8D9E1BE7EA1A0038277E /* ToysTableViewController.swift in Sources */,
 				DA3F8DA01BE7EA290038277E /* ToysDetailsViewController.swift in Sources */,
+				DAB8F4A21CBC35CD00A0B601 /* AFImageDownloader.m in Sources */,
+				DAB8F4AE1CBC362900A0B601 /* AFURLResponseSerialization.m in Sources */,
+				DAB8F4A81CBC35FA00A0B601 /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1034,13 +1042,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA36D5A61BE4FBBB0035285A /* TeamAppleNewsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DACC195D1C9B64EC005C5159 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1288,38 +1289,6 @@
 			};
 			name = Release;
 		};
-		DACC19711C9B64EE005C5159 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"Rollout-ios-SDK/Rollout",
-				);
-				INFOPLIST_FILE = "TA News iPad/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Debug;
-		};
-		DACC19721C9B64EE005C5159 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"Rollout-ios-SDK/Rollout",
-				);
-				INFOPLIST_FILE = "TA News iPad/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1355,15 +1324,6 @@
 			buildConfigurations = (
 				DA36D5B11BE4FBBB0035285A /* Debug */,
 				DA36D5B21BE4FBBB0035285A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DACC19701C9B64EE005C5159 /* Build configuration list for PBXNativeTarget "TA News iPad" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DACC19711C9B64EE005C5159 /* Debug */,
-				DACC19721C9B64EE005C5159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

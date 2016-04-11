@@ -45,8 +45,11 @@
             <string>SFUIDisplay-Thin</string>
             <string>SFUIDisplay-Thin</string>
             <string>SFUIDisplay-Thin</string>
+            <string>SFUIDisplay-Thin</string>
+            <string>SFUIDisplay-Thin</string>
         </mutableArray>
         <mutableArray key="SF-UI-Text-Heavy.otf">
+            <string>SFUIText-Heavy</string>
             <string>SFUIText-Heavy</string>
             <string>SFUIText-Heavy</string>
             <string>SFUIText-Heavy</string>
@@ -497,33 +500,43 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01.png" translatesAutoresizingMaskIntoConstraints="NO" id="xKB-hT-UYK">
                                                     <rect key="frame" x="0.0" y="0.0" width="84" height="84"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="84" id="yar-Bs-F05"/>
+                                                        <constraint firstAttribute="width" constant="84" id="4pO-VI-tsA"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEY-Nn-l5v">
-                                                    <rect key="frame" x="92" y="24" width="32" height="20"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="clip" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEY-Nn-l5v">
+                                                    <rect key="frame" x="92" y="8" width="475" height="45"/>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfQ-5v-Q59">
-                                                    <rect key="frame" x="92" y="45" width="41" height="14"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <rect key="frame" x="92" y="61" width="37" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="aHS-zo-pbK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="jEY-Nn-l5v" firstAttribute="top" secondItem="uha-CM-sqS" secondAttribute="topMargin" constant="16" id="Nw7-eA-MU5"/>
-                                                <constraint firstItem="XfQ-5v-Q59" firstAttribute="top" secondItem="jEY-Nn-l5v" secondAttribute="bottom" constant="1" id="V0g-MQ-wfi"/>
-                                                <constraint firstItem="xKB-hT-UYK" firstAttribute="leading" secondItem="uha-CM-sqS" secondAttribute="leading" id="ZqS-kA-QgK"/>
-                                                <constraint firstAttribute="bottom" secondItem="xKB-hT-UYK" secondAttribute="bottom" id="ZzS-6e-Ihx"/>
-                                                <constraint firstItem="jEY-Nn-l5v" firstAttribute="leading" secondItem="xKB-hT-UYK" secondAttribute="trailing" constant="8" symbolic="YES" id="oMN-sH-dR5"/>
-                                                <constraint firstItem="jEY-Nn-l5v" firstAttribute="leading" secondItem="XfQ-5v-Q59" secondAttribute="leading" id="t0h-wL-xqs"/>
-                                                <constraint firstItem="xKB-hT-UYK" firstAttribute="top" secondItem="uha-CM-sqS" secondAttribute="top" id="yaZ-xd-dRl"/>
+                                                <constraint firstAttribute="trailing" secondItem="jEY-Nn-l5v" secondAttribute="trailing" id="FjA-w2-3OF"/>
+                                                <constraint firstItem="xKB-hT-UYK" firstAttribute="top" secondItem="uha-CM-sqS" secondAttribute="top" id="HRe-sY-vKn"/>
+                                                <constraint firstItem="jEY-Nn-l5v" firstAttribute="leading" secondItem="XfQ-5v-Q59" secondAttribute="leading" id="KPn-i8-auM"/>
+                                                <constraint firstAttribute="bottom" secondItem="xKB-hT-UYK" secondAttribute="bottom" id="NXD-uY-LyT"/>
+                                                <constraint firstItem="jEY-Nn-l5v" firstAttribute="leading" secondItem="xKB-hT-UYK" secondAttribute="trailing" constant="8" symbolic="YES" id="RIr-9R-xrz"/>
+                                                <constraint firstItem="XfQ-5v-Q59" firstAttribute="bottom" secondItem="uha-CM-sqS" secondAttribute="bottomMargin" id="V8I-hk-ZsH"/>
+                                                <constraint firstItem="jEY-Nn-l5v" firstAttribute="top" secondItem="uha-CM-sqS" secondAttribute="topMargin" id="WtF-1m-YML"/>
+                                                <constraint firstItem="XfQ-5v-Q59" firstAttribute="top" secondItem="jEY-Nn-l5v" secondAttribute="bottom" constant="8" symbolic="YES" id="d97-VR-0S4"/>
+                                                <constraint firstItem="xKB-hT-UYK" firstAttribute="leading" secondItem="uha-CM-sqS" secondAttribute="leading" id="itj-gw-eSw"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.89927262929999996" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="articleDetail" destination="XfQ-5v-Q59" id="kWI-gk-t8n"/>
+                                            <outlet property="articleImage" destination="xKB-hT-UYK" id="tCL-VD-RqK"/>
+                                            <outlet property="articleTitle" destination="jEY-Nn-l5v" id="qDZ-Rp-ISc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -1355,10 +1368,25 @@
                                     <action selector="michael:" destination="Yhb-8s-irp" eventType="touchUpInside" id="74u-EC-dWE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bue-qb-IVU">
+                                <rect key="frame" x="202" y="494" width="196" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="dYK-1d-QOw"/>
+                                    <constraint firstAttribute="height" constant="30" id="zQs-p8-hAP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIText-Heavy" family="SF UI Text" pointSize="16"/>
+                                <state key="normal" title="View Full Team Here">
+                                    <color key="titleColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="fullTeam:" destination="Yhb-8s-irp" eventType="touchUpInside" id="RDH-s4-dTP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oTf-m2-0BC" firstAttribute="bottom" secondItem="UiU-Dy-ZhQ" secondAttribute="top" id="0Ns-yU-uuT"/>
+                            <constraint firstItem="Bue-qb-IVU" firstAttribute="centerX" secondItem="UPe-kD-x8N" secondAttribute="centerX" id="16L-7U-Szo"/>
                             <constraint firstItem="oTf-m2-0BC" firstAttribute="leading" secondItem="g36-ju-b46" secondAttribute="leading" id="1tt-Gt-2Yl"/>
                             <constraint firstItem="w77-fV-VQc" firstAttribute="leading" secondItem="ySh-Nr-U6I" secondAttribute="leading" id="2Yf-Ks-0qM"/>
                             <constraint firstItem="LZ6-kT-Hl1" firstAttribute="centerX" secondItem="iW3-VP-2QC" secondAttribute="centerX" id="BRc-RY-onw"/>
@@ -1375,6 +1403,7 @@
                             <constraint firstItem="w77-fV-VQc" firstAttribute="leading" secondItem="nOe-W3-YIr" secondAttribute="leading" id="QBI-P0-Kc5"/>
                             <constraint firstItem="wLg-sg-dPo" firstAttribute="trailing" secondItem="xUD-Cl-HUz" secondAttribute="trailing" id="ScT-DZ-OqN"/>
                             <constraint firstItem="9GO-5a-FHj" firstAttribute="trailing" secondItem="A5Y-rF-zFe" secondAttribute="trailing" id="TJG-A7-aja"/>
+                            <constraint firstItem="Bue-qb-IVU" firstAttribute="top" secondItem="UPe-kD-x8N" secondAttribute="bottom" constant="8" symbolic="YES" id="TV1-2y-DaI"/>
                             <constraint firstItem="9GO-5a-FHj" firstAttribute="leading" secondItem="A5Y-rF-zFe" secondAttribute="leading" id="UMs-EX-7lh"/>
                             <constraint firstItem="iW3-VP-2QC" firstAttribute="top" secondItem="ySh-Nr-U6I" secondAttribute="bottom" constant="41" id="VKx-aw-aXQ"/>
                             <constraint firstItem="xUD-Cl-HUz" firstAttribute="trailing" secondItem="9GO-5a-FHj" secondAttribute="trailing" id="Va5-aN-4zf"/>

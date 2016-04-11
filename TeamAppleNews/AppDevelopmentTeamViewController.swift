@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SafariServices
 
-class AppDevelopmentTeamViewController: UIViewController {
+class AppDevelopmentTeamViewController: UIViewController, SFSafariViewControllerDelegate {
     
     @IBOutlet var sliderMenu: UIBarButtonItem!
     
@@ -54,5 +55,11 @@ class AppDevelopmentTeamViewController: UIViewController {
         let instagramHooks = "instagram://user?username=gatortech94"
         let instagramUrl = NSURL(string: instagramHooks)
         UIApplication.sharedApplication().openURL(instagramUrl!)
+    }
+    
+    @IBAction func fullTeam(sender: AnyObject) {
+        let svc = SFSafariViewController(URL: NSURL(string: "http://www.futureappleceo.com/team.html")!)
+        svc.delegate = self
+        presentViewController(svc, animated: true, completion: nil)
     }
 }

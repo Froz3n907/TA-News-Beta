@@ -59,7 +59,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 60
+        return 84
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,21 +68,39 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        /*let cell = tableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath)
+        let cell = self.myTableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath) as! NewsTableViewCell
         
         let thisRecord : RssRecord  = self.rssRecordList[indexPath.row]
         
-        cell.textLabel?.text = thisRecord.title
-        cell.detailTextLabel?.text = thisRecord.pubDate*/
+        cell.articleTitle.text = thisRecord.title as String
+        cell.articleDetail.text = thisRecord.pubDate as String
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath) as! NewsTableViewCell
-        
-        let thisRecord : RssRecord  = self.rssRecordList[indexPath.row]
-        
-        cell.articleTitle.text = thisRecord.title
-        cell.articleDetail.text = thisRecord.pubDate
-        
+        if let imageLink = NSURL(string: self.rssRecordList[indexPath.row].link ) {
+            
+            let task = NSURLSession.sharedSession().dataTaskWithURL(imageLink) { (data, response, error) -> Void in
+                
+                if let urlContent = data {
+                    
+                    let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
+                    
+                    let blogContent = webContent?.componentsSeparatedByString("<div class=\"blog-content\">")
+                    if blogContent!.count > 0 {
+                        let imageURL = blogContent![1].componentsSeparatedByString("<img src=\"")
+                        let imageURL2 = imageURL[1].componentsSeparatedByString("\" alt=")
+                        let finalURL = "http://www.futureappleceo.com/\(imageURL2[0])"
+                        //print(finalURL)
+                        cell.articleImage.contentMode = .ScaleAspectFit
+                        cell.articleImage.setImageWithURL(NSURL(string: finalURL)!, placeholderImage: UIImage(named: "01.png"))
+                    }
+                    
+                }
+                
+            }
+            task.resume()
+        }
+    
         return cell
+    
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -148,10 +166,11 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
             myTableView.tableFooterView = UIView()
         }
         SVProgressHUD.dismiss()
+        self.refreshControl.endRefreshing()
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
-        self.showAlertMessage(alertTitle: "Error", alertMessage: "Error while loading TeamApple News. Please check internet connection.")
+        self.showAlertMessage(alertTitle: "Error", alertMessage: "Error while loading TA News. Please check internet connection.")
     }
     
     func refresh(sender:AnyObject) {
