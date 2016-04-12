@@ -77,8 +77,10 @@ class InstagramViewController: UIViewController, UITableViewDelegate, UITableVie
         imageFile.getDataInBackgroundWithBlock {
             (imageData: NSData?, error: NSError?)-> Void in
             if (error == nil) {
-                let image = UIImage(data: imageData!)
-                cell.accountImage.image = image
+                dispatch_async(dispatch_get_main_queue(), {
+                    let image = UIImage(data: imageData!)
+                    cell.accountImage.image = image
+                })
             }
         }
         

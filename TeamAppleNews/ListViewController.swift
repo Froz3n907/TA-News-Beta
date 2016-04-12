@@ -74,13 +74,13 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.articleTitle.text = thisRecord.title as String
         cell.articleDetail.text = thisRecord.pubDate as String
-        
+
         if let imageLink = NSURL(string: self.rssRecordList[indexPath.row].link ) {
             
             let task = NSURLSession.sharedSession().dataTaskWithURL(imageLink) { (data, response, error) -> Void in
                 
                 if let urlContent = data {
-                    
+                
                     let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
                     
                     let blogContent = webContent?.componentsSeparatedByString("<div class=\"blog-content\">")
@@ -89,16 +89,18 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
                         let imageURL2 = imageURL[1].componentsSeparatedByString("\" alt=")
                         let finalURL = "http://www.futureappleceo.com/\(imageURL2[0])"
                         //print(finalURL)
-                        cell.articleImage.contentMode = .ScaleAspectFit
-                        cell.articleImage.setImageWithURL(NSURL(string: finalURL)!, placeholderImage: UIImage(named: "01.png"))
+                        dispatch_async(dispatch_get_main_queue(), {
+                            cell.articleImage.contentMode = .ScaleAspectFit
+                            cell.articleImage.setImageWithURL(NSURL(string: finalURL)!, placeholderImage: UIImage(named: "01.png"))
+                        })
                     }
-                    
+                        
                 }
-                
+            
             }
             task.resume()
         }
-    
+            
         return cell
     
     }

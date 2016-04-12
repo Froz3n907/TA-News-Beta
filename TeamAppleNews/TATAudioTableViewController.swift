@@ -34,7 +34,7 @@ class TATAudioTableViewController: UITableViewController, AVAudioPlayerDelegate 
         objectIDQuery.findObjectsInBackgroundWithBlock({
             (objectsArray : [PFObject]?, error: NSError?) in
             if(error == nil) {
-                for i in 0...objectsArray!.count-1 {
+                for i in 0...objectsArray!.reverse().count-1 {
                     self.IDArray.append(objectsArray![i].valueForKey("objectId") as! String)
                     self.nameArray.append(objectsArray![i].valueForKey("AudioName") as! String)
                     self.urlArray.append(objectsArray![i].valueForKey("WebsiteLink") as! String)
