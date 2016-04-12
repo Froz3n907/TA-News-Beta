@@ -139,10 +139,12 @@ class TATEmbededViewController : UIViewController {
     
     @IBAction func pause(sender: AnyObject) {
         audioPlayer.pause()
+        timer.invalidate()
     }
     
     @IBAction func play(sender: AnyObject) {
         audioPlayer.play()
+        timer = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: #selector(TATEmbededViewController.updateSlider), userInfo: nil, repeats: true)
     }
     
     var playerRateBeforeSeek: Float = 0
