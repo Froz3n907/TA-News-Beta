@@ -42,6 +42,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //registerForPreviewingWithDelegate(self, sourceView: myTableView)
         
+        parseImages = true
+        
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -66,6 +68,9 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return self.rssRecordList.count
     }
     
+    var task: NSURLSessionDataTask!
+    var parseImages = Bool()
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = self.myTableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath) as! NewsTableViewCell
@@ -74,31 +79,34 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         cell.articleTitle.text = thisRecord.title as String
         cell.articleDetail.text = thisRecord.pubDate as String
+        
+        if parseImages == true {
 
-        if let imageLink = NSURL(string: self.rssRecordList[indexPath.row].link ) {
+            if let imageLink = NSURL(string: self.rssRecordList[indexPath.row].link ) {
             
-            let task = NSURLSession.sharedSession().dataTaskWithURL(imageLink) { (data, response, error) -> Void in
+                task = NSURLSession.sharedSession().dataTaskWithURL(imageLink) { (data, response, error) -> Void in
                 
-                if let urlContent = data {
+                    if let urlContent = data {
                 
-                    let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
+                        let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
                     
-                    let blogContent = webContent?.componentsSeparatedByString("<div class=\"blog-content\">")
-                    if blogContent!.count > 0 {
-                        let imageURL = blogContent![1].componentsSeparatedByString("<img src=\"")
-                        let imageURL2 = imageURL[1].componentsSeparatedByString("\" alt=")
-                        let finalURL = "http://www.futureappleceo.com/\(imageURL2[0])"
-                        //print(finalURL)
-                        dispatch_async(dispatch_get_main_queue(), {
-                            cell.articleImage.contentMode = .ScaleAspectFit
-                            cell.articleImage.setImageWithURL(NSURL(string: finalURL)!, placeholderImage: UIImage(named: "01.png"))
-                        })
-                    }
+                        let blogContent = webContent?.componentsSeparatedByString("<div class=\"blog-content\">")
+                        if blogContent!.count > 0 {
+                            let imageURL = blogContent![1].componentsSeparatedByString("<img src=\"")
+                            let imageURL2 = imageURL[1].componentsSeparatedByString("\" alt=")
+                            let finalURL = "http://www.futureappleceo.com/\(imageURL2[0])"
+                            //print(finalURL)
+                            dispatch_async(dispatch_get_main_queue(), {
+                                cell.articleImage.contentMode = .ScaleAspectFit
+                                cell.articleImage.setImageWithURL(NSURL(string: finalURL)!, placeholderImage: UIImage(named: "01.png"))
+                            })
+                        }
                         
-                }
+                    }
             
+                }
+                task.resume()
             }
-            task.resume()
         }
             
         return cell
@@ -169,6 +177,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         SVProgressHUD.dismiss()
         self.refreshControl.endRefreshing()
+        parseImages = true
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
@@ -177,6 +186,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func refresh(sender:AnyObject) {
         self.loadRSSData()
+        parseImages = false
     }
     
     private func loadRSSData(){
