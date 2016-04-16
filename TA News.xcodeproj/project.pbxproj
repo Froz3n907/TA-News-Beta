@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		039C6B419D28484F81BCFADC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46A0D6CCA6D4BABB7F7FD57 /* JavaScriptCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		65D0B8B554AB6F59CF854A91 /* Pods_TA_News_Today_View.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AD7CA355403287547B4FEE /* Pods_TA_News_Today_View.framework */; };
 		980FD9621C7D158F00363F1E /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD95F1C7D158F00363F1E /* TwitterCore.framework */; };
 		980FD9651C7D170000363F1E /* Instabug.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 980FD9631C7D170000363F1E /* Instabug.bundle */; };
 		980FD9661C7D170000363F1E /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9641C7D170000363F1E /* Instabug.framework */; };
 		980FD9681C7D173C00363F1E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9671C7D173C00363F1E /* CoreMotion.framework */; };
 		980FD96A1C7D175200363F1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD9691C7D175200363F1E /* UIKit.framework */; };
 		980FD96C1C7D175E00363F1E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 980FD96B1C7D175E00363F1E /* CoreTelephony.framework */; };
+		984D8D151CC075790058FE31 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984D8D141CC075790058FE31 /* NotificationCenter.framework */; };
+		984D8D1F1CC075790058FE31 /* TA News Today View.app in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 984D8D131CC075790058FE31 /* TA News Today View.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		984D8D2B1CC07C890058FE31 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 984D8D261CC07C890058FE31 /* Info.plist */; };
+		984D8D2C1CC07C890058FE31 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 984D8D271CC07C890058FE31 /* MainInterface.storyboard */; };
+		984D8D2D1CC07C890058FE31 /* RSSItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D8D281CC07C890058FE31 /* RSSItemTableViewCell.swift */; };
+		984D8D2E1CC07C890058FE31 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984D8D291CC07C890058FE31 /* TodayViewController.swift */; };
 		98B4DF5A1C753C1900059323 /* LaunchImage Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B4DF591C753C1900059323 /* LaunchImage Icon.png */; };
 		98CAFC021C811E7400D77442 /* SIFloatingCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98CAFC011C811E7400D77442 /* SIFloatingCollection.framework */; };
 		98D9EAAD1C7D43C80053CF78 /* TATEmbededViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */; };
@@ -129,6 +136,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		984D8D1D1CC075790058FE31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA36D57A1BE4FBBB0035285A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 984D8D121CC075790058FE31;
+			remoteInfo = "TA News Today View";
+		};
 		DA36D5971BE4FBBB0035285A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA36D57A1BE4FBBB0035285A /* Project object */;
@@ -145,8 +159,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		984D8D231CC075790058FE31 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				984D8D1F1CC075790058FE31 /* TA News Today View.app in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		12AD7CA355403287547B4FEE /* Pods_TA_News_Today_View.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TA_News_Today_View.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F49F08256F7410EB180A2C8 /* Rollout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rollout.framework; path = "Rollout-ios-SDK/Rollout/Rollout.framework"; sourceTree = "<group>"; };
+		624EF2F48824927F18289AD1 /* Pods-TA News Today View.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News Today View.release.xcconfig"; path = "Pods/Target Support Files/Pods-TA News Today View/Pods-TA News Today View.release.xcconfig"; sourceTree = "<group>"; };
 		8DB785955DC227B284FD5866 /* Pods_TA_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TA_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980FD95F1C7D158F00363F1E /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		980FD9631C7D170000363F1E /* Instabug.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Instabug.bundle; sourceTree = "<group>"; };
@@ -154,6 +184,18 @@
 		980FD9671C7D173C00363F1E /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		980FD9691C7D175200363F1E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		980FD96B1C7D175E00363F1E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		984D8D131CC075790058FE31 /* TA News Today View.app */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TA News Today View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		984D8D141CC075790058FE31 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		984D8D251CC07C880058FE31 /* TA News Today View-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TA News Today View-Bridging-Header.h"; sourceTree = "<group>"; };
+		984D8D261CC07C890058FE31 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../Downloads/XebiaBlogRSSWidget-master/XebiaBlogRSSWidget/Info.plist"; sourceTree = "<group>"; };
+		984D8D271CC07C890058FE31 /* MainInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainInterface.storyboard; path = "../../../Downloads/XebiaBlogRSSWidget-master/XebiaBlogRSSWidget/MainInterface.storyboard"; sourceTree = "<group>"; };
+		984D8D281CC07C890058FE31 /* RSSItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RSSItemTableViewCell.swift; path = "../../../Downloads/XebiaBlogRSSWidget-master/XebiaBlogRSSWidget/RSSItemTableViewCell.swift"; sourceTree = "<group>"; };
+		984D8D291CC07C890058FE31 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TodayViewController.swift; path = "../../../Downloads/XebiaBlogRSSWidget-master/XebiaBlogRSSWidget/TodayViewController.swift"; sourceTree = "<group>"; };
+		984D8D2F1CC080490058FE31 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
+		984D8D301CC080490058FE31 /* BlockRSSParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BlockRSSParser.framework; path = "Pods/../build/Release-iphoneos/BlockRSSParser.framework"; sourceTree = "<group>"; };
+		984D8D311CC080490058FE31 /* Pods_TA_News.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_TA_News.framework; path = "Pods/../build/Release-iphoneos/Pods_TA_News.framework"; sourceTree = "<group>"; };
+		984D8D321CC080490058FE31 /* SIFloatingCollection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SIFloatingCollection.framework; path = "Pods/../build/Release-iphoneos/SIFloatingCollection.framework"; sourceTree = "<group>"; };
+		984D8D331CC080490058FE31 /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = "Pods/../build/Release-iphoneos/SVProgressHUD.framework"; sourceTree = "<group>"; };
 		98B4DF591C753C1900059323 /* LaunchImage Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage Icon.png"; sourceTree = "<group>"; };
 		98CAFC011C811E7400D77442 /* SIFloatingCollection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SIFloatingCollection.framework; path = "Pods/../build/Debug-iphoneos/SIFloatingCollection.framework"; sourceTree = "<group>"; };
 		98D9EAAC1C7D43C80053CF78 /* TATEmbededViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TATEmbededViewController.swift; sourceTree = "<group>"; };
@@ -286,12 +328,22 @@
 		DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TALive_Menu_Icon.png; sourceTree = "<group>"; };
 		DAFF566B1C20BA9F00838822 /* reddit.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddit.PNG; sourceTree = "<group>"; };
+		DB9A0CD116F611E9C1F7BE0E /* Pods-TA News Today View.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News Today View.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TA News Today View/Pods-TA News Today View.debug.xcconfig"; sourceTree = "<group>"; };
 		DE865AB5E3E9C62D74032DA3 /* Pods-TA News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TA News/Pods-TA News.debug.xcconfig"; sourceTree = "<group>"; };
 		DF2884E188F3C18FA41AE918 /* Pods-TA News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News.release.xcconfig"; path = "Pods/Target Support Files/Pods-TA News/Pods-TA News.release.xcconfig"; sourceTree = "<group>"; };
 		E46A0D6CCA6D4BABB7F7FD57 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		984D8D101CC075790058FE31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984D8D151CC075790058FE31 /* NotificationCenter.framework in Frameworks */,
+				65D0B8B554AB6F59CF854A91 /* Pods_TA_News_Today_View.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA36D57F1BE4FBBB0035285A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,11 +399,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		984D8D161CC075790058FE31 /* TA News Today View */ = {
+			isa = PBXGroup;
+			children = (
+				984D8D261CC07C890058FE31 /* Info.plist */,
+				984D8D271CC07C890058FE31 /* MainInterface.storyboard */,
+				984D8D281CC07C890058FE31 /* RSSItemTableViewCell.swift */,
+				984D8D291CC07C890058FE31 /* TodayViewController.swift */,
+				984D8D251CC07C880058FE31 /* TA News Today View-Bridging-Header.h */,
+			);
+			path = "TA News Today View";
+			sourceTree = "<group>";
+		};
 		A10C548D79363F399E7AD268 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DE865AB5E3E9C62D74032DA3 /* Pods-TA News.debug.xcconfig */,
 				DF2884E188F3C18FA41AE918 /* Pods-TA News.release.xcconfig */,
+				DB9A0CD116F611E9C1F7BE0E /* Pods-TA News Today View.debug.xcconfig */,
+				624EF2F48824927F18289AD1 /* Pods-TA News Today View.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -359,9 +425,16 @@
 		D917719222A2B592A1A2F28C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				984D8D2F1CC080490058FE31 /* AFNetworking.framework */,
+				984D8D301CC080490058FE31 /* BlockRSSParser.framework */,
+				984D8D311CC080490058FE31 /* Pods_TA_News.framework */,
+				984D8D321CC080490058FE31 /* SIFloatingCollection.framework */,
+				984D8D331CC080490058FE31 /* SVProgressHUD.framework */,
 				98CAFC011C811E7400D77442 /* SIFloatingCollection.framework */,
 				8DB785955DC227B284FD5866 /* Pods_TA_News.framework */,
 				E46A0D6CCA6D4BABB7F7FD57 /* JavaScriptCore.framework */,
+				984D8D141CC075790058FE31 /* NotificationCenter.framework */,
+				12AD7CA355403287547B4FEE /* Pods_TA_News_Today_View.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -381,6 +454,7 @@
 				DA36D5841BE4FBBB0035285A /* TeamAppleNews */,
 				DA36D5991BE4FBBB0035285A /* TeamAppleNewsTests */,
 				DA36D5A41BE4FBBB0035285A /* TeamAppleNewsUITests */,
+				984D8D161CC075790058FE31 /* TA News Today View */,
 				DA36D5831BE4FBBB0035285A /* Products */,
 				A10C548D79363F399E7AD268 /* Pods */,
 				D917719222A2B592A1A2F28C /* Frameworks */,
@@ -394,6 +468,7 @@
 				DA36D5821BE4FBBB0035285A /* TA News.app */,
 				DA36D5961BE4FBBB0035285A /* TA News.app */,
 				DA36D5A11BE4FBBB0035285A /* TA News.app */,
+				984D8D131CC075790058FE31 /* TA News Today View.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -715,6 +790,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		984D8D121CC075790058FE31 /* TA News Today View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 984D8D201CC075790058FE31 /* Build configuration list for PBXNativeTarget "TA News Today View" */;
+			buildPhases = (
+				D9FE23B61866BD69ED68148D /* Check Pods Manifest.lock */,
+				984D8D0F1CC075790058FE31 /* Sources */,
+				984D8D101CC075790058FE31 /* Frameworks */,
+				984D8D111CC075790058FE31 /* Resources */,
+				F90B19351F4B722A677C8906 /* Embed Pods Frameworks */,
+				410DDB758254F2688212A9DF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TA News Today View";
+			productName = "TA News Today View";
+			productReference = 984D8D131CC075790058FE31 /* TA News Today View.app */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DA36D5811BE4FBBB0035285A /* TA News */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA36D5AA1BE4FBBB0035285A /* Build configuration list for PBXNativeTarget "TA News" */;
@@ -728,10 +823,12 @@
 				980FD96D1C7D1A8200363F1E /* ShellScript */,
 				E42BBB998FBBDFF1BCF7ADD2 /* Embed Pods Frameworks */,
 				03F2639505D5071D387FF154 /* Copy Pods Resources */,
+				984D8D231CC075790058FE31 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				984D8D1E1CC075790058FE31 /* PBXTargetDependency */,
 			);
 			name = "TA News";
 			productName = TeamAppleNews;
@@ -780,10 +877,14 @@
 		DA36D57A1BE4FBBB0035285A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = FutureAppleCEO;
 				TargetAttributes = {
+					984D8D121CC075790058FE31 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = VVWF3C7RAU;
+					};
 					DA36D5811BE4FBBB0035285A = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = VVWF3C7RAU;
@@ -819,11 +920,21 @@
 				DA36D5811BE4FBBB0035285A /* TA News */,
 				DA36D5951BE4FBBB0035285A /* TA NewsTests */,
 				DA36D5A01BE4FBBB0035285A /* TA NewsUITests */,
+				984D8D121CC075790058FE31 /* TA News Today View */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		984D8D111CC075790058FE31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984D8D2B1CC07C890058FE31 /* Info.plist in Resources */,
+				984D8D2C1CC07C890058FE31 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA36D5801BE4FBBB0035285A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -918,6 +1029,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TA News/Pods-TA News-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		410DDB758254F2688212A9DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TA News Today View/Pods-TA News Today View-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5502040CF970D1D0B0325A5F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -960,6 +1086,21 @@
 			shellPath = /bin/sh;
 			shellScript = "ROLLOUT_lastXcodeprojConfiguration=5 \"${SRCROOT}/Rollout-ios-SDK/lib/upload_dsym_phase\" -k 56f733e521ad9c531aeffd9c";
 		};
+		D9FE23B61866BD69ED68148D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		DAB28FF11C42B5890030AB9A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -988,9 +1129,33 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TA News/Pods-TA News-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F90B19351F4B722A677C8906 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TA News Today View/Pods-TA News Today View-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		984D8D0F1CC075790058FE31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				984D8D2E1CC07C890058FE31 /* TodayViewController.swift in Sources */,
+				984D8D2D1CC07C890058FE31 /* RSSItemTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA36D57E1BE4FBBB0035285A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1048,6 +1213,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		984D8D1E1CC075790058FE31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 984D8D121CC075790058FE31 /* TA News Today View */;
+			targetProxy = 984D8D1D1CC075790058FE31 /* PBXContainerItemProxy */;
+		};
 		DA36D5981BE4FBBB0035285A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA36D5811BE4FBBB0035285A /* TA News */;
@@ -1080,6 +1250,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		984D8D211CC075790058FE31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9A0CD116F611E9C1F7BE0E /* Pods-TA News Today View.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TeamAppleNews/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FACEO.TeamAppleNews.TA-News-Today-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TA News Today View/TA News Today View-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		984D8D221CC075790058FE31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624EF2F48824927F18289AD1 /* Pods-TA News Today View.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TeamAppleNews/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.FACEO.TeamAppleNews.TA-News-Today-View";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TA News Today View/TA News Today View-Bridging-Header.h";
+			};
+			name = Release;
+		};
 		DA36D5A81BE4FBBB0035285A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1172,6 +1387,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TeamAppleNews",
@@ -1201,6 +1417,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COMPRESS_PNG_FILES = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TeamAppleNews",
@@ -1292,6 +1509,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		984D8D201CC075790058FE31 /* Build configuration list for PBXNativeTarget "TA News Today View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984D8D211CC075790058FE31 /* Debug */,
+				984D8D221CC075790058FE31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA36D57D1BE4FBBB0035285A /* Build configuration list for PBXProject "TA News" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
