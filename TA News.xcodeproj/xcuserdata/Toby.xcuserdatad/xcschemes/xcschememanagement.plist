@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TA News Today View.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>TA News iPad.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,7 +17,7 @@
 		<key>TA News.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
 		</dict>
 		<key>TeamAppleNews.xcscheme</key>
 		<dict>
@@ -24,6 +29,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>984D8D121CC075790058FE31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DA36D5811BE4FBBB0035285A</key>
 		<dict>
 			<key>primary</key>

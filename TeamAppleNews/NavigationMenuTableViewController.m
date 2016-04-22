@@ -88,39 +88,39 @@
             CellIdentifier = @"news";
             break;
             
-        case 2:
+        /*case 2:
             CellIdentifier = @"TAT";
-            break;
+            break;*/
             
-        case 3:
+        case 2:
             CellIdentifier = @"toys";
             break;
             
-        case 4:
+        case 3:
             CellIdentifier = @"live";
             break;
             
-        case 5:
+        case 4:
             CellIdentifier = @"bookmarks";
             break;
             
-        case 6:
+        case 5:
             CellIdentifier = @"events";
             break;
             
-        case 7:
+        case 6:
             CellIdentifier = @"connect";
             break;
             
-        case 8:
+        case 7:
             CellIdentifier = @"website";
             break;
         
-        case 9:
+        case 8:
             CellIdentifier = @"gallery";
             break;
             
-        case 10:
+        case 9:
             CellIdentifier = @"settings";
             break;
             
@@ -148,15 +148,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (indexPath.row == 4) {
+    if (indexPath.row == 3) {
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.futureappleceo.com/teamapple-live.html"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }
-    if (indexPath.row == 9) {
+    if (indexPath.row == 8) {
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://instagram.com/futureappleceo/"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }
-    if (indexPath.row == 8) {
+    if (indexPath.row == 7) {
         SFSafariViewController *sfvc = [[SFSafariViewController alloc] initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://www.futureappleceo.com/"]]];
         [self presentViewController:sfvc animated:YES completion:nil];
     }

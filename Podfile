@@ -8,6 +8,7 @@ target 'TA News' do
 pod 'SIFloatingCollection', '~> 2.1'
 pod 'SVProgressHUD'
 pod 'AFNetworking'
+
 end
 
 target 'TA NewsTests' do
@@ -22,5 +23,7 @@ target 'TA News Today View' do
 
 pod 'BlockRSSParser', '~> 2.1'
 pod 'AFNetworking'
+pod ‘TMCache’
 
 end
+
