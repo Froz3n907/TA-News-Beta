@@ -11,7 +11,7 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
-    var items : [RSSItem]?
+    /*var items : [RSSItem]?
     
     let dateFormatter :NSDateFormatter = {
         let formatter = NSDateFormatter()
@@ -142,5 +142,5 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         updateExpandButtonTitle()
         updatePreferredContentSize()
         tableView.reloadData()
-    }
+    }*/
 }
