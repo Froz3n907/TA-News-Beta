@@ -61,6 +61,11 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+            return 200
+        }
+        
         return 84
     }
     

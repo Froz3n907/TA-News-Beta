@@ -78,6 +78,7 @@
 		DA41D9571C38A9FB007BE8B3 /* safari.png in Resources */ = {isa = PBXBuildFile; fileRef = DA41D9561C38A9FB007BE8B3 /* safari.png */; };
 		DA41D95B1C39DC9B007BE8B3 /* faceo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA41D95A1C39DC9B007BE8B3 /* faceo.png */; };
 		DA4877041C1DBA8600DA5263 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4877031C1DBA8600DA5263 /* EventViewController.swift */; };
+		DA516BA61CCB8EE300D07AE4 /* MainHD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA516BA51CCB8EE200D07AE4 /* MainHD.storyboard */; };
 		DA5939791C28A45D00B40358 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */; };
 		DA59397B1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */; };
 		DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */; };
@@ -263,6 +264,7 @@
 		DA41D9561C38A9FB007BE8B3 /* safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = safari.png; sourceTree = "<group>"; };
 		DA41D95A1C39DC9B007BE8B3 /* faceo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceo.png; sourceTree = "<group>"; };
 		DA4877031C1DBA8600DA5263 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		DA516BA51CCB8EE200D07AE4 /* MainHD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainHD.storyboard; sourceTree = "<group>"; };
 		DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDevelopmentTeamViewController.swift; sourceTree = "<group>"; };
 		DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
@@ -451,6 +453,10 @@
 		DA36D5791BE4FBBB0035285A = {
 			isa = PBXGroup;
 			children = (
+				DA3F8D631BE511720038277E /* SWRevealViewController */,
+				DA36D5B31BE4FC0C0035285A /* Supporting Files */,
+				DAB8F49F1CBC359E00A0B601 /* AFNetworking */,
+				DACD39B91C13CBFA00900FF2 /* Parse Frameworks */,
 				DA36D5841BE4FBBB0035285A /* TeamAppleNews */,
 				DA36D5991BE4FBBB0035285A /* TeamAppleNewsTests */,
 				DA36D5A41BE4FBBB0035285A /* TeamAppleNewsUITests */,
@@ -489,16 +495,12 @@
 				DA3F8D371BE510520038277E /* Settings */,
 				DABD2F6F1C3C64580062D901 /* Pull To Refresh */,
 				DA36D5891BE4FBBB0035285A /* Main.storyboard */,
-				DA3F8D631BE511720038277E /* SWRevealViewController */,
+				DA516BA51CCB8EE200D07AE4 /* MainHD.storyboard */,
 				DA36D58C1BE4FBBB0035285A /* Assets.xcassets */,
 				DA36D58E1BE4FBBB0035285A /* LaunchScreen.storyboard */,
 				DA36D5911BE4FBBB0035285A /* Info.plist */,
-				DAB8F49F1CBC359E00A0B601 /* AFNetworking */,
 				DA36D6101BE4FC730035285A /* App Icons */,
-				DA36D5B31BE4FC0C0035285A /* Supporting Files */,
 				DA36D6111BE4FC7A0035285A /* Frameworks */,
-				DACD39B91C13CBFA00900FF2 /* Parse Frameworks */,
-				DA36D5EF1BE4FC3D0035285A /* Animation Assets */,
 			);
 			path = TeamAppleNews;
 			sourceTree = "<group>";
@@ -551,13 +553,7 @@
 				98B4DF591C753C1900059323 /* LaunchImage Icon.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DA36D5EF1BE4FC3D0035285A /* Animation Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Animation Assets";
+			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		DA36D6101BE4FC730035285A /* App Icons */ = {
@@ -690,6 +686,7 @@
 				DA36D6271BE4FE100035285A /* SWRevealViewController.m */,
 			);
 			name = SWRevealViewController;
+			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		DA3F8D981BE7D36F0038277E /* RSSFeed Swift Files */ = {
@@ -756,6 +753,7 @@
 				DAB8F49D1CBC359A00A0B601 /* UIImageView+AFNetworking.m */,
 			);
 			name = AFNetworking;
+			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		DABD2F6F1C3C64580062D901 /* Pull To Refresh */ = {
@@ -777,6 +775,7 @@
 				DACD39BF1C13CC1300900FF2 /* Parse.framework */,
 			);
 			name = "Parse Frameworks";
+			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		F931984E02A44C7DB8E5F77B /* Rollout */ = {
@@ -956,6 +955,7 @@
 				DABD2F6C1C3C5B000062D901 /* tat.PNG in Resources */,
 				DA41D9501C38A6D0007BE8B3 /* remove.PNG in Resources */,
 				DABD2F681C3C5B000062D901 /* events.PNG in Resources */,
+				DA516BA61CCB8EE300D07AE4 /* MainHD.storyboard in Resources */,
 				DA1E31CA1C13822900499592 /* tumblr.PNG in Resources */,
 				DA1E31C91C13822900499592 /* snapchat.PNG in Resources */,
 				DA36D5DF1BE4FC1C0035285A /* navicon@3x.png in Resources */,
@@ -1413,7 +1413,7 @@
 				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "TeamAppleNews-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1442,7 +1442,7 @@
 				PRODUCT_NAME = "TA News";
 				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "TeamAppleNews-Bridging-Header.h";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'DFBFB2993EEE180B3C0C8704'
+               BlueprintIdentifier = 'F682F2EF6CD66C4FB12C89C8'
                BlueprintName = 'SIFloatingCollection'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SIFloatingCollection.framework'>

@@ -61,7 +61,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 11;
+    return 10;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
@@ -88,13 +88,13 @@
             CellIdentifier = @"news";
             break;
             
-        /*case 2:
-            CellIdentifier = @"TAT";
-            break;*/
-            
         case 2:
-            CellIdentifier = @"toys";
+            CellIdentifier = @"TAT";
             break;
+            
+        /*case 2:
+            CellIdentifier = @"toys";
+            break;*/
             
         case 3:
             CellIdentifier = @"live";

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D129B714E50DF304DDEA3B20'
+               BlueprintIdentifier = '25AE0556E508AB2D2A207DF1'
                BlueprintName = 'BlockRSSParser'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'BlockRSSParser.framework'>
