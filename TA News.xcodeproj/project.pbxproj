@@ -453,10 +453,6 @@
 		DA36D5791BE4FBBB0035285A = {
 			isa = PBXGroup;
 			children = (
-				DA3F8D631BE511720038277E /* SWRevealViewController */,
-				DA36D5B31BE4FC0C0035285A /* Supporting Files */,
-				DAB8F49F1CBC359E00A0B601 /* AFNetworking */,
-				DACD39B91C13CBFA00900FF2 /* Parse Frameworks */,
 				DA36D5841BE4FBBB0035285A /* TeamAppleNews */,
 				DA36D5991BE4FBBB0035285A /* TeamAppleNewsTests */,
 				DA36D5A41BE4FBBB0035285A /* TeamAppleNewsUITests */,
@@ -484,6 +480,7 @@
 			children = (
 				DA36D6221BE4FCD40035285A /* TeamAppleNews-Bridging-Header.h */,
 				DA36D5851BE4FBBB0035285A /* AppDelegate.swift */,
+				DA3F8D631BE511720038277E /* SWRevealViewController */,
 				DA3F8D2F1BE50F970038277E /* Navigation Menu */,
 				DA3F8D981BE7D36F0038277E /* RSSFeed Swift Files */,
 				DA3F8D301BE50FB30038277E /* TeamApple News */,
@@ -499,7 +496,10 @@
 				DA36D58C1BE4FBBB0035285A /* Assets.xcassets */,
 				DA36D58E1BE4FBBB0035285A /* LaunchScreen.storyboard */,
 				DA36D5911BE4FBBB0035285A /* Info.plist */,
+				DA36D5B31BE4FC0C0035285A /* Supporting Files */,
 				DA36D6101BE4FC730035285A /* App Icons */,
+				DAB8F49F1CBC359E00A0B601 /* AFNetworking */,
+				DACD39B91C13CBFA00900FF2 /* Parse Frameworks */,
 				DA36D6111BE4FC7A0035285A /* Frameworks */,
 			);
 			path = TeamAppleNews;
@@ -553,7 +553,6 @@
 				98B4DF591C753C1900059323 /* LaunchImage Icon.png */,
 			);
 			name = "Supporting Files";
-			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		DA36D6101BE4FC730035285A /* App Icons */ = {
@@ -686,7 +685,6 @@
 				DA36D6271BE4FE100035285A /* SWRevealViewController.m */,
 			);
 			name = SWRevealViewController;
-			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		DA3F8D981BE7D36F0038277E /* RSSFeed Swift Files */ = {
@@ -753,7 +751,6 @@
 				DAB8F49D1CBC359A00A0B601 /* UIImageView+AFNetworking.m */,
 			);
 			name = AFNetworking;
-			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		DABD2F6F1C3C64580062D901 /* Pull To Refresh */ = {
@@ -775,7 +772,6 @@
 				DACD39BF1C13CC1300900FF2 /* Parse.framework */,
 			);
 			name = "Parse Frameworks";
-			path = TeamAppleNews;
 			sourceTree = "<group>";
 		};
 		F931984E02A44C7DB8E5F77B /* Rollout */ = {
