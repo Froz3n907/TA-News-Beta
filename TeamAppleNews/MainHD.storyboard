@@ -117,7 +117,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="news" textLabel="lPW-NR-nfY" imageView="8cV-jb-TuM" rowHeight="55" style="IBUITableViewCellStyleDefault" id="wNl-tH-iD7">
+                            <tableViewCell clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="news" textLabel="lPW-NR-nfY" imageView="8cV-jb-TuM" rowHeight="55" style="IBUITableViewCellStyleDefault" id="wNl-tH-iD7">
                                 <rect key="frame" x="0.0" y="138" width="600" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wNl-tH-iD7" id="QfB-e3-vss">
