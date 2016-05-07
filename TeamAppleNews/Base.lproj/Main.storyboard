@@ -1481,60 +1481,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emerald.png" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-Fb-ybL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emerald.png" translatesAutoresizingMaskIntoConstraints="NO" id="OGT-Fb-ybL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follow us on all our social media sites to find out all the latest news about Apple and what's happening within FutureAppleCEO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sR-78-SWD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow us on all our social media sites to find out all the latest news about Apple and what's happening within FutureAppleCEO" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sR-78-SWD">
                                 <rect key="frame" x="20" y="72" width="560" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="qrk-3A-P9R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pw0-zF-hzT">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pw0-zF-hzT">
                                 <rect key="frame" x="248" y="331" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="jZ5-Rb-Dmj"/>
+                                    <constraint firstAttribute="width" constant="105" id="vkt-wf-Wp8"/>
+                                </constraints>
                                 <state key="normal" image="instagram.PNG"/>
                                 <connections>
                                     <segue destination="fzq-Fx-Ro6" kind="show" id="wkK-Y1-7uc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-AR-zGm">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivK-AR-zGm">
                                 <rect key="frame" x="312" y="240" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="G0n-5F-Gxi"/>
+                                    <constraint firstAttribute="height" constant="93" id="lYB-dp-UrN"/>
+                                </constraints>
                                 <state key="normal" image="facebook.PNG"/>
                                 <connections>
                                     <action selector="facebook:" destination="gb8-JV-K9g" eventType="touchUpInside" id="RxR-UY-4kb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axd-Od-fgl">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Axd-Od-fgl">
                                 <rect key="frame" x="142" y="337" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="NcL-y4-PQ5"/>
+                                    <constraint firstAttribute="width" constant="93" id="PQc-FI-Rlc"/>
+                                </constraints>
                                 <state key="normal" image="youtube.PNG"/>
                                 <connections>
                                     <action selector="youtube:" destination="gb8-JV-K9g" eventType="touchUpInside" id="1ia-Ir-Cgs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuF-c0-44k">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JuF-c0-44k">
                                 <rect key="frame" x="366" y="337" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="xu3-bX-X7h"/>
+                                    <constraint firstAttribute="width" constant="93" id="xuM-vw-a8Z"/>
+                                </constraints>
                                 <state key="normal" image="snapchat.PNG"/>
                                 <connections>
                                     <action selector="snapchat:" destination="gb8-JV-K9g" eventType="touchUpInside" id="VUw-bp-fWb"/>
                                     <segue destination="UVd-gQ-Aat" kind="show" id="mV4-NN-9Zg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONF-0A-Biz">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONF-0A-Biz">
                                 <rect key="frame" x="200" y="240" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="QtM-uS-0DT"/>
+                                    <constraint firstAttribute="width" constant="93" id="tn0-tV-iZj"/>
+                                </constraints>
                                 <state key="normal" image="twitter.PNG"/>
                                 <connections>
                                     <action selector="twitter:" destination="gb8-JV-K9g" eventType="touchUpInside" id="n5O-eP-N4L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-Xw-Kkw">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm0-Xw-Kkw">
                                 <rect key="frame" x="200" y="435" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="1Ol-A6-HnS"/>
+                                    <constraint firstAttribute="height" constant="93" id="bVU-9m-edd"/>
+                                </constraints>
                                 <state key="normal" image="tumblr.PNG"/>
                                 <connections>
                                     <action selector="tumblr:" destination="gb8-JV-K9g" eventType="touchUpInside" id="Ghs-jK-jD3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zc-Jb-c33">
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zc-Jb-c33">
                                 <rect key="frame" x="312" y="435" width="93" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="5AZ-xg-nbx"/>
+                                    <constraint firstAttribute="width" constant="93" id="vea-z3-ETV"/>
+                                </constraints>
                                 <state key="normal" image="reddit.PNG"/>
                                 <connections>
                                     <action selector="reddit:" destination="gb8-JV-K9g" eventType="touchUpInside" id="Lfl-RP-ycC"/>
@@ -1542,6 +1573,33 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="top" secondItem="ivK-AR-zGm" secondAttribute="bottom" constant="-2" id="0uV-NO-qbM"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="top" secondItem="ONF-0A-Biz" secondAttribute="bottom" constant="-2" id="4xj-lj-pVP"/>
+                            <constraint firstItem="6sR-78-SWD" firstAttribute="centerX" secondItem="OGT-Fb-ybL" secondAttribute="centerX" id="9Y9-a8-qpm"/>
+                            <constraint firstItem="6sR-78-SWD" firstAttribute="leading" secondItem="fBu-iS-YWi" secondAttribute="leadingMargin" id="AUH-cE-Vla"/>
+                            <constraint firstItem="3zc-Jb-c33" firstAttribute="top" secondItem="JuF-c0-44k" secondAttribute="bottom" constant="5" id="CST-rx-p5X"/>
+                            <constraint firstItem="JuF-c0-44k" firstAttribute="leading" secondItem="Pw0-zF-hzT" secondAttribute="trailing" constant="13" id="DjH-dY-3rC"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="top" secondItem="6pT-fM-3RC" secondAttribute="bottom" constant="267" id="Fas-Wf-RL2"/>
+                            <constraint firstItem="ivK-AR-zGm" firstAttribute="leading" secondItem="Pw0-zF-hzT" secondAttribute="trailing" constant="-41" id="HgX-WY-h6z"/>
+                            <constraint firstItem="cm0-Xw-Kkw" firstAttribute="top" secondItem="Axd-Od-fgl" secondAttribute="bottom" constant="5" id="LtJ-R2-TZI"/>
+                            <constraint firstItem="OGT-Fb-ybL" firstAttribute="bottom" secondItem="TNK-gi-OfP" secondAttribute="top" id="PHl-qw-JPL"/>
+                            <constraint firstItem="cm0-Xw-Kkw" firstAttribute="top" secondItem="Pw0-zF-hzT" secondAttribute="bottom" constant="-1" id="RHr-Qb-2S1"/>
+                            <constraint firstItem="JuF-c0-44k" firstAttribute="top" secondItem="ivK-AR-zGm" secondAttribute="bottom" constant="4" id="TVG-qD-jKD"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="leading" secondItem="cm0-Xw-Kkw" secondAttribute="trailing" constant="-45" id="U2z-EX-htQ"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="leading" secondItem="Axd-Od-fgl" secondAttribute="trailing" constant="13" id="Wbm-t4-tRn"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="centerX" secondItem="fBu-iS-YWi" secondAttribute="centerX" id="XeP-8N-mVp"/>
+                            <constraint firstItem="Axd-Od-fgl" firstAttribute="top" secondItem="ONF-0A-Biz" secondAttribute="bottom" constant="4" id="YeQ-qD-ayf"/>
+                            <constraint firstItem="3zc-Jb-c33" firstAttribute="top" secondItem="Pw0-zF-hzT" secondAttribute="bottom" constant="-1" id="avN-eT-g0r"/>
+                            <constraint firstItem="OGT-Fb-ybL" firstAttribute="leading" secondItem="fBu-iS-YWi" secondAttribute="leading" id="bca-60-i8N"/>
+                            <constraint firstItem="OGT-Fb-ybL" firstAttribute="top" secondItem="fBu-iS-YWi" secondAttribute="top" id="lxD-Cr-S5U"/>
+                            <constraint firstItem="6sR-78-SWD" firstAttribute="trailing" secondItem="fBu-iS-YWi" secondAttribute="trailingMargin" id="nYn-KM-hIC"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="top" secondItem="6sR-78-SWD" secondAttribute="bottom" constant="70" id="qlf-tC-kWb"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="leading" secondItem="ONF-0A-Biz" secondAttribute="trailing" constant="-45" id="uw1-Pk-C6Z"/>
+                            <constraint firstItem="Pw0-zF-hzT" firstAttribute="centerY" secondItem="fBu-iS-YWi" secondAttribute="centerY" id="wNS-8T-kcU"/>
+                            <constraint firstItem="6sR-78-SWD" firstAttribute="centerX" secondItem="Pw0-zF-hzT" secondAttribute="centerX" id="ziI-Pr-8C1"/>
+                            <constraint firstItem="3zc-Jb-c33" firstAttribute="leading" secondItem="Pw0-zF-hzT" secondAttribute="trailing" constant="-41" id="zsP-hV-srU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Connect" id="rKr-Vw-b75">
                         <barButtonItem key="leftBarButtonItem" image="navicon.png" id="6kt-3S-Wf9"/>
