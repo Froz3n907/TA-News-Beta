@@ -49,6 +49,10 @@ class TATAudioTableViewController: UITableViewController, AVAudioPlayerDelegate 
         update = false
         
     }
+    
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
+    }
         
     func grabAudio() {
         
@@ -74,6 +78,8 @@ class TATAudioTableViewController: UITableViewController, AVAudioPlayerDelegate 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("cell")! as UITableViewCell!
+        
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
         
         cell.textLabel?.text = nameArray[indexPath.row]
                 

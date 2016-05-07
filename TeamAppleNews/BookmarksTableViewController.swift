@@ -54,6 +54,10 @@ class BookmarksTableViewController: UITableViewController {
                 
     }
     
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.75)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

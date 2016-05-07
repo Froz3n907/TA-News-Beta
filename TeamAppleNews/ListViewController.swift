@@ -60,6 +60,11 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 1
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
+    }
+
+    
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
         if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
