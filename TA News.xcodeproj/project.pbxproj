@@ -86,6 +86,7 @@
 		DA7252791C7F707E003556E3 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7252781C7F707E003556E3 /* play.png */; };
 		DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */; };
 		DAA6673B1C343E2500FF2D4B /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6673A1C343E2500FF2D4B /* InstagramViewController.swift */; };
+		DAB13F701CDE5F7800D18551 /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB13F6F1CDE5F7800D18551 /* Apple.png */; };
 		DAB28FF41C42B5DB0030AB9A /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB28FF21C42B5DA0030AB9A /* Fabric.framework */; };
 		DAB28FF51C42B5DB0030AB9A /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB28FF31C42B5DB0030AB9A /* Crashlytics.framework */; };
 		DAB8F4971CBC23DB00A0B601 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB8F4961CBC23DB00A0B601 /* NewsTableViewCell.swift */; };
@@ -272,6 +273,7 @@
 		DA7252781C7F707E003556E3 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableViewCell.swift; sourceTree = "<group>"; };
 		DAA6673A1C343E2500FF2D4B /* InstagramViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		DAB13F6F1CDE5F7800D18551 /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple.png; sourceTree = "<group>"; };
 		DAB28FF21C42B5DA0030AB9A /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
 		DAB28FF31C42B5DB0030AB9A /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
 		DAB8F4961CBC23DB00A0B601 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -699,6 +701,7 @@
 		DA41D93B1C389DF6007BE8B3 /* Settings Icons */ = {
 			isa = PBXGroup;
 			children = (
+				DAB13F6F1CDE5F7800D18551 /* Apple.png */,
 				DA41D9481C38A6D0007BE8B3 /* not.PNG */,
 				DA41D9491C38A6D0007BE8B3 /* rate.PNG */,
 				DA41D94A1C38A6D0007BE8B3 /* remove.PNG */,
@@ -937,6 +940,7 @@
 				DA41D94E1C38A6D0007BE8B3 /* not.PNG in Resources */,
 				DA1E31CB1C13822900499592 /* twitter.PNG in Resources */,
 				DA36D61E1BE4FCB10035285A /* Icon 87x87.png in Resources */,
+				DAB13F701CDE5F7800D18551 /* Apple.png in Resources */,
 				DA41D9571C38A9FB007BE8B3 /* safari.png in Resources */,
 				DA36D61D1BE4FCB10035285A /* Icon 80x80.png in Resources */,
 				DA1CFF731C10AED900AA46DF /* Screen Shot 2014-02-25 at 18.48.14.png in Resources */,

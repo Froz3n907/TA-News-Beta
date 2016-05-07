@@ -1069,36 +1069,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emerald.png" translatesAutoresizingMaskIntoConstraints="NO" id="UAl-gp-P8k">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find out when Apple's  next event is due..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rux-Km-2Ex">
-                                <rect key="frame" x="149" y="80" width="303" height="74"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="mdq-Ci-ZG1"/>
-                                    <constraint firstAttribute="width" constant="303" id="qNe-gO-W3n"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="27"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EventsCalendar.png" translatesAutoresizingMaskIntoConstraints="NO" id="47M-tg-dod">
-                                <rect key="frame" x="185" y="162" width="231" height="224"/>
+                                <rect key="frame" x="185" y="188" width="231" height="224"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="231" id="i4X-wc-PBd"/>
+                                    <constraint firstAttribute="height" constant="224" id="3Rz-T4-e5N"/>
+                                    <constraint firstAttribute="width" constant="231" id="SHI-AE-GBz"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16d 23h 20m 50s" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIF-Nz-TAU">
-                                <rect key="frame" x="200" y="301" width="200" height="44"/>
+                                <rect key="frame" x="200" y="338" width="200" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="8lV-XR-nuV"/>
+                                    <constraint firstAttribute="height" constant="44" id="zUM-yz-uCG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbv-2A-M9y">
-                                <rect key="frame" x="232" y="508" width="135" height="38"/>
+                                <rect key="frame" x="232" y="516" width="135" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="PL2-rI-CjW"/>
-                                    <constraint firstAttribute="width" constant="135" id="taT-rp-EpD"/>
+                                    <constraint firstAttribute="height" constant="38" id="CFm-oC-l67"/>
+                                    <constraint firstAttribute="width" constant="135" id="scN-AT-QcC"/>
                                 </constraints>
                                 <state key="normal" image="calendar black.PNG"/>
                                 <connections>
@@ -1106,71 +1097,77 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event: Apple iPhone Event" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESl-gD-07r">
-                                <rect key="frame" x="20" y="399" width="560" height="44"/>
+                                <rect key="frame" x="20" y="434" width="560" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="0k4-ms-Jyq"/>
+                                    <constraint firstAttribute="height" constant="44" id="PuC-Nr-LdA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 9th September, 2015" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBu-EW-Fzl">
-                                <rect key="frame" x="20" y="451" width="560" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="HJd-E3-oh4"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="486" width="560" height="22"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone Event" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8r-fP-ATP">
-                                <rect key="frame" x="200" y="230" width="200" height="75"/>
+                                <rect key="frame" x="200" y="255" width="200" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="LEe-rM-ho9"/>
+                                    <constraint firstAttribute="width" constant="200" id="YqR-Na-7z5"/>
+                                    <constraint firstAttribute="height" constant="75" id="rsu-0w-e9N"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7W-ne-hmA">
-                                <rect key="frame" x="232" y="554" width="135" height="38"/>
+                                <rect key="frame" x="232" y="562" width="135" height="38"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="JnV-RY-b6R"/>
+                                    <constraint firstAttribute="height" constant="38" id="9ue-Uv-zpY"/>
                                 </constraints>
                                 <state key="normal" image="share black.PNG"/>
                                 <connections>
                                     <action selector="shareEvent:" destination="bbx-9c-ugu" eventType="touchUpInside" id="AYv-CZ-d4G"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find out when Apple's  next event is due..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rux-Km-2Ex">
+                                <rect key="frame" x="148" y="106" width="303" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="303" id="tkX-p9-pnV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Thin" family="SF UI Display" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ESl-gD-07r" firstAttribute="top" secondItem="47M-tg-dod" secondAttribute="bottom" constant="13" id="5GZ-7E-VdN"/>
-                            <constraint firstItem="mBu-EW-Fzl" firstAttribute="trailing" secondItem="ESl-gD-07r" secondAttribute="trailing" id="6YW-yC-tHr"/>
-                            <constraint firstItem="47M-tg-dod" firstAttribute="top" secondItem="rux-Km-2Ex" secondAttribute="bottom" constant="8" symbolic="YES" id="7pM-Ce-Wbf"/>
-                            <constraint firstItem="mBu-EW-Fzl" firstAttribute="centerX" secondItem="Jbv-2A-M9y" secondAttribute="centerX" id="8JA-k0-piM"/>
-                            <constraint firstItem="Jbv-2A-M9y" firstAttribute="centerX" secondItem="UAl-gp-P8k" secondAttribute="centerX" id="AsG-AR-LRo"/>
-                            <constraint firstItem="ESl-gD-07r" firstAttribute="top" secondItem="eIF-Nz-TAU" secondAttribute="bottom" constant="54" id="FKW-Sb-vBP"/>
-                            <constraint firstItem="H8r-fP-ATP" firstAttribute="top" secondItem="rux-Km-2Ex" secondAttribute="bottom" constant="76" id="Fgz-6n-oDr"/>
-                            <constraint firstAttribute="trailing" secondItem="UAl-gp-P8k" secondAttribute="trailing" id="Guc-Ch-Y69"/>
-                            <constraint firstItem="rux-Km-2Ex" firstAttribute="top" secondItem="UJf-hS-Zv7" secondAttribute="bottom" constant="16" id="IZU-si-bb5"/>
-                            <constraint firstItem="mBu-EW-Fzl" firstAttribute="top" secondItem="ESl-gD-07r" secondAttribute="bottom" constant="8" symbolic="YES" id="JuP-Gn-0rT"/>
-                            <constraint firstItem="Jbv-2A-M9y" firstAttribute="top" secondItem="mBu-EW-Fzl" secondAttribute="bottom" constant="13" id="LlM-kQ-ROf"/>
-                            <constraint firstItem="H8r-fP-ATP" firstAttribute="leading" secondItem="eIF-Nz-TAU" secondAttribute="leading" id="YcU-e8-4uZ"/>
-                            <constraint firstItem="y7W-ne-hmA" firstAttribute="trailing" secondItem="Jbv-2A-M9y" secondAttribute="trailing" id="ZLT-LO-0LA"/>
-                            <constraint firstItem="mBu-EW-Fzl" firstAttribute="leading" secondItem="UBL-fG-hOz" secondAttribute="leadingMargin" id="ax7-xc-8WS"/>
-                            <constraint firstItem="xzM-bx-Ygh" firstAttribute="top" secondItem="y7W-ne-hmA" secondAttribute="bottom" constant="8" symbolic="YES" id="cmT-3n-WbU"/>
-                            <constraint firstItem="y7W-ne-hmA" firstAttribute="top" secondItem="Jbv-2A-M9y" secondAttribute="bottom" constant="8" symbolic="YES" id="e2r-If-JXY"/>
-                            <constraint firstItem="mBu-EW-Fzl" firstAttribute="leading" secondItem="ESl-gD-07r" secondAttribute="leading" id="etg-63-hGW"/>
-                            <constraint firstItem="rux-Km-2Ex" firstAttribute="centerX" secondItem="H8r-fP-ATP" secondAttribute="centerX" id="fUj-dW-spV"/>
-                            <constraint firstItem="H8r-fP-ATP" firstAttribute="trailing" secondItem="eIF-Nz-TAU" secondAttribute="trailing" id="jV5-le-LiH"/>
-                            <constraint firstItem="ESl-gD-07r" firstAttribute="centerX" secondItem="eIF-Nz-TAU" secondAttribute="centerX" id="lr9-NU-WjD"/>
-                            <constraint firstItem="UAl-gp-P8k" firstAttribute="leading" secondItem="UBL-fG-hOz" secondAttribute="leading" id="oMQ-us-jFb"/>
-                            <constraint firstItem="UAl-gp-P8k" firstAttribute="top" secondItem="UBL-fG-hOz" secondAttribute="top" id="okC-C9-sbZ"/>
-                            <constraint firstItem="47M-tg-dod" firstAttribute="centerX" secondItem="H8r-fP-ATP" secondAttribute="centerX" id="tBm-Vu-Qc2"/>
-                            <constraint firstItem="ESl-gD-07r" firstAttribute="top" secondItem="H8r-fP-ATP" secondAttribute="bottom" constant="94" id="uc7-3T-TjD"/>
-                            <constraint firstItem="Jbv-2A-M9y" firstAttribute="leading" secondItem="y7W-ne-hmA" secondAttribute="leading" id="vpB-uA-Lc0"/>
-                            <constraint firstItem="UAl-gp-P8k" firstAttribute="bottom" secondItem="xzM-bx-Ygh" secondAttribute="top" id="wHG-06-yfC"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="47M-tg-dod" secondAttribute="centerX" id="3Et-h7-ffj"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="top" secondItem="UBL-fG-hOz" secondAttribute="top" id="3et-mJ-VWK"/>
+                            <constraint firstItem="ESl-gD-07r" firstAttribute="leading" secondItem="UBL-fG-hOz" secondAttribute="leadingMargin" id="5wH-AO-5is"/>
+                            <constraint firstItem="mBu-EW-Fzl" firstAttribute="top" secondItem="47M-tg-dod" secondAttribute="bottom" constant="74" id="8cl-Mr-0lp"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="y7W-ne-hmA" secondAttribute="centerX" id="Buo-ZK-z4u"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="leading" secondItem="UBL-fG-hOz" secondAttribute="leading" id="GTp-W5-p3v"/>
+                            <constraint firstItem="H8r-fP-ATP" firstAttribute="leading" secondItem="eIF-Nz-TAU" secondAttribute="leading" id="HoG-hg-O98"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="ESl-gD-07r" secondAttribute="centerX" id="I1b-0l-3vt"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="bottom" secondItem="xzM-bx-Ygh" secondAttribute="top" id="JvK-S9-lhT"/>
+                            <constraint firstItem="Jbv-2A-M9y" firstAttribute="leading" secondItem="y7W-ne-hmA" secondAttribute="leading" id="KGw-nA-Zyo"/>
+                            <constraint firstItem="Jbv-2A-M9y" firstAttribute="top" secondItem="mBu-EW-Fzl" secondAttribute="bottom" constant="8" id="MNp-ID-2hB"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="H8r-fP-ATP" secondAttribute="centerX" id="REl-ae-xiZ"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="eIF-Nz-TAU" secondAttribute="centerX" id="Wgp-pM-ruz"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="rux-Km-2Ex" secondAttribute="centerX" id="WzN-Xa-6Jl"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="mBu-EW-Fzl" secondAttribute="centerX" id="ZBq-xg-LI0"/>
+                            <constraint firstItem="ESl-gD-07r" firstAttribute="top" secondItem="eIF-Nz-TAU" secondAttribute="bottom" constant="52" id="dve-gI-Wfn"/>
+                            <constraint firstItem="eIF-Nz-TAU" firstAttribute="top" secondItem="H8r-fP-ATP" secondAttribute="bottom" constant="8" symbolic="YES" id="fyQ-Zj-Bdq"/>
+                            <constraint firstItem="47M-tg-dod" firstAttribute="top" secondItem="rux-Km-2Ex" secondAttribute="bottom" constant="8" id="h86-eG-we2"/>
+                            <constraint firstAttribute="trailing" secondItem="UAl-gp-P8k" secondAttribute="trailing" id="jQw-XU-VT1"/>
+                            <constraint firstItem="mBu-EW-Fzl" firstAttribute="top" secondItem="ESl-gD-07r" secondAttribute="bottom" constant="8" id="k1a-oh-DGn"/>
+                            <constraint firstItem="ESl-gD-07r" firstAttribute="leading" secondItem="mBu-EW-Fzl" secondAttribute="leading" id="kAY-Vo-wg9"/>
+                            <constraint firstItem="47M-tg-dod" firstAttribute="centerY" secondItem="UAl-gp-P8k" secondAttribute="centerY" id="kUG-h1-yGE"/>
+                            <constraint firstItem="rux-Km-2Ex" firstAttribute="top" secondItem="UJf-hS-Zv7" secondAttribute="bottom" constant="42" id="v7F-2T-OBF"/>
+                            <constraint firstItem="UAl-gp-P8k" firstAttribute="centerX" secondItem="Jbv-2A-M9y" secondAttribute="centerX" id="w1h-0c-Hbu"/>
+                            <constraint firstItem="y7W-ne-hmA" firstAttribute="top" secondItem="Jbv-2A-M9y" secondAttribute="bottom" constant="8" id="yhD-vE-5b1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Events" id="a2j-ex-ieL">

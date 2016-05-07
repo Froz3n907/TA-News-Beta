@@ -162,6 +162,19 @@ class EventViewController: UIViewController {
         minutesLeft = difference.minute
         secondsLeft = difference.second
         eventCountdownLabel.text = "\(daysLeft)d \(hoursLeft)h \(minutesLeft)m \(secondsLeft)s"
+        if daysLeft <= 0 {
+            eventCountdownLabel.text = "\(hoursLeft)h \(minutesLeft)m \(secondsLeft)s"
+            if hoursLeft <= 0 {
+                eventCountdownLabel.text = "\(minutesLeft)m \(secondsLeft)s"
+                if secondsLeft <= 0{
+                    eventCountdownLabel.text = "Live Now!"
+                    if hoursLeft <= -2 {
+                        eventCountdownLabel.text = "Event Finished!"
+                    }
+                }
+            }
+        }
+        
     }
 
     func createEvent(eventStore: EKEventStore, title: String, startDate: NSDate, endDate: NSDate) {

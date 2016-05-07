@@ -46,12 +46,14 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         case 1:
             cellIdentifier = "team"
         case 2:
+            cellIdentifier = "apple"
+        case 3:
             cellIdentifier = "rate"
         /*case 4:
             cellIdentifier = "restore"*/
-        case 3:
-            cellIdentifier = "not"
         case 4:
+            cellIdentifier = "not"
+        case 5:
             cellIdentifier = "pic"
         //case 5:
         //    cellIdentifier = "ver"
@@ -75,7 +77,7 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         if indexPath.row == 0 {
             return 40
         }
-        if indexPath.row == 4 {
+        if indexPath.row == 5 {
             return 156
         }
         //if indexPath.row == 5 {
@@ -94,7 +96,7 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         /*if indexPath.row == 1 {
             InAppPurchase.sharedInstance.removeAdBanner()
         }*/
-        if indexPath.row == 2 {
+        if indexPath.row == 3 {
             SVProgressHUD.show()
             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Gradient)
             UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/ta-news/id995706775?ls=1&mt=8")!)
@@ -103,7 +105,7 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
         /*if indexPath.row == 4 {
             InAppPurchase.sharedInstance.restoreTransactions()
         }*/
-        if indexPath.row == 3 {
+        if indexPath.row == 4 {
             SVProgressHUD.show()
             SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Gradient)
             if let appSettings = NSURL(string: UIApplicationOpenSettingsURLString) {
@@ -111,7 +113,7 @@ class SettingsTableViewController: UIViewController, UITableViewDataSource, UITa
             }
             SVProgressHUD.dismiss()
         }
-        if indexPath.row == 4 {
+        if indexPath.row == 5 {
             let cell = tableView.dequeueReusableCellWithIdentifier("pic", forIndexPath: indexPath)
             cell.selectionStyle = .None
         }
