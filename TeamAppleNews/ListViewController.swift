@@ -196,6 +196,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     private func loadRSSData(){
         
+        self.rssRecordList.removeAll()
+        
         if let rssURL = NSURL(string: RSS_FEED_URL1) {
             
             self.myParser = NSXMLParser(contentsOfURL: rssURL)!
