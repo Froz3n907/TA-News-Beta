@@ -9,6 +9,26 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>TA News Watch App (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>TA News Watch App (Glance).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>TA News Watch App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>TA News Watch App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>TA News iPad.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -60,6 +80,11 @@
 			<true/>
 		</dict>
 		<key>DACC19601C9B64EC005C5159</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DAFCFF511CDFE73F00D3ED19</key>
 		<dict>
 			<key>primary</key>
 			<true/>

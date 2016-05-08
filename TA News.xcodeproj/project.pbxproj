@@ -134,6 +134,18 @@
 		DACD39D71C13CCC100900FF2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D61C13CCC100900FF2 /* libz.tbd */; };
 		DACD39D91C13CCDB00900FF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */; };
 		DAF47B841C9221A6007AF551 /* TALive_Menu_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */; };
+		DAFCFF581CDFE73F00D3ED19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF571CDFE73F00D3ED19 /* Assets.xcassets */; };
+		DAFCFF5F1CDFE73F00D3ED19 /* TA News Watch App Extension.app in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAFCFF5E1CDFE73F00D3ED19 /* TA News Watch App Extension.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAFCFF741CDFE73F00D3ED19 /* TA News Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DAFCFF521CDFE73F00D3ED19 /* TA News Watch App.app */; };
+		DAFCFF841CDFE79A00D3ED19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF7D1CDFE79A00D3ED19 /* Assets.xcassets */; };
+		DAFCFF851CDFE79A00D3ED19 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF7E1CDFE79A00D3ED19 /* ComplicationController.swift */; };
+		DAFCFF861CDFE79A00D3ED19 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF7F1CDFE79A00D3ED19 /* ExtensionDelegate.swift */; };
+		DAFCFF871CDFE79A00D3ED19 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF801CDFE79A00D3ED19 /* GlanceController.swift */; };
+		DAFCFF881CDFE79A00D3ED19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF811CDFE79A00D3ED19 /* Info.plist */; };
+		DAFCFF891CDFE79A00D3ED19 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF821CDFE79A00D3ED19 /* InterfaceController.swift */; };
+		DAFCFF8A1CDFE79A00D3ED19 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF831CDFE79A00D3ED19 /* NotificationController.swift */; };
+		DAFCFF8C1CDFE87200D3ED19 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF8B1CDFE87200D3ED19 /* PushNotificationPayload.apns */; };
+		DAFCFF8D1CDFE96100D3ED19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF591CDFE73F00D3ED19 /* Info.plist */; };
 		DAFF566C1C20BA9F00838822 /* reddit.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DAFF566B1C20BA9F00838822 /* reddit.PNG */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +171,20 @@
 			remoteGlobalIDString = DA36D5811BE4FBBB0035285A;
 			remoteInfo = TeamAppleNews;
 		};
+		DAFCFF601CDFE73F00D3ED19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA36D57A1BE4FBBB0035285A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFCFF5D1CDFE73F00D3ED19;
+			remoteInfo = "TA News Watch App Extension";
+		};
+		DAFCFF721CDFE73F00D3ED19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA36D57A1BE4FBBB0035285A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFCFF511CDFE73F00D3ED19;
+			remoteInfo = "TA News Watch App";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -171,6 +197,28 @@
 				984D8D1F1CC075790058FE31 /* TA News Today View.app in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFCFF781CDFE73F00D3ED19 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DAFCFF5F1CDFE73F00D3ED19 /* TA News Watch App Extension.app in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFCFF7C1CDFE73F00D3ED19 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DAFCFF741CDFE73F00D3ED19 /* TA News Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -331,6 +379,19 @@
 		DACD39D61C13CCC100900FF2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DACD39D81C13CCDB00900FF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TALive_Menu_Icon.png; sourceTree = "<group>"; };
+		DAFCFF521CDFE73F00D3ED19 /* TA News Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TA News Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFCFF551CDFE73F00D3ED19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DAFCFF571CDFE73F00D3ED19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAFCFF591CDFE73F00D3ED19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFCFF5E1CDFE73F00D3ED19 /* TA News Watch App Extension.app */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TA News Watch App Extension.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFCFF7D1CDFE79A00D3ED19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAFCFF7E1CDFE79A00D3ED19 /* ComplicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		DAFCFF7F1CDFE79A00D3ED19 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DAFCFF801CDFE79A00D3ED19 /* GlanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		DAFCFF811CDFE79A00D3ED19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFCFF821CDFE79A00D3ED19 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DAFCFF831CDFE79A00D3ED19 /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DAFCFF8B1CDFE87200D3ED19 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		DAFF566B1C20BA9F00838822 /* reddit.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reddit.PNG; sourceTree = "<group>"; };
 		DB9A0CD116F611E9C1F7BE0E /* Pods-TA News Today View.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News Today View.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TA News Today View/Pods-TA News Today View.debug.xcconfig"; sourceTree = "<group>"; };
 		DE865AB5E3E9C62D74032DA3 /* Pods-TA News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TA News.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TA News/Pods-TA News.debug.xcconfig"; sourceTree = "<group>"; };
@@ -400,6 +461,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAFCFF5B1CDFE73F00D3ED19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -459,6 +527,8 @@
 				DA36D5991BE4FBBB0035285A /* TeamAppleNewsTests */,
 				DA36D5A41BE4FBBB0035285A /* TeamAppleNewsUITests */,
 				984D8D161CC075790058FE31 /* TA News Today View */,
+				DAFCFF531CDFE73F00D3ED19 /* TA News Watch App */,
+				DAFCFF621CDFE73F00D3ED19 /* TA News Watch App Extension */,
 				DA36D5831BE4FBBB0035285A /* Products */,
 				A10C548D79363F399E7AD268 /* Pods */,
 				D917719222A2B592A1A2F28C /* Frameworks */,
@@ -473,6 +543,8 @@
 				DA36D5961BE4FBBB0035285A /* TA News.app */,
 				DA36D5A11BE4FBBB0035285A /* TA News.app */,
 				984D8D131CC075790058FE31 /* TA News Today View.app */,
+				DAFCFF521CDFE73F00D3ED19 /* TA News Watch App.app */,
+				DAFCFF5E1CDFE73F00D3ED19 /* TA News Watch App Extension.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -777,6 +849,39 @@
 			name = "Parse Frameworks";
 			sourceTree = "<group>";
 		};
+		DAFCFF531CDFE73F00D3ED19 /* TA News Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				DAFCFF541CDFE73F00D3ED19 /* Interface.storyboard */,
+				DAFCFF571CDFE73F00D3ED19 /* Assets.xcassets */,
+				DAFCFF591CDFE73F00D3ED19 /* Info.plist */,
+			);
+			path = "TA News Watch App";
+			sourceTree = "<group>";
+		};
+		DAFCFF621CDFE73F00D3ED19 /* TA News Watch App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DAFCFF821CDFE79A00D3ED19 /* InterfaceController.swift */,
+				DAFCFF7F1CDFE79A00D3ED19 /* ExtensionDelegate.swift */,
+				DAFCFF831CDFE79A00D3ED19 /* NotificationController.swift */,
+				DAFCFF801CDFE79A00D3ED19 /* GlanceController.swift */,
+				DAFCFF7E1CDFE79A00D3ED19 /* ComplicationController.swift */,
+				DAFCFF7D1CDFE79A00D3ED19 /* Assets.xcassets */,
+				DAFCFF811CDFE79A00D3ED19 /* Info.plist */,
+				DAFCFF631CDFE73F00D3ED19 /* Supporting Files */,
+			);
+			path = "TA News Watch App Extension";
+			sourceTree = "<group>";
+		};
+		DAFCFF631CDFE73F00D3ED19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAFCFF8B1CDFE87200D3ED19 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F931984E02A44C7DB8E5F77B /* Rollout */ = {
 			isa = PBXGroup;
 			children = (
@@ -822,11 +927,13 @@
 				E42BBB998FBBDFF1BCF7ADD2 /* Embed Pods Frameworks */,
 				03F2639505D5071D387FF154 /* Copy Pods Resources */,
 				984D8D231CC075790058FE31 /* Embed App Extensions */,
+				DAFCFF7C1CDFE73F00D3ED19 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				984D8D1E1CC075790058FE31 /* PBXTargetDependency */,
+				DAFCFF731CDFE73F00D3ED19 /* PBXTargetDependency */,
 			);
 			name = "TA News";
 			productName = TeamAppleNews;
@@ -869,6 +976,40 @@
 			productReference = DA36D5A11BE4FBBB0035285A /* TA News.app */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DAFCFF511CDFE73F00D3ED19 /* TA News Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFCFF791CDFE73F00D3ED19 /* Build configuration list for PBXNativeTarget "TA News Watch App" */;
+			buildPhases = (
+				DAFCFF501CDFE73F00D3ED19 /* Resources */,
+				DAFCFF781CDFE73F00D3ED19 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFCFF611CDFE73F00D3ED19 /* PBXTargetDependency */,
+			);
+			name = "TA News Watch App";
+			productName = "TA News Watch App";
+			productReference = DAFCFF521CDFE73F00D3ED19 /* TA News Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DAFCFF5D1CDFE73F00D3ED19 /* TA News Watch App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFCFF751CDFE73F00D3ED19 /* Build configuration list for PBXNativeTarget "TA News Watch App Extension" */;
+			buildPhases = (
+				DAFCFF5A1CDFE73F00D3ED19 /* Sources */,
+				DAFCFF5B1CDFE73F00D3ED19 /* Frameworks */,
+				DAFCFF5C1CDFE73F00D3ED19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TA News Watch App Extension";
+			productName = "TA News Watch App Extension";
+			productReference = DAFCFF5E1CDFE73F00D3ED19 /* TA News Watch App Extension.app */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -900,6 +1041,13 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = DA36D5811BE4FBBB0035285A;
 					};
+					DAFCFF511CDFE73F00D3ED19 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VVWF3C7RAU;
+					};
+					DAFCFF5D1CDFE73F00D3ED19 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = DA36D57D1BE4FBBB0035285A /* Build configuration list for PBXProject "TA News" */;
@@ -919,6 +1067,8 @@
 				DA36D5951BE4FBBB0035285A /* TA NewsTests */,
 				DA36D5A01BE4FBBB0035285A /* TA NewsUITests */,
 				984D8D121CC075790058FE31 /* TA News Today View */,
+				DAFCFF511CDFE73F00D3ED19 /* TA News Watch App */,
+				DAFCFF5D1CDFE73F00D3ED19 /* TA News Watch App Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1008,6 +1158,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFCFF501CDFE73F00D3ED19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFCFF581CDFE73F00D3ED19 /* Assets.xcassets in Resources */,
+				DAFCFF8D1CDFE96100D3ED19 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFCFF5C1CDFE73F00D3ED19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFCFF841CDFE79A00D3ED19 /* Assets.xcassets in Resources */,
+				DAFCFF881CDFE79A00D3ED19 /* Info.plist in Resources */,
+				DAFCFF8C1CDFE87200D3ED19 /* PushNotificationPayload.apns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,6 +1379,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAFCFF5A1CDFE73F00D3ED19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFCFF8A1CDFE79A00D3ED19 /* NotificationController.swift in Sources */,
+				DAFCFF861CDFE79A00D3ED19 /* ExtensionDelegate.swift in Sources */,
+				DAFCFF891CDFE79A00D3ED19 /* InterfaceController.swift in Sources */,
+				DAFCFF851CDFE79A00D3ED19 /* ComplicationController.swift in Sources */,
+				DAFCFF871CDFE79A00D3ED19 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1227,6 +1408,16 @@
 			isa = PBXTargetDependency;
 			target = DA36D5811BE4FBBB0035285A /* TA News */;
 			targetProxy = DA36D5A21BE4FBBB0035285A /* PBXContainerItemProxy */;
+		};
+		DAFCFF611CDFE73F00D3ED19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFCFF5D1CDFE73F00D3ED19 /* TA News Watch App Extension */;
+			targetProxy = DAFCFF601CDFE73F00D3ED19 /* PBXContainerItemProxy */;
+		};
+		DAFCFF731CDFE73F00D3ED19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFCFF511CDFE73F00D3ED19 /* TA News Watch App */;
+			targetProxy = DAFCFF721CDFE73F00D3ED19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1253,6 +1444,14 @@
 				DAC6B5FE1CCADFEA00E3C2C4 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		DAFCFF541CDFE73F00D3ED19 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFCFF551CDFE73F00D3ED19 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1514,6 +1713,74 @@
 			};
 			name = Release;
 		};
+		DAFCFF761CDFE73F00D3ED19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "TA News Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DAFCFF771CDFE73F00D3ED19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "TA News Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		DAFCFF7A1CDFE73F00D3ED19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TA_News_Watch_App_Extension;
+				INFOPLIST_FILE = "TA News Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DAFCFF7B1CDFE73F00D3ED19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = TA_News_Watch_App_Extension;
+				INFOPLIST_FILE = "TA News Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1561,6 +1828,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DAFCFF751CDFE73F00D3ED19 /* Build configuration list for PBXNativeTarget "TA News Watch App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFCFF761CDFE73F00D3ED19 /* Debug */,
+				DAFCFF771CDFE73F00D3ED19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAFCFF791CDFE73F00D3ED19 /* Build configuration list for PBXNativeTarget "TA News Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFCFF7A1CDFE73F00D3ED19 /* Debug */,
+				DAFCFF7B1CDFE73F00D3ED19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
