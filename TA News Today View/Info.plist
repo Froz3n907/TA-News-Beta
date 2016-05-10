@@ -29,5 +29,69 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.widget-extension</string>
 	</dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tanews</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>TA News</string>
+		</dict>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~iphone</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<string>????</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>MainHD</string>
+	<key>UIMainStoryboardFile~iphone</key>
+	<string>Main</string>
+	<key>UILaunchImageFile</key>
+	<string>????</string>
+	<key>Fabric</key>
+	<dict>
+		<key>APIKey</key>
+		<string>371014dff6c6aa9b02953aae33069552168c6ee9</string>
+		<key>Kits</key>
+		<array>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict>
+					<key>consumerKey</key>
+					<string>FhERjqKanTna9Pq80IA0U4ikF</string>
+					<key>consumerSecret</key>
+					<string>m14KD701foRfhJzrJ1j0u3rNrINhSP7qpXJU6D45uiZgzGWWCs</string>
+				</dict>
+				<key>KitName</key>
+				<string>Digits</string>
+			</dict>
+		</array>
+	</dict>
 </dict>
 </plist>
