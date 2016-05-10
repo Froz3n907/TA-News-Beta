@@ -89,7 +89,7 @@
 			<string>TA News</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tanews://</string>
+				<string>tanews</string>
 			</array>
 		</dict>
 	</array>
