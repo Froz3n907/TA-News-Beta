@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.FACEO.TeamAppleNews.TA-News-Today-View</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -17,22 +17,17 @@
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>104</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.widget-extension</string>
-	</dict>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
 	</dict>
 	<key>CFBundleURLTypes</key>
 	<array>
@@ -47,51 +42,7 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~iphone</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<string>????</string>
-	<key>UIMainStoryboardFile~ipad</key>
-	<string>MainHD</string>
-	<key>UIMainStoryboardFile~iphone</key>
-	<string>Main</string>
-	<key>UILaunchImageFile</key>
-	<string>????</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>371014dff6c6aa9b02953aae33069552168c6ee9</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict/>
-				<key>KitName</key>
-				<string>Crashlytics</string>
-			</dict>
-			<dict>
-				<key>KitInfo</key>
-				<dict>
-					<key>consumerKey</key>
-					<string>FhERjqKanTna9Pq80IA0U4ikF</string>
-					<key>consumerSecret</key>
-					<string>m14KD701foRfhJzrJ1j0u3rNrINhSP7qpXJU6D45uiZgzGWWCs</string>
-				</dict>
-				<key>KitName</key>
-				<string>Digits</string>
-			</dict>
-		</array>
-	</dict>
 </dict>
 </plist>

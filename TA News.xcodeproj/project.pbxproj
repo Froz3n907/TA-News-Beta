@@ -160,16 +160,13 @@
 		DAF47B841C9221A6007AF551 /* TALive_Menu_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF47B831C9221A5007AF551 /* TALive_Menu_Icon.png */; };
 		DAFCFF581CDFE73F00D3ED19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF571CDFE73F00D3ED19 /* Assets.xcassets */; };
 		DAFCFF5F1CDFE73F00D3ED19 /* TA News Watch App Extension.app in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAFCFF5E1CDFE73F00D3ED19 /* TA News Watch App Extension.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DAFCFF741CDFE73F00D3ED19 /* TA News Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DAFCFF521CDFE73F00D3ED19 /* TA News Watch App.app */; };
 		DAFCFF841CDFE79A00D3ED19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF7D1CDFE79A00D3ED19 /* Assets.xcassets */; };
 		DAFCFF851CDFE79A00D3ED19 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF7E1CDFE79A00D3ED19 /* ComplicationController.swift */; };
 		DAFCFF861CDFE79A00D3ED19 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF7F1CDFE79A00D3ED19 /* ExtensionDelegate.swift */; };
 		DAFCFF871CDFE79A00D3ED19 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF801CDFE79A00D3ED19 /* GlanceController.swift */; };
-		DAFCFF881CDFE79A00D3ED19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF811CDFE79A00D3ED19 /* Info.plist */; };
 		DAFCFF891CDFE79A00D3ED19 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF821CDFE79A00D3ED19 /* InterfaceController.swift */; };
 		DAFCFF8A1CDFE79A00D3ED19 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFCFF831CDFE79A00D3ED19 /* NotificationController.swift */; };
 		DAFCFF8C1CDFE87200D3ED19 /* PushNotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF8B1CDFE87200D3ED19 /* PushNotificationPayload.apns */; };
-		DAFCFF8D1CDFE96100D3ED19 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAFCFF591CDFE73F00D3ED19 /* Info.plist */; };
 		DAFF566C1C20BA9F00838822 /* reddit.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DAFF566B1C20BA9F00838822 /* reddit.PNG */; };
 /* End PBXBuildFile section */
 
@@ -241,7 +238,6 @@
 			dstSubfolderSpec = 16;
 			files = (
 				DA3C0F851CE1F6D60068C003 /* TA News Watch App.app in Embed Watch Content */,
-				DAFCFF741CDFE73F00D3ED19 /* TA News Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1068,7 +1064,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = FutureAppleCEO;
 				TargetAttributes = {
 					984D8D121CC075790058FE31 = {
@@ -1224,7 +1220,6 @@
 				DA3C0F7D1CE1F4BB0068C003 /* WatchAppIcon 87x87.png in Resources */,
 				DA3C0F7B1CE1F4BB0068C003 /* WatchAppIcon 80x80.png in Resources */,
 				DA3C0F6E1CE1F49B0068C003 /* TANews_WatchApp_Icon.png in Resources */,
-				DAFCFF8D1CDFE96100D3ED19 /* Info.plist in Resources */,
 				DA3C0F7F1CE1F4BB0068C003 /* WatchAppIcon 58x58.png in Resources */,
 				DA3C0F771CE1F4BB0068C003 /* WatchAppIcon 196x196.png in Resources */,
 				DA3C0F791CE1F4BB0068C003 /* WatchAppIcon 172x172.png in Resources */,
@@ -1243,7 +1238,6 @@
 				DA3C0F7E1CE1F4BB0068C003 /* WatchAppIcon 87x87.png in Resources */,
 				DA3C0F781CE1F4BB0068C003 /* WatchAppIcon 196x196.png in Resources */,
 				DA3C0F6F1CE1F49B0068C003 /* TANews_WatchApp_Icon.png in Resources */,
-				DAFCFF881CDFE79A00D3ED19 /* Info.plist in Resources */,
 				DA3C0F841CE1F4BB0068C003 /* WatchAppIcon 48x48.png in Resources */,
 				DA3C0F6D1CE1F49B0068C003 /* Events_WatchApp_Icon.png in Resources */,
 				DAFCFF8C1CDFE87200D3ED19 /* PushNotificationPayload.apns in Resources */,
@@ -1544,8 +1538,8 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/TeamAppleNews/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				INFOPLIST_FILE = "$(SRCROOT)/TA News Today View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FACEO.TeamAppleNews.TA-News-Today-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1567,8 +1561,8 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/build/Release-iphoneos",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/TeamAppleNews/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				INFOPLIST_FILE = "$(SRCROOT)/TA News Today View/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.FACEO.TeamAppleNews.TA-News-Today-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1679,7 +1673,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = TeamAppleNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "\"-D\" \"DEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
@@ -1709,7 +1703,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = TeamAppleNews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "\"-D\" \"DEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews;
@@ -1730,6 +1724,7 @@
 					"Rollout-ios-SDK/Rollout",
 				);
 				INFOPLIST_FILE = TeamAppleNewsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsTests;
 				PRODUCT_NAME = "TA News";
@@ -1747,6 +1742,7 @@
 					"Rollout-ios-SDK/Rollout",
 				);
 				INFOPLIST_FILE = TeamAppleNewsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsTests;
 				PRODUCT_NAME = "TA News";
@@ -1763,6 +1759,7 @@
 					"Rollout-ios-SDK/Rollout",
 				);
 				INFOPLIST_FILE = TeamAppleNewsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsUITests;
 				PRODUCT_NAME = "TA News";
@@ -1780,6 +1777,7 @@
 					"Rollout-ios-SDK/Rollout",
 				);
 				INFOPLIST_FILE = TeamAppleNewsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNewsUITests;
 				PRODUCT_NAME = "TA News";
@@ -1794,7 +1792,8 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "TA News Watch App Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TA News Watch App Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -1811,7 +1810,8 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = "TA News Watch App Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TA News Watch App Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -1830,7 +1830,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = TA_News_Watch_App_Extension;
-				INFOPLIST_FILE = "TA News Watch App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TA News Watch App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -1848,7 +1849,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = TA_News_Watch_App_Extension;
-				INFOPLIST_FILE = "TA News Watch App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TA News Watch App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
