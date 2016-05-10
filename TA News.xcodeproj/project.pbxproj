@@ -56,6 +56,27 @@
 		DA36D6201BE4FCB10035285A /* Icon 152x152.png in Resources */ = {isa = PBXBuildFile; fileRef = DA36D6181BE4FCB10035285A /* Icon 152x152.png */; };
 		DA36D6211BE4FCB10035285A /* Icon 180x180.png in Resources */ = {isa = PBXBuildFile; fileRef = DA36D6191BE4FCB10035285A /* Icon 180x180.png */; };
 		DA36D6281BE4FE100035285A /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA36D6271BE4FE100035285A /* SWRevealViewController.m */; };
+		DA3C0F6A1CE1F49B0068C003 /* Black_Blur_50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F671CE1F49B0068C003 /* Black_Blur_50x50.png */; };
+		DA3C0F6B1CE1F49B0068C003 /* Black_Blur_50x50.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F671CE1F49B0068C003 /* Black_Blur_50x50.png */; };
+		DA3C0F6C1CE1F49B0068C003 /* Events_WatchApp_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F681CE1F49B0068C003 /* Events_WatchApp_Icon.png */; };
+		DA3C0F6D1CE1F49B0068C003 /* Events_WatchApp_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F681CE1F49B0068C003 /* Events_WatchApp_Icon.png */; };
+		DA3C0F6E1CE1F49B0068C003 /* TANews_WatchApp_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F691CE1F49B0068C003 /* TANews_WatchApp_Icon.png */; };
+		DA3C0F6F1CE1F49B0068C003 /* TANews_WatchApp_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F691CE1F49B0068C003 /* TANews_WatchApp_Icon.png */; };
+		DA3C0F771CE1F4BB0068C003 /* WatchAppIcon 196x196.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F701CE1F4BB0068C003 /* WatchAppIcon 196x196.png */; };
+		DA3C0F781CE1F4BB0068C003 /* WatchAppIcon 196x196.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F701CE1F4BB0068C003 /* WatchAppIcon 196x196.png */; };
+		DA3C0F791CE1F4BB0068C003 /* WatchAppIcon 172x172.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F711CE1F4BB0068C003 /* WatchAppIcon 172x172.png */; };
+		DA3C0F7A1CE1F4BB0068C003 /* WatchAppIcon 172x172.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F711CE1F4BB0068C003 /* WatchAppIcon 172x172.png */; };
+		DA3C0F7B1CE1F4BB0068C003 /* WatchAppIcon 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F721CE1F4BB0068C003 /* WatchAppIcon 80x80.png */; };
+		DA3C0F7C1CE1F4BB0068C003 /* WatchAppIcon 80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F721CE1F4BB0068C003 /* WatchAppIcon 80x80.png */; };
+		DA3C0F7D1CE1F4BB0068C003 /* WatchAppIcon 87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F731CE1F4BB0068C003 /* WatchAppIcon 87x87.png */; };
+		DA3C0F7E1CE1F4BB0068C003 /* WatchAppIcon 87x87.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F731CE1F4BB0068C003 /* WatchAppIcon 87x87.png */; };
+		DA3C0F7F1CE1F4BB0068C003 /* WatchAppIcon 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F741CE1F4BB0068C003 /* WatchAppIcon 58x58.png */; };
+		DA3C0F801CE1F4BB0068C003 /* WatchAppIcon 58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F741CE1F4BB0068C003 /* WatchAppIcon 58x58.png */; };
+		DA3C0F811CE1F4BB0068C003 /* WatchAppIcon 55x55.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F751CE1F4BB0068C003 /* WatchAppIcon 55x55.png */; };
+		DA3C0F821CE1F4BB0068C003 /* WatchAppIcon 55x55.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F751CE1F4BB0068C003 /* WatchAppIcon 55x55.png */; };
+		DA3C0F831CE1F4BB0068C003 /* WatchAppIcon 48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F761CE1F4BB0068C003 /* WatchAppIcon 48x48.png */; };
+		DA3C0F841CE1F4BB0068C003 /* WatchAppIcon 48x48.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3C0F761CE1F4BB0068C003 /* WatchAppIcon 48x48.png */; };
+		DA3C0F851CE1F6D60068C003 /* TA News Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DAFCFF521CDFE73F00D3ED19 /* TA News Watch App.app */; };
 		DA3DD3491C25B4F8001728BC /* emerald.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3DD3481C25B4F8001728BC /* emerald.png */; };
 		DA3F8D2E1BE506D00038277E /* NavigationMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F8D2D1BE506D00038277E /* NavigationMenuTableViewController.m */; };
 		DA3F8D5C1BE510E20038277E /* SnapchatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3F8D4B1BE510E20038277E /* SnapchatViewController.m */; };
@@ -82,6 +103,9 @@
 		DA5939791C28A45D00B40358 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */; };
 		DA59397B1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */; };
 		DA5AA53D1C236CB3009D2661 /* InAppPurchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */; };
+		DA6930E11CE1C1CA00E5BBD3 /* TANewsFeedInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6930E01CE1C1CA00E5BBD3 /* TANewsFeedInterfaceController.swift */; };
+		DA6930E31CE1C1EF00E5BBD3 /* TANewsCellI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6930E21CE1C1EF00E5BBD3 /* TANewsCellI.swift */; };
+		DA6930E51CE1C20700E5BBD3 /* DetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6930E41CE1C20700E5BBD3 /* DetailsInterfaceController.swift */; };
 		DA7252771C7F6F81003556E3 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7252761C7F6F81003556E3 /* pause.png */; };
 		DA7252791C7F707E003556E3 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7252781C7F707E003556E3 /* play.png */; };
 		DAA667391C343E0200FF2D4B /* InstagramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */; };
@@ -216,6 +240,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
+				DA3C0F851CE1F6D60068C003 /* TA News Watch App.app in Embed Watch Content */,
 				DAFCFF741CDFE73F00D3ED19 /* TA News Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
@@ -288,6 +313,16 @@
 		DA36D6221BE4FCD40035285A /* TeamAppleNews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TeamAppleNews-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DA36D6261BE4FE100035285A /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		DA36D6271BE4FE100035285A /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		DA3C0F671CE1F49B0068C003 /* Black_Blur_50x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black_Blur_50x50.png; sourceTree = "<group>"; };
+		DA3C0F681CE1F49B0068C003 /* Events_WatchApp_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Events_WatchApp_Icon.png; sourceTree = "<group>"; };
+		DA3C0F691CE1F49B0068C003 /* TANews_WatchApp_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TANews_WatchApp_Icon.png; sourceTree = "<group>"; };
+		DA3C0F701CE1F4BB0068C003 /* WatchAppIcon 196x196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchAppIcon 196x196.png"; sourceTree = "<group>"; };
+		DA3C0F711CE1F4BB0068C003 /* WatchAppIcon 172x172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchAppIcon 172x172.png"; sourceTree = "<group>"; };
+		DA3C0F721CE1F4BB0068C003 /* WatchAppIcon 80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchAppIcon 80x80.png"; sourceTree = "<group>"; };
+		DA3C0F731CE1F4BB0068C003 /* WatchAppIcon 87x87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchAppIcon 87x87.png"; sourceTree = "<group>"; };
+		DA3C0F741CE1F4BB0068C003 /* WatchAppIcon 58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchAppIcon 58x58.png"; sourceTree = "<group>"; };
+		DA3C0F751CE1F4BB0068C003 /* WatchAppIcon 55x55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchAppIcon 55x55.png"; sourceTree = "<group>"; };
+		DA3C0F761CE1F4BB0068C003 /* WatchAppIcon 48x48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WatchAppIcon 48x48.png"; sourceTree = "<group>"; };
 		DA3DD3481C25B4F8001728BC /* emerald.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emerald.png; sourceTree = "<group>"; };
 		DA3F8D2C1BE506D00038277E /* NavigationMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationMenuTableViewController.h; sourceTree = "<group>"; };
 		DA3F8D2D1BE506D00038277E /* NavigationMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationMenuTableViewController.m; sourceTree = "<group>"; };
@@ -317,6 +352,9 @@
 		DA5939781C28A45D00B40358 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		DA59397A1C28FC8900B40358 /* AppDevelopmentTeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDevelopmentTeamViewController.swift; sourceTree = "<group>"; };
 		DA5AA53C1C236CB3009D2661 /* InAppPurchase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchase.swift; sourceTree = "<group>"; };
+		DA6930E01CE1C1CA00E5BBD3 /* TANewsFeedInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TANewsFeedInterfaceController.swift; sourceTree = "<group>"; };
+		DA6930E21CE1C1EF00E5BBD3 /* TANewsCellI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TANewsCellI.swift; sourceTree = "<group>"; };
+		DA6930E41CE1C20700E5BBD3 /* DetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInterfaceController.swift; sourceTree = "<group>"; };
 		DA7252761C7F6F81003556E3 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		DA7252781C7F707E003556E3 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		DAA667381C343E0200FF2D4B /* InstagramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramTableViewCell.swift; sourceTree = "<group>"; };
@@ -863,6 +901,9 @@
 			isa = PBXGroup;
 			children = (
 				DAFCFF821CDFE79A00D3ED19 /* InterfaceController.swift */,
+				DA6930E01CE1C1CA00E5BBD3 /* TANewsFeedInterfaceController.swift */,
+				DA6930E21CE1C1EF00E5BBD3 /* TANewsCellI.swift */,
+				DA6930E41CE1C20700E5BBD3 /* DetailsInterfaceController.swift */,
 				DAFCFF7F1CDFE79A00D3ED19 /* ExtensionDelegate.swift */,
 				DAFCFF831CDFE79A00D3ED19 /* NotificationController.swift */,
 				DAFCFF801CDFE79A00D3ED19 /* GlanceController.swift */,
@@ -877,6 +918,16 @@
 		DAFCFF631CDFE73F00D3ED19 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA3C0F671CE1F49B0068C003 /* Black_Blur_50x50.png */,
+				DA3C0F681CE1F49B0068C003 /* Events_WatchApp_Icon.png */,
+				DA3C0F691CE1F49B0068C003 /* TANews_WatchApp_Icon.png */,
+				DA3C0F701CE1F4BB0068C003 /* WatchAppIcon 196x196.png */,
+				DA3C0F711CE1F4BB0068C003 /* WatchAppIcon 172x172.png */,
+				DA3C0F721CE1F4BB0068C003 /* WatchAppIcon 80x80.png */,
+				DA3C0F731CE1F4BB0068C003 /* WatchAppIcon 87x87.png */,
+				DA3C0F741CE1F4BB0068C003 /* WatchAppIcon 58x58.png */,
+				DA3C0F751CE1F4BB0068C003 /* WatchAppIcon 55x55.png */,
+				DA3C0F761CE1F4BB0068C003 /* WatchAppIcon 48x48.png */,
 				DAFCFF8B1CDFE87200D3ED19 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
@@ -1047,6 +1098,7 @@
 					};
 					DAFCFF5D1CDFE73F00D3ED19 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = VVWF3C7RAU;
 					};
 				};
 			};
@@ -1165,8 +1217,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3C0F6A1CE1F49B0068C003 /* Black_Blur_50x50.png in Resources */,
+				DA3C0F811CE1F4BB0068C003 /* WatchAppIcon 55x55.png in Resources */,
+				DA3C0F831CE1F4BB0068C003 /* WatchAppIcon 48x48.png in Resources */,
 				DAFCFF581CDFE73F00D3ED19 /* Assets.xcassets in Resources */,
+				DA3C0F7D1CE1F4BB0068C003 /* WatchAppIcon 87x87.png in Resources */,
+				DA3C0F7B1CE1F4BB0068C003 /* WatchAppIcon 80x80.png in Resources */,
+				DA3C0F6E1CE1F49B0068C003 /* TANews_WatchApp_Icon.png in Resources */,
 				DAFCFF8D1CDFE96100D3ED19 /* Info.plist in Resources */,
+				DA3C0F7F1CE1F4BB0068C003 /* WatchAppIcon 58x58.png in Resources */,
+				DA3C0F771CE1F4BB0068C003 /* WatchAppIcon 196x196.png in Resources */,
+				DA3C0F791CE1F4BB0068C003 /* WatchAppIcon 172x172.png in Resources */,
+				DA3C0F6C1CE1F49B0068C003 /* Events_WatchApp_Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1174,9 +1236,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA3C0F7C1CE1F4BB0068C003 /* WatchAppIcon 80x80.png in Resources */,
+				DA3C0F7A1CE1F4BB0068C003 /* WatchAppIcon 172x172.png in Resources */,
 				DAFCFF841CDFE79A00D3ED19 /* Assets.xcassets in Resources */,
+				DA3C0F6B1CE1F49B0068C003 /* Black_Blur_50x50.png in Resources */,
+				DA3C0F7E1CE1F4BB0068C003 /* WatchAppIcon 87x87.png in Resources */,
+				DA3C0F781CE1F4BB0068C003 /* WatchAppIcon 196x196.png in Resources */,
+				DA3C0F6F1CE1F49B0068C003 /* TANews_WatchApp_Icon.png in Resources */,
 				DAFCFF881CDFE79A00D3ED19 /* Info.plist in Resources */,
+				DA3C0F841CE1F4BB0068C003 /* WatchAppIcon 48x48.png in Resources */,
+				DA3C0F6D1CE1F49B0068C003 /* Events_WatchApp_Icon.png in Resources */,
 				DAFCFF8C1CDFE87200D3ED19 /* PushNotificationPayload.apns in Resources */,
+				DA3C0F821CE1F4BB0068C003 /* WatchAppIcon 55x55.png in Resources */,
+				DA3C0F801CE1F4BB0068C003 /* WatchAppIcon 58x58.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1384,9 +1456,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAFCFF8A1CDFE79A00D3ED19 /* NotificationController.swift in Sources */,
+				DA6930E11CE1C1CA00E5BBD3 /* TANewsFeedInterfaceController.swift in Sources */,
 				DAFCFF861CDFE79A00D3ED19 /* ExtensionDelegate.swift in Sources */,
 				DAFCFF891CDFE79A00D3ED19 /* InterfaceController.swift in Sources */,
+				DA6930E51CE1C20700E5BBD3 /* DetailsInterfaceController.swift in Sources */,
 				DAFCFF851CDFE79A00D3ED19 /* ComplicationController.swift in Sources */,
+				DA6930E31CE1C1EF00E5BBD3 /* TANewsCellI.swift in Sources */,
 				DAFCFF871CDFE79A00D3ED19 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1718,6 +1793,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "TA News Watch App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp.watchkitextension;
@@ -1734,6 +1810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "TA News Watch App Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.FACEO.TeamAppleNews.watchkitapp.watchkitextension;
@@ -1836,6 +1913,7 @@
 				DAFCFF771CDFE73F00D3ED19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAFCFF791CDFE73F00D3ED19 /* Build configuration list for PBXNativeTarget "TA News Watch App" */ = {
 			isa = XCConfigurationList;
@@ -1844,6 +1922,7 @@
 				DAFCFF7B1CDFE73F00D3ED19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
