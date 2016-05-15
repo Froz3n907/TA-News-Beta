@@ -84,12 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-TA News/AFNetworking.framework"
   install_framework "Pods-TA News/SIFloatingCollection.framework"
   install_framework "Pods-TA News/SVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-TA News/AFNetworking.framework"
   install_framework "Pods-TA News/SIFloatingCollection.framework"
   install_framework "Pods-TA News/SVProgressHUD.framework"
 fi

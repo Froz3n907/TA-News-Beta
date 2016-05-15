@@ -20,7 +20,7 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var rssRecordList : [RssRecord] = [RssRecord]()
     var rssRecord : RssRecord?
-    var isTagFound = [ "item": false , "title":false, "pubDate": false ,"link":false]
+    var isTagFound = [ "item": false , "title":false, "pubDate": false ,"link":false ,"content:encoded":false]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,10 +42,8 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //registerForPreviewingWithDelegate(self, sourceView: myTableView)
         
-        parseImages = true
-        
     }
-
+    
     override func viewDidAppear(animated: Bool) {
         if self.rssRecordList.isEmpty {
             self.loadRSSData()
@@ -56,14 +54,14 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.didReceiveMemoryWarning()
     }
     
-        func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.9)
     }
-
+    
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
@@ -78,9 +76,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return self.rssRecordList.count
     }
     
-    var task: NSURLSessionDataTask!
-    var parseImages = Bool()
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = self.myTableView.dequeueReusableCellWithIdentifier("rssCell", forIndexPath: indexPath) as! NewsTableViewCell
@@ -90,43 +85,21 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.articleTitle.text = thisRecord.title as String
         cell.articleDetail.text = thisRecord.pubDate as String
         
-        if parseImages == true {
-
-            if let imageLink = NSURL(string: self.rssRecordList[indexPath.row].link ) {
-            
-                task = NSURLSession.sharedSession().dataTaskWithURL(imageLink) { (data, response, error) -> Void in
-                
-                    if let urlContent = data {
-                
-                        let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
-                    
-                        let blogContent = webContent?.componentsSeparatedByString("<div class=\"blog-content\">")
-                        if blogContent!.count > 0 {
-                            let imageURL = blogContent![1].componentsSeparatedByString("<img src=\"")
-                            let imageURL2 = imageURL[1].componentsSeparatedByString("\" alt=")
-                            let finalURL = "http://www.futureappleceo.com/\(imageURL2[0])"
-                            //print(finalURL)
-                            dispatch_async(dispatch_get_main_queue(), {
-                                cell.articleImage.contentMode = .ScaleAspectFit
-                                cell.articleImage.setImageWithURL(NSURL(string: finalURL)!, placeholderImage: UIImage(named: "01.png"))
-                            })
-                        }
-                        
-                    }
-            
-                }
-                task.resume()
-            }
-        }
-            
+        let text = thisRecord.description as String
+        let image1 = text.componentsSeparatedByString("<a> <img src=\"")
+        let image2 = image1[1].componentsSeparatedByString("\"")
+        let image3 = NSURL(string: image2[0])
+        cell.articleImage.contentMode = .ScaleAspectFit
+        cell.articleImage.setImageWithURL(image3!)
+        
         return cell
-    
+        
     }
-
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         self.performSegueWithIdentifier("segueShowDetails", sender: self)
     }
-
+    
     func parserDidStartDocument(parser: NSXMLParser) {
     }
     
@@ -135,48 +108,47 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if elementName == "item" {
             self.isTagFound["item"] = true
             self.rssRecord = RssRecord()
-            
-        }else if elementName == "title" {
+        } else if elementName == "title" {
             self.isTagFound["title"] = true
-            
-        }else if elementName == "link" {
+        } else if elementName == "link" {
             self.isTagFound["link"] = true
-            
-        }else if elementName == "pubDate" {
+        } else if elementName == "pubDate" {
             self.isTagFound["pubDate"] = true
+        } else if elementName == "content:encoded" {
+            self.isTagFound["content:encoded"] = true
         }
         
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
-
+        
         if isTagFound["title"] == true {
             self.rssRecord?.title += string
-            
-        }else if isTagFound["link"] == true {
+        } else if isTagFound["link"] == true {
             self.rssRecord?.link += string
-            
-        }else if isTagFound["pubDate"] == true {
-            self.rssRecord?.pubDate += string            
+        } else if isTagFound["pubDate"] == true {
+            self.rssRecord?.pubDate += string
+        } else if isTagFound["content:encoded"] == true {
+            self.rssRecord?.description += string
         }
         
-    }    
+    }
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
         if elementName == "item" {
             self.isTagFound["item"] = false
             self.rssRecordList.append(self.rssRecord!)
-            
-        }else if elementName == "title" {
+        } else if elementName == "title" {
             self.isTagFound["title"] = false
-            
-        }else if elementName == "link" {
+        } else if elementName == "link" {
             self.isTagFound["link"] = false
-            
-        }else if elementName == "pubDate" {
+        } else if elementName == "pubDate" {
             self.isTagFound["pubDate"] = false
+        } else if elementName == "content:encoded" {
+            self.isTagFound["content:encoded"] = false
         }
+        
     }
     
     func parserDidEndDocument(parser: NSXMLParser) {
@@ -187,7 +159,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         SVProgressHUD.dismiss()
         self.refreshControl.endRefreshing()
-        parseImages = true
     }
     
     func parser(parser: NSXMLParser, parseErrorOccurred parseError: NSError) {
@@ -196,7 +167,6 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func refresh(sender:AnyObject) {
         self.loadRSSData()
-        parseImages = false
     }
     
     private func loadRSSData(){
@@ -206,10 +176,10 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if let rssURL = NSURL(string: RSS_FEED_URL1) {
             
             self.myParser = NSXMLParser(contentsOfURL: rssURL)!
-
+            
             self.myParser.delegate = self
             self.myParser.shouldResolveExternalEntities = false
-
+            
             self.myParser.parse()
             
         }
@@ -248,13 +218,13 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
     }
     
-                /*func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
-        if let indexPath = myTableView.indexPathForRowAtPoint(location) {
-            //This will show the cell clearly and blur the rest of the screen for our peek.
-            previewingContext.sourceRect = myTableView.rectForRowAtIndexPath(indexPath)
-            return viewControllerForIndexPath(indexPath)
-        }
-        return nil
-    }*/
-
+    /*func previewingContext(previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+     if let indexPath = myTableView.indexPathForRowAtPoint(location) {
+     //This will show the cell clearly and blur the rest of the screen for our peek.
+     previewingContext.sourceRect = myTableView.rectForRowAtIndexPath(indexPath)
+     return viewControllerForIndexPath(indexPath)
+     }
+     return nil
+     }*/
+    
 }
