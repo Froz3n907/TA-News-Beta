@@ -71,10 +71,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Rollout.setupWithKey("56f733e521ad9c531aeffd9c", developmentDevice: false)
         #endif
         
-        Instabug.startWithToken("affae67b70d67a9976da331bf9d04d7f", invocationEvent: IBGInvocationEventFloatingButton)
+        Instabug.startWithToken("", invocationEvent: IBGInvocationEventFloatingButton)
         Parse.enableLocalDatastore()
-        Parse.setApplicationId("1HJPhBvsiNk0SHvAW9PhIKr88xqpO5LK0TcgKkgm",
-            clientKey: "K8rEAlEcyufROFiraAGEHesKuf6KFpGBzhuzVFSB")
+        Parse.setApplicationId("",
+            clientKey: "")
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         Fabric.with([Crashlytics.self])
         if application.applicationState != UIApplicationState.Background {            
