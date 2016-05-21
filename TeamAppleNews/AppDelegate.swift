@@ -66,9 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         #if DEBUG
-            Rollout.setupWithKey("56f733e521ad9c531aeffd9c", developmentDevice: true)
+            Rollout.setupWithKey("", developmentDevice: true)
         #else
-            Rollout.setupWithKey("56f733e521ad9c531aeffd9c", developmentDevice: false)
+            Rollout.setupWithKey("", developmentDevice: false)
         #endif
         
         Instabug.startWithToken("", invocationEvent: IBGInvocationEventFloatingButton)
