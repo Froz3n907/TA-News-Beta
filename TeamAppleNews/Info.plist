@@ -31,31 +31,7 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>105</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>371014dff6c6aa9b02953aae33069552168c6ee9</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict/>
-				<key>KitName</key>
-				<string>Crashlytics</string>
-			</dict>
-			<dict>
-				<key>KitInfo</key>
-				<dict>
-					<key>consumerKey</key>
-					<string>FhERjqKanTna9Pq80IA0U4ikF</string>
-					<key>consumerSecret</key>
-					<string>m14KD701foRfhJzrJ1j0u3rNrINhSP7qpXJU6D45uiZgzGWWCs</string>
-				</dict>
-				<key>KitName</key>
-				<string>Digits</string>
-			</dict>
-		</array>
-	</dict>
+	
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
